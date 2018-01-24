@@ -4,7 +4,7 @@ The easiest way to get started with Amazon Translate is to use the console to tr
 
 To start translating text, sign in to the AWS Management Console and open the Amazon Translate console\. If this is the first time that you've used Amazon Translate, choose **Try Amazon Translate**\.
 
-In the **API Explorer**, choose the source and target languages\. Enter the text that you want to translate in the left\-hand text box, the translated text appears in the right\-hand text box\.
+In the **API Explorer**, choose the source and target languages\. Enter the text that you want to translate in the left\-hand text box\. The translated text appears in the right\-hand text box\.
 
 ![\[The translate text page of the Amazon Translate API Explorer.\]](http://docs.aws.amazon.com/translate/latest/dg/images/gs-10.png)
 

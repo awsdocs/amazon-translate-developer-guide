@@ -2,7 +2,7 @@
 
 You can use Amazon Translate for real time translation of chat messages\. This example uses a Twitch channel, but you can use it as a starting point for other real\-time streaming text like other chat platforms, customer service interactions, message boards, and more\. 
 
-This example uses a web page that shows real\-time messages in English and their real\-time translations side\-by\-side\. You can send the messages to Amazon Polly to speak the text\. You can follow a person in the chat, enter their user name and the app will only speak messages from that user\.
+This example uses a web page that shows real\-time messages in English and their real\-time translations side\-by\-side\. You can send the messages to Amazon Polly to speak the text\. To follow a person in the chat, type their user name\. The app will speak only messages from that user\.
 
 The code can be summarized as follows:
 

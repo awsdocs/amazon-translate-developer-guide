@@ -17,7 +17,6 @@ The following is the permissions policy required to use Amazon Translate and the
                 "translate:TranslateText"
              ],   
             "Resource": "*"
-            ]
         }
     ]
 }

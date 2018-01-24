@@ -1,7 +1,7 @@
 # Amazon Translate Developer Guide
 
 -----
-*****Copyright &copy; 2017 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2018 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -27,6 +27,8 @@ Amazon's trademarks and trade dress may not be used in
 + [Examples](examples.md)
    + [Using Amazon Polly with Amazon Translate](examples-polly.md)
    + [Using Amazon Translate to Translate a Chat Channel](examples-twitch.md)
+   + [Using Amazon Translate with Amazon DynamoDB](examples-ddb.md)
+   + [Using Amazon Translate to Translate a Web Page](examples-web.md)
 + [Authentication and Access Control for Amazon Translate](auth-and-access-control.md)
    + [Overview of Managing Access Permissions to Your Amazon Translate Resources](access-control-overview.md)
    + [Using Identity-Based Polices (IAM Policies) for Amazon Translate](access-control-managing-permissions.md)
