@@ -29,6 +29,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Using Amazon Translate to Translate a Chat Channel](examples-twitch.md)
    + [Using Amazon Translate with Amazon DynamoDB](examples-ddb.md)
    + [Using Amazon Translate to Translate a Web Page](examples-web.md)
+   + [Using Amazon Translate to Translate Large Documents](examples-split.md)
 + [Authentication and Access Control for Amazon Translate](auth-and-access-control.md)
    + [Overview of Managing Access Permissions to Your Amazon Translate Resources](access-control-overview.md)
    + [Using Identity-Based Polices (IAM Policies) for Amazon Translate](access-control-managing-permissions.md)
