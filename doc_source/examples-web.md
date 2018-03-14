@@ -71,7 +71,7 @@ public class TranslateWebPage {
       .withEndpointConfiguration(endpointConfiguration).build();
  
    
-   // Record the begining of translating the HTML content at the url
+   // Record the beginning of translating the HTML content at the url
    System.out.println("Translating URL: " + url);
  
    // Create an empty HTML document to store the parsed data
