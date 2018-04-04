@@ -3,9 +3,7 @@
 This example shows you how to translate a product review and store it in Amazon DynamoDB\. If you request the same review later, DynamoDB returns it without Amazon Translate needing to translate it again\. 
 
 In this example, you:
-
 + Use AWS CloudFormation to create DynamoDB tables to store the translation and a Lambda function that calls the [TranslateText](API_TranslateText.md) operation\.
-
 + Test the function using the AWS Lambda console\.
 
 **To run the example**

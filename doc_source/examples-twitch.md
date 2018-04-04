@@ -5,19 +5,12 @@ You can use Amazon Translate for real time translation of chat messages\. This e
 This example uses a web page that shows real\-time messages in English and their real\-time translations side\-by\-side\. You can send the messages to Amazon Polly to speak the text\. To follow a person in the chat, type their user name\. The app will speak only messages from that user\.
 
 The code can be summarized as follows:
-
 + CSS and HTML to create the Web page\.
-
 + Initialization code that creates controllers for Amazon Translate and Amazon Polly\.
-
 + A call back function that gets executed when a chat message is received\.
-
 + A function that sends a chat message\.
-
 + A function that calls Amazon Translate to translate messages\.
-
 + A function that calls Amazon Polly to synthesize speech\.
-
 +  Utility functions for managing the Web page\.
 
 **To configure the example**
@@ -28,7 +21,7 @@ The code can be summarized as follows:
 
 1. Update the `<script>` tag to the location where you installed the SDK for JavaScript\.
 
-1. Change the region and endpoint to the region where you want to run the Amazon Translate and Amazon Polly operations\. For a list of supported regions for Amazon Translate, see [Beta Guidelines and Limits](beta-limits-guidelines.md)\. For a list of supported regions for Amazon Polly, see [AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#pol_region) in the *Amazon Web Services General Reference*\.
+1. Change the region and endpoint to the region where you want to run the Amazon Translate and Amazon Polly operations\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. For a list of supported regions for Amazon Polly, see [AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#pol_region) in the *Amazon Web Services General Reference*\.
 
 1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Polices \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md) and [ Using Identity\-Based Policies \(IAM Policies\) for Amazon Polly ](http://docs.aws.amazon.com/polly/latest/dg/using-identity-based-policies.html) in the *Amazon Polly Developer Guide*\.
 

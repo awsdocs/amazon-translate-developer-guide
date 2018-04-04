@@ -1,9 +1,7 @@
 # Using Amazon Translate to Translate a Web Page<a name="examples-web"></a>
 
 You can use Amazon Translate to translate the contents of a Web page\. The following Java program translates a specified Web page from English to Spanish and creates an HTML file that contains the result of the translation\. There are two functions in the program:
-
 + A function that reads data from the source Web page, separates it into HTML elements, and then calls the second function to translate the element\. At the end of the document, it writes the results to an HTML file\.
-
 + A function that calls the Amazon Translate service to translate the contents of an HTML element\.
 
 **To configure the example**
@@ -18,7 +16,7 @@ You can use Amazon Translate to translate the contents of a Web page\. The follo
 
 1. Create a new project in your Java IDE and copy the source code\.
 
-1. Change the region and endpoint to the region where you want to run the Amazon Translate operation\. For a list of supported regions for Amazon Translate, see [Beta Guidelines and Limits](beta-limits-guidelines.md)\. 
+1. Change the region and endpoint to the region where you want to run the Amazon Translate operation\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. 
 
 ```
 package com.amazonaws.translateweb;

@@ -12,17 +12,17 @@ import com.amazonaws.services.translate.model.TranslateTextRequest;
 import com.amazonaws.services.translate.model.TranslateTextResult;
 
 public class App {
-    private static final String ENDPOINT = "endpoint";
     private static final String REGION = "region";
 
     public static void main( String[] args ) {
 
-        BasicAWSCredentials awsCredentials = new BasicAWSCredentials("access key ID", "secret access key");
-        AwsClientBuilder.EndpointConfiguration endpointConfiguration = new AwsClientBuilder.EndpointConfiguration(ENDPOINT, REGION);
-
-        AWSTranslate translate = AmazonTranslateClient.builder()
-                .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
-                .withEndpointConfiguration(endpointConfiguration)
+        // Create credentials using a provider chain. For more information, see
+        // https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html
+        AWSCredentialsProvider awsCreds = DefaultAWSCredentialsProviderChain.getInstance();
+        
+        AWSTranslate translate = AmazonTranslateClient.standard()
+                .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
+                .withRegion(REGION)
                 .build();
 
         TranslateTextRequest request = new TranslateTextRequest()
@@ -36,7 +36,5 @@ public class App {
 ```
 
 You can change the source and target languages subject to the following constraints:
-
-+ If the source language is English, you can translate the source text to any of the other supported languages\. For a list of supported languages, see [ How It Works](how-it-works.md)\.
-
++ If the source language is English, you can translate the source text to any of the other supported languages\. For a list of supported languages, see [How It Works](how-it-works.md)\.
 + If the source language is not English, the target language must be English\.

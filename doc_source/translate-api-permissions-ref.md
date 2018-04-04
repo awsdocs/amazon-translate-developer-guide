@@ -14,4 +14,5 @@ If you see an expand arrow \(**↗**\) in the upper\-right corner of the table, 
 
 | Amazon Translate API Operations | Required Permissions \(API Actions\) | Resources | 
 | --- | --- | --- | 
-| [TranslateText](API_TranslateText.md) | translate:TranslateText | \* | 
+| [TranslateText](API_TranslateText.md) – Use to specify the source language  |  `translate:TranslateText`  | \* | 
+| [TranslateText](API_TranslateText.md) – Use for automatic source language detection |  `translate:TranslateText` `comprehend:DetectDominantLanguage`  | \* | 

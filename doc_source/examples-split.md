@@ -1,16 +1,12 @@
 # Using Amazon Translate to Translate Large Documents<a name="examples-split"></a>
 
-You can split large documents into smaller parts to keep the total document size below the document size limit\. For more information about document size limits, see [Limits](beta-limits-guidelines.md#beta-limits)\. The following Java program breaks long text documents into individual sentences and then translates each sentence from the source language to the target language\. The program contains two sections:
-
-+ The `SentenceSegmenter` class that is responsible for breaking the source string into individual sentences\. The sample uses the International Components for Unicode \(ICU\) `BreakIterator` class\. You can use the Java `BreakIterator` class as an alternative\. For more information, see [Using the Java BreakIterator Class](#split-java-iterator)\.
-
+You can split large documents into smaller parts to keep the total document size below the document size limit\. For more information about document size limits, see [Limits](limits-guidelines.md#limits)\. The following Java program breaks long text documents into individual sentences and then translates each sentence from the source language to the target language\. The program contains two sections:
++ The `SentenceSegmenter` class that is responsible for breaking the source string into individual sentences\. The sample uses the Java `BreakIterator` class\.
 + The `main` function that calls the `Translate` operation for each sentence in the source string\. The `main` function also handles authentication with Amazon Translate\.
 
 **To configure the example**
 
 1. Install and configure the AWS SDK for Java\. For instructions for installing the SDK for Java, see [ Set up the AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-install.html)\.
-
-1. Download and install the ICU jar files from [http://site\.icu\-project\.org/download](http://site.icu-project.org/download)\. If you are using Maven, set up dependencies from [https://mvnrepository\.com/artifact/com\.ibm\.icu/icu4j](https://mvnrepository.com/artifact/com.ibm.icu/icu4j)\.
 
 1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Polices \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md)\.
 
@@ -18,7 +14,7 @@ You can split large documents into smaller parts to keep the total document size
 
 1. Create a new project in your Java IDE and copy the source code\.
 
-1. Change the region to the region where you want to run the Amazon Translate operation\. For a list of supported regions for Amazon Translate, see [Beta Guidelines and Limits](beta-limits-guidelines.md)\. 
+1. Change the region to the region where you want to run the Amazon Translate operation\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. 
 
 1. Change the source and target languages to the languages to translate between\.
 
@@ -33,7 +29,7 @@ import com.amazonaws.services.translate.AmazonTranslate;
 import com.amazonaws.services.translate.AmazonTranslateClient;
 import com.amazonaws.services.translate.model.TranslateTextRequest;
 import com.amazonaws.services.translate.model.TranslateTextResult;
-import com.ibm.icu.text.BreakIterator;
+import java.text.BreakIterator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -106,21 +102,3 @@ class SentenceSegmenter {
 
 }
 ```
-
-## Using the Java BreakIterator Class<a name="split-java-iterator"></a>
-
-Depending on the language pair and your use case, the Java `BreakIterator` class may provide better performance\. You should not use it if the source language is Arabic \(ar\)\. If you want to use the Java `BreakIterator`, make the following changes to the sample:
-
-1. Remove the following line from the imports section of the sample:
-
-   ```
-   import com.ibm.icu.text.BreakIterator;
-   ```
-
-1. Add the following line to the imports section of the sample:
-
-   ```
-   import java.text.BreakIterator;
-   ```
-
-The sample will now use the Java `BreakIterator` class\.

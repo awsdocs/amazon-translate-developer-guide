@@ -4,6 +4,6 @@ The following examples demonstrate how to use Amazon Translate [TranslateText](A
 
 To run the Java examples, you need to install the AWS SDK for Java\. For instructions for installing the SDK for Java, see [Set up the AWS SDK for Java](http://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-install.html)\.
 
-
+**Topics**
 + [Translating Text Using the AWS SDK for Java](examples-java.md)
 + [Translating Text Using the AWS SDK for Python \(Boto\)](examples-python.md)

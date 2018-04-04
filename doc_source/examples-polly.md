@@ -1,15 +1,10 @@
 # Using Amazon Polly with Amazon Translate<a name="examples-polly"></a>
 
 To speak translated text, you can use Amazon Polly with Amazon Translate\. In this example you'll create a Web page where you can translate text using Amazon Translate and then speak that text using Amazon Polly\. The code can be summarized into the following:
-
 + CSS and HTML to create the Web page\.
-
 + Initialization code that creates controllers for Amazon Translate and Amazon Polly\.
-
 + A function that reads data from the Web page and calls Amazon Translate\.
-
 + A function that reads data from the Web page and calls Amazon Polly\.
-
 + Utility functions for managing the Web page\.
 
 **To configure the example**
@@ -20,7 +15,7 @@ To speak translated text, you can use Amazon Polly with Amazon Translate\. In th
 
 1. Update the `<script>` tag to the location where you installed the SDK for JavaScript\.
 
-1. Change the region and endpoint to the region where you want to run the Amazon Translate and Amazon Polly operations\. For a list of supported regions for Amazon Translate, see [Beta Guidelines and Limits](beta-limits-guidelines.md)\. For a list of supported regions for Amazon Polly, see [AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#pol_region) in the *Amazon Web Services General Reference*\.
+1. Change the region and endpoint to the region where you want to run the Amazon Translate and Amazon Polly operations\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. For a list of supported regions for Amazon Polly, see [AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#pol_region) in the *Amazon Web Services General Reference*\.
 
 1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Polices \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md) and [ Using Identity\-Based Policies \(IAM Policies\) for Amazon Polly ](http://docs.aws.amazon.com/polly/latest/dg/using-identity-based-policies.html) in the *Amazon Polly Developer Guide*\.
 

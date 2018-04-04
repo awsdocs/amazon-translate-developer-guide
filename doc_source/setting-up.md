@@ -10,7 +10,7 @@ Before you use Amazon Translate for the first time, complete the following tasks
 
 When you sign up for Amazon Web Services \(AWS\), your AWS account is automatically signed up for all AWS services, including Amazon Translate\. You are charged only for the services that you use\.
 
-With Amazon Translate, you pay only for the resources that you use\. If you are a new AWS customer, you can get started with Amazon Translate for free\. For more information, see [AWS Free Usage Tier](https://aws.amazon.com//free/)\.
+With Amazon Translate, you pay only for the resources that you use\. If you are a new AWS customer, you can get started with Amazon Translate for free\. For more information, see [AWS Free Usage Tier](https://aws.amazon.com/free/)\.
 
 If you already have an AWS account, skip to the next section\. 
 
@@ -35,15 +35,11 @@ We strongly recommend that you access AWS using AWS Identity and Access Manageme
 Exercises in this guide assume that you have an IAM user with administrator privileges called `adminuser`\. 
 
 **To create an administrator user**
-
 + In your AWS account, create an administrator user called `adminuser`\. For instructions, see [Creating Your First IAM User and Administrators Group](http://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) in the *IAM User Guide*\.
 
 For more information about IAM, see the following:
-
 + [AWS Identity and Access Management \(IAM\)](https://aws.amazon.com/iam/)
-
 + [Getting Started](http://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html)
-
 + [IAM User Guide](http://docs.aws.amazon.com/IAM/latest/UserGuide/)
 
 ## Next Step<a name="setting-up-next-step-2"></a>

@@ -4,15 +4,14 @@ In the following exercises , you use the AWS command line interface \(AWS CLI\) 
 
 There are two ways to use the CLI to translate text with Amazon Translate\. For short text, you can provide the text that you want to translate as a parameter of the `translate-text` command\. For longer text, you can provide the source language, target language, and text in a JSON file\.
 
-To use Amazon Translate from the command line, you need to know the endpoint and region for the service\. For a list of available endpoints and regions, see [Beta Guidelines and Limits](beta-limits-guidelines.md)\.
+To use Amazon Translate from the command line, you need to know the endpoint and region for the service\. For a list of available endpoints and regions, see [Guidelines and Limits](limits-guidelines.md)\.
 
 ## Translate Text Using the Command Line<a name="cli-command-line"></a>
 
-The following example shows how to use the `TranslateText` operation from the command line to translate text\. The example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\)\. At the command line, type the following\. 
+The following example shows how to use the `translate-text` operation from the command line to translate text\. The example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\)\. At the command line, type the following\. 
 
 ```
 aws translate translate-text \
-            --endpoint-url endpoint  \
             --region region \
             --source-language-code "en" \
             --target-language-code "es" \
@@ -45,7 +44,7 @@ The example is formatted for Unix, Linux, and macOS\. For Windows, replace the b
    {
        "Text": "Amazon Translate translates documents into English from 
        six languages and vice versa in real time.  It uses 
-       advanced machine learning technologies to provides 
+       advanced machine learning technologies to provide 
        high-quality real-time translation. Use it to translate 
        documents or to build applications that work in multiple 
        languages.", 
@@ -58,7 +57,6 @@ The example is formatted for Unix, Linux, and macOS\. For Windows, replace the b
 
    ```
    aws translate translate-text \
-               --endpoint-url endpoint \ 
                --region region \
                --cli-input-json file://translate.json > translated.json
    ```
@@ -68,12 +66,12 @@ The example is formatted for Unix, Linux, and macOS\. For Windows, replace the b
    ```
    {
        "TargetLanguageCode": "fr", 
-       "Text": "Amazon Translate traduit en temps réel des documents en anglais 
-       de sept langues et vice versa. Il utilise des technologies 
-       avancées d'apprentissage des machines pour offrir une traduction 
-       en temps réel de haute qualité. Utilisez-le pour traduire des 
-       documents ou pour créer des applications qui fonctionnent dans 
-       plusieurs langues.", 
+       "Text": "Amazon Translate traduit les documents en anglais à partir 
+       de six langues et vice versa en temps réel. Il utilise des 
+       technologies avancées d'apprentissage de la machine pour 
+       fournir une traduction en temps réel de haute qualité. 
+       Utilisez-le pour traduire des documents ou pour créer des 
+       applications qui fonctionnent en plusieurs langues.", 
        "SourceLanguageCode": "en"
    }
    ```
