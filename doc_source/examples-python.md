@@ -15,5 +15,5 @@ print('TargetLanguageCode: ' + result.get('TargetLanguageCode'))
 ```
 
 You can change the source and target languages subject to the following constraints:
-+ If the source language is English, you can translate the source text to any of the other supported languages\. For a list of supported languages, see [How It Works](how-it-works.md)\.
++ If the source language is English, you can translate the source text to any of the other supported languages\. For a list of supported languages, see [How Amazon Translate Works](how-it-works.md)\.
 + If the source language is not English, the target language must be English\.

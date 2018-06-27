@@ -8,5 +8,5 @@ The following table describes the documentation for this release of Amazon Trans
 
 | Change | Description | Date | 
 | --- | --- | --- | 
-| New feature | Amazon Translate adds support for automatic source language detection\. For more information, see [How It Works](how-it-works.md)\. | April 4, 2018 | 
+| New feature | Amazon Translate adds support for automatic source language detection\. For more information, see [How Amazon Translate Works](how-it-works.md)\. | April 4, 2018 | 
 | New guide | This is the first release of the Amazon Translate Developer Guide\. | November 29, 2017 | 

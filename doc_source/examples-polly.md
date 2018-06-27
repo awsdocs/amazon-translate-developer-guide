@@ -17,7 +17,7 @@ To speak translated text, you can use Amazon Polly with Amazon Translate\. In th
 
 1. Change the region and endpoint to the region where you want to run the Amazon Translate and Amazon Polly operations\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. For a list of supported regions for Amazon Polly, see [AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#pol_region) in the *Amazon Web Services General Reference*\.
 
-1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Polices \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md) and [ Using Identity\-Based Policies \(IAM Policies\) for Amazon Polly ](http://docs.aws.amazon.com/polly/latest/dg/using-identity-based-policies.html) in the *Amazon Polly Developer Guide*\.
+1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md) and [ Using Identity\-Based Policies \(IAM Policies\) for Amazon Polly ](http://docs.aws.amazon.com/polly/latest/dg/using-identity-based-policies.html) in the *Amazon Polly Developer Guide*\.
 
 1. Provide the access ID and secret key of the IAM user created in the previous step\.
 
@@ -31,7 +31,7 @@ The following is the complete code of the example Web page\. You can copy this c
 
 <head>
     <title>Amazon Translate</title>
-    <script src="aws-js-sdk/dist/aws-sdk-all.js"></script>
+    <script src="aws-sdk/dist/aws-sdk.js"></script>
 </head>
 
 <body>

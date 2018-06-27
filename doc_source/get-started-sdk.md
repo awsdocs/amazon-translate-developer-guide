@@ -7,3 +7,5 @@ To run the Java examples, you need to install the AWS SDK for Java\. For instruc
 **Topics**
 + [Translating Text Using the AWS SDK for Java](examples-java.md)
 + [Translating Text Using the AWS SDK for Python \(Boto\)](examples-python.md)
++ [Translating Text Using the AWS Mobile SDK for Android](getting-started-android.md)
++ [Translating Text Using the AWS Mobile SDK for iOS](getting-started-ios.md)

@@ -1,4 +1,4 @@
-# Using Identity\-Based Polices \(IAM Policies\) for Amazon Translate<a name="access-control-managing-permissions"></a>
+# Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate<a name="access-control-managing-permissions"></a>
 
 This topic provides an example of an identity\-based policy that demonstrate how an account administrator can attach permissions policies to IAM identities \(that is, users, groups, and roles\) to grant permissions to perform Amazon Translate actions\. 
 
@@ -23,7 +23,7 @@ The following is the permissions policy required to use Amazon Translate and the
 }
 ```
 
-The policy has one statement that grants permissions to use the `TranslateText` action\.
+The policy has two statements\. The first grants permissions to use the `TranslateText` action\. The second grants permissions to the Amazon Comprehend `DetectDominantLanguage` operation to enable automatic language detection\.
 
 The policy doesn't specify the `Principal` element because you don't specify the principal who gets the permissions in an identity\-based policy\. When you attach a policy to a user, the user is the implicit principal\. When you attach a permissions policy to an IAM role, the principal identified in the role's trust policy gets the permissions\. 
 

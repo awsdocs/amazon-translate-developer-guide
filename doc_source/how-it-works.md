@@ -1,4 +1,4 @@
-# How It Works<a name="how-it-works"></a>
+# How Amazon Translate Works<a name="how-it-works"></a>
 
 Amazon Translate is based on neural networks that have been trained to translate between English and the following langurages, or from these languages into English:
 + Arabic

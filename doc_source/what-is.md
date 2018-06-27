@@ -29,7 +29,7 @@ For example, you can:
 
 If you are a first\-time user, we recommend that you read the following sections in order:
 
-1. [How It Works](how-it-works.md)—Introduces Amazon Translate\.
+1. [How Amazon Translate Works](how-it-works.md)—Introduces Amazon Translate\.
 
 1. [Getting Started with Amazon Translate](getting-started.md)—Explains how to set up your AWS account and test Amazon Translate\.
 

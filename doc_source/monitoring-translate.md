@@ -4,7 +4,7 @@ Monitoring is an important part of maintaining the reliability, availability, an
 
 Amazon Translate provides preconfigured graphs that show you the most important metrics for your solution\. Each graph offers a window into your solution's performance\. You can change the time range that the graphs show to get different views of how your solution is performing over time\.
 
-You can also use Amazon CloudWatch to monitor Amazon Translate\. With CloudWatch, you can automate monitoring specific metrics for your solutions\. You receive a notice whenever a metric is outside of the thresholds that you set\. You can also use the CloudWatch API to create a custom monitoring application that is suitable for your needs\. Fpr more information, see [What is Amazon CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html) in the *Amazon CloudWatch User Guide*\.
+You can also use Amazon CloudWatch to monitor Amazon Translate\. With CloudWatch, you can automate monitoring specific metrics for your solutions\. You receive a notice whenever a metric is outside of the thresholds that you set\. You can also use the CloudWatch API to create a custom monitoring application that is suitable for your needs\. For more information, see [What is Amazon CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html) in the *Amazon CloudWatch User Guide*\.
 
 The following table describes each of the preconfigured graphs provided by Amazon Translate\.
 

@@ -32,4 +32,4 @@ You can have valid credentials to authenticate your requests\. For example, you 
 
  The following sections describe how to manage permissions for Amazon Translate\. We recommend that you read the overview first\. 
 + [Overview of Managing Access Permissions to Your Amazon Translate Resources](access-control-overview.md)
-+ [Using Identity\-Based Polices \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md)
++ [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md)

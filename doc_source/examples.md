@@ -8,3 +8,4 @@ The following examples show ways that you can use Amazon Translate\.
 + [Using Amazon Translate with Amazon DynamoDB](examples-ddb.md)
 + [Using Amazon Translate to Translate a Web Page](examples-web.md)
 + [Using Amazon Translate to Translate Large Documents](examples-split.md)
++ [Using Signature Version 4 with Amazon Translate](examples-sigv4.md)
