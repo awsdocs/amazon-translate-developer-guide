@@ -3,10 +3,16 @@
 Translates input text from the source language to the target language\. You can translate between English \(en\) and one of the following languages, or between one of the following languages and English\.
 + Arabic \(ar\)
 + Chinese \(Simplified\) \(zh\)
++ Chinese \(Traditional\) \(zh\-TW\)
++ Czech \(cs\)
 + French \(fr\)
 + German \(de\)
++ Italian \(it\)
++ Japanese \(ja\)
 + Portuguese \(pt\)
++ Russian \(ru\)
 + Spanish \(es\)
++ Turkish \(tr\)
 
 To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call Amazon Comprehend to determine the source language\.
 

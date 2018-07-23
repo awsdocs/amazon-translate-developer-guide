@@ -1,12 +1,18 @@
 # What Is Amazon Translate?<a name="what-is"></a>
 
-Amazon Translate translates documents from the following six languages into English, and from English into these languages:
+Amazon Translate translates documents from the following twelve languages into English, and from English into these languages:
 + Arabic
-+ Simplified Chinese
++ Chinese \(Simplified\)
++ Chinese \(Traditional\)
++ Czech
 + French
 + German
++ Italian
++ Japanese
 + Portuguese
++ Russian
 + Spanish
++ Turkish
 
 Amazon Translate uses advanced machine learning technologies to provide high\-quality translation on demand\. Use it to translate unstructured text documents or to build applications that work in multiple languages\. 
 

@@ -1,12 +1,18 @@
 # How Amazon Translate Works<a name="how-it-works"></a>
 
-Amazon Translate is based on neural networks that have been trained to translate between English and the following langurages, or from these languages into English:
+Amazon Translate is based on neural networks that have been trained to translate between English and the following languages, or from these languages into English:
 + Arabic
 + Chinese \(Simplified\)
++ Chinese \(Traditional\)
++ Czech
 + French
 + German
++ Italian
++ Japanese
 + Portuguese
++ Russian
 + Spanish
++ Turkish
 
 You can also translate text in any of these languages into another one of these languages by first translating the source text to English and then translating the English text to the target language\.
 
@@ -27,11 +33,17 @@ To translate text, you call the [TranslateText](API_TranslateText.md) method and
 | --- | --- | 
 | Arabic | ar | 
 | Chinese \(Simplified\) | zh | 
+| Chinese \(Traditional\) | zh\-TW | 
+| Czech | cs | 
 | English | en | 
 | French | fr | 
 | German | de | 
+| Italian | it | 
+| Japanese | ja | 
 | Portuguese | pt | 
+| Russian | ru | 
 | Spanish | es | 
+| Turkish | tr | 
 
 To translate text from any non\-English language in the table to any other non\-English language in the table, translate it into English, and then translate the English output text into the target language\.
 
