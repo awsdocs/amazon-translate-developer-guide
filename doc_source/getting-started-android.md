@@ -4,9 +4,9 @@ You can use Amazon Translate in an Android application to translate text\.
 
 **To configure the example**
 
-1. Set up the AWS Mobile SDK for Android\. For instructions, see [ Android: Setup Options for the SDK](http://docs.aws.amazon.com/aws-mobile/latest/developerguide/how-to-android-sdk-setup.html) in the *AWS Mobile Developer Guide*
+1. Set up the AWS Mobile SDK for Android\. For instructions, see [ Android: Setup Options for the SDK](https://docs.aws.amazon.com/aws-mobile/latest/developerguide/how-to-android-sdk-setup.html) in the *AWS Mobile Developer Guide*
 
-1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md)\. After you create the user, download the credentials or record the access key and secret access key\.
+1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md)\. After you create the user, download the credentials or record the access key and secret access key\.
 
 1. Create a new project with Android Studio\.
 

@@ -1,20 +1,6 @@
 # How Amazon Translate Works<a name="how-it-works"></a>
 
-Amazon Translate is based on neural networks that have been trained to translate between English and the following languages, or from these languages into English:
-+ Arabic
-+ Chinese \(Simplified\)
-+ Chinese \(Traditional\)
-+ Czech
-+ French
-+ German
-+ Italian
-+ Japanese
-+ Portuguese
-+ Russian
-+ Spanish
-+ Turkish
-
-You can also translate text in any of these languages into another one of these languages by first translating the source text to English and then translating the English text to the target language\.
+The Amazon Translate service is based on neural networks trained for language translation\. This enables you to translate between a source language \(the original language of the text being translated\) and a target language \(the language into which the text is being translated\)\. It is not necessary to use English as either the source or the target language but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Language Pairs](pairs.md)\.
 
 When working with Amazon Translate, you will provide source text and get output text:
 + **Source text**—The text that you want to translate\. You provide the source text in UTF\-8 format\.
@@ -35,19 +21,23 @@ To translate text, you call the [TranslateText](API_TranslateText.md) method and
 | Chinese \(Simplified\) | zh | 
 | Chinese \(Traditional\) | zh\-TW | 
 | Czech | cs | 
+| Danish | da  | 
+| Dutch | nl  | 
 | English | en | 
+| Finnish | fi  | 
 | French | fr | 
 | German | de | 
+| Hebrew | he  | 
+| Indonesian | id  | 
 | Italian | it | 
 | Japanese | ja | 
+| Korean | ko | 
+| Polish | pl | 
 | Portuguese | pt | 
 | Russian | ru | 
 | Spanish | es | 
+| Swedish | sv | 
 | Turkish | tr | 
-
-To translate text from any non\-English language in the table to any other non\-English language in the table, translate it into English, and then translate the English output text into the target language\.
-
-Amazon Translate can automatically detect the source language\. For automatic language detection, specify `auto` as the source language\. when you provide source text\. Amazon Translate calls Amazon Comprehend to detect the source language\. 
 
 ## Automatic Language Detection<a name="how-to-auto"></a>
 
@@ -56,7 +46,7 @@ Amazon Translate can automatically detect the language used in your source text\
 ## Exception Handling<a name="how-to-error-msg"></a>
 
 If you specify a source or target language that isn't supported, Amazon Translate returns the following exceptions: 
-+ **UnsupportedLanguagePairException** – Amazon Translate supports translation between English and the six other languages\. Either the source language or the target language must be English\. 
++ **UnsupportedLanguagePairException** – Amazon Translate supports translation between the supported languages\. This exception is returned if translation between the language pair is unsupported\. For more information, see [Supported Language Pairs](pairs.md) 
 + **DetectedLanguageLowConfidenceException** – If you use automatic language detection, and Amazon Translate has low confidence that it detected the correct source language, it returns this exception\. If a low confidence level is acceptable, you can use the source language returned in the exception\.
 
 ## Next Steps<a name="how-it-works-next-steps"></a>

@@ -9,15 +9,15 @@ To speak translated text, you can use Amazon Polly with Amazon Translate\. In th
 
 **To configure the example**
 
-1. Install and Configure the AWS SDK for JavaScript\. For instructions for installing the SDK for JavaScript, see [Installing the SDK for JavaScript](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html)\.
+1. Install and Configure the AWS SDK for JavaScript\. For instructions for installing the SDK for JavaScript, see [Installing the SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html)\.
 
 1. Copy the code for the example to an HTML file on your Web server\.
 
 1. Update the `<script>` tag to the location where you installed the SDK for JavaScript\.
 
-1. Change the region and endpoint to the region where you want to run the Amazon Translate and Amazon Polly operations\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. For a list of supported regions for Amazon Polly, see [AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#pol_region) in the *Amazon Web Services General Reference*\.
+1. Change the region and endpoint to the region where you want to run the Amazon Translate and Amazon Polly operations\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. For a list of supported regions for Amazon Polly, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#pol_region) in the *Amazon Web Services General Reference*\.
 
-1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md) and [ Using Identity\-Based Policies \(IAM Policies\) for Amazon Polly ](http://docs.aws.amazon.com/polly/latest/dg/using-identity-based-policies.html) in the *Amazon Polly Developer Guide*\.
+1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md) and [ Using Identity\-Based Policies \(IAM Policies\) for Amazon Polly ](https://docs.aws.amazon.com/polly/latest/dg/using-identity-based-policies.html) in the *Amazon Polly Developer Guide*\.
 
 1. Provide the access ID and secret key of the IAM user created in the previous step\.
 
@@ -44,11 +44,17 @@ Source Language Code:
                 <select id="sourceLanguageCodeDropdown">
                       <option value="en">en</option>
                       <option value="ar">ar</option>
+                      <option value="cs">cs</option>
                       <option value="de">de</option>
                       <option value="es">es</option>
                       <option value="fr">fr</option>
+                      <option value="it">it</option>
+                      <option value="ja">ja</option>
                       <option value="pt">pt</option>
+                      <option value="ru">ru</option>
+                      <option value="tr">tr</option>
                       <option value="zh">zh</option>
+                      <option value="zh-TW">zh-TW</option>
                 </select>
             </th>
             <th align="left">
@@ -56,11 +62,17 @@ Target Language Code:
                 <select id="targetLanguageCodeDropdown">
                       <option value="en">en</option>
                       <option value="ar">ar</option>
+                      <option value="cs">cs</option>
                       <option value="de">de</option>
                       <option value="es">es</option>
                       <option value="fr">fr</option>
+                      <option value="it">it</option>
+                      <option value="ja">ja</option>
                       <option value="pt">pt</option>
+                      <option value="ru">ru</option>
+                      <option value="tr">tr</option>
                       <option value="zh">zh</option>
+                      <option value="zh-TW">zh-TW</option>
                 </select>
             </th>
         </tr>
@@ -89,13 +101,20 @@ Target Language Code:
 
         /**
         * Change the region and endpoint.
+        */
         AWS.config.region = 'region'; // Region
-        var ep = new AWS.Endpoint('endpoint');
 
          /**
-         * Place your credentials here. The IAM user associated with these credentials must have permissions to call
-         * Amazon Translate. We recommend using the following permissions policy and nothing more, as anyone that has
-         * access to this HTML page will also have access to these hard-coded credentials.
+         * In a production application you should use a secure method of authenticating uses, such as the ones 
+         * described here:
+         *   https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-browser.html
+         *
+         * Note that Amazon Translate does not work with Amazon Cognito Identity.
+         *
+         * For this example you place the credentials of an IAM user in the HTML page. The IAM user associated 
+         * with these credentials must have permissions to call Amazon Translate. We recommend using the following 
+         * permissions policy and nothing more, as anyone that has access to this HTML page will also have access to 
+         * these hard-coded credentials.
          * {
          *     "Version": "2012-10-17",
          *     "Statement": [
@@ -115,7 +134,7 @@ Target Language Code:
          */
         AWS.config.credentials = new AWS.Credentials("access key", "secret key);
 
-        var translate = new AWS.Translate({endpoint: ep, region: AWS.config.region});
+        var translate = new AWS.Translate({region: AWS.config.region});
         var polly = new AWS.Polly();
 
         function doTranslate() {

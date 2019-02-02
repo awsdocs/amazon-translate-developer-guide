@@ -1,7 +1,7 @@
 # Amazon Translate Developer Guide
 
 -----
-*****Copyright &copy; 2018 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -15,6 +15,7 @@ Amazon's trademarks and trade dress may not be used in
 -----
 ## Contents
 + [What Is Amazon Translate?](what-is.md)
+   + [Supported Language Pairs](pairs.md)
 + [How Amazon Translate Works](how-it-works.md)
 + [Getting Started with Amazon Translate](getting-started.md)
    + [Step 1: Set Up an AWS Account and Create an Administrator User](setting-up.md)
@@ -26,6 +27,12 @@ Amazon's trademarks and trade dress may not be used in
       + [Translating Text Using the AWS SDK for Python (Boto)](examples-python.md)
       + [Translating Text Using the AWS Mobile SDK for Android](getting-started-android.md)
       + [Translating Text Using the AWS Mobile SDK for iOS](getting-started-ios.md)
++ [Custom Terminology](how-custom-terminology.md)
+   + [Creating a Custom Terminology](creating-custom-terminology.md)
+      + [Compatible Languages](permissible-language-pairs.md)
+   + [Using Custom Terminologies](using-ct.md)
+   + [Encrypting Your Terminology](protect-terminology.md)
+   + [Best Practices](ct-best-practices.md)
 + [Examples](examples.md)
    + [Using Amazon Polly with Amazon Translate](examples-polly.md)
    + [Using Amazon Translate to Translate a Chat Channel](examples-twitch.md)
@@ -43,8 +50,18 @@ Amazon's trademarks and trade dress may not be used in
 + [Document History for Amazon Translate](doc-history.md)
 + [API Reference](API_Reference.md)
    + [Actions](API_Operations.md)
+      + [DeleteTerminology](API_DeleteTerminology.md)
+      + [GetTerminology](API_GetTerminology.md)
+      + [ImportTerminology](API_ImportTerminology.md)
+      + [ListTerminologies](API_ListTerminologies.md)
       + [TranslateText](API_TranslateText.md)
    + [Data Types](API_Types.md)
+      + [AppliedTerminology](API_AppliedTerminology.md)
+      + [EncryptionKey](API_EncryptionKey.md)
+      + [Term](API_Term.md)
+      + [TerminologyData](API_TerminologyData.md)
+      + [TerminologyDataLocation](API_TerminologyDataLocation.md)
+      + [TerminologyProperties](API_TerminologyProperties.md)
    + [Common Errors](CommonErrors.md)
    + [Common Parameters](CommonParameters.md)
 + [AWS Glossary](glossary.md)

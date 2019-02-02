@@ -1,20 +1,20 @@
 # What Is Amazon Translate?<a name="what-is"></a>
 
-Amazon Translate translates documents from the following twelve languages into English, and from English into these languages:
-+ Arabic
-+ Chinese \(Simplified\)
-+ Chinese \(Traditional\)
-+ Czech
-+ French
-+ German
-+ Italian
-+ Japanese
-+ Portuguese
-+ Russian
-+ Spanish
-+ Turkish
-
 Amazon Translate uses advanced machine learning technologies to provide high\-quality translation on demand\. Use it to translate unstructured text documents or to build applications that work in multiple languages\. 
+
+Amazon Translate translates documents between the following languages:
+
+
+|  |  |  |  |  | 
+| --- |--- |--- |--- |--- |
+| Arabic | Chinese \(Simplified\) | Chinese \(Traditional\) | Czech | Danish | 
+| Dutch | English | Finnish | French | German | 
+| Hebrew | Indonesian | Italian | Japanese | Korean | 
+| Polish | Portuguese | Russian | Spanish | Swedish | 
+| Turkish |  |  |  |  | 
+
+**Note**  
+Not all translations between language combinations \(known as *language pairs*\) are currently supported by Amazon Translate\. For more information, see [Supported Language Pairs](pairs.md)\.  
 
 For example, you can:
 + Integrate Amazon Translate into your applications to enable multilingual user experiences\.
@@ -30,6 +30,8 @@ For example, you can:
   + Use it with Amazon S3 to translate document repositories\.
   + Use it with Amazon DynamoDB, Amazon Aurora, and Amazon Redshift to translate text stored in databases\.
   + Use it with AWS Lambda or AWS Glue for seamless workflow integration\.
+
+This is a HIPAA Eligible Service\. For more information about AWS, U\.S\. Health Insurance Portability and Accountability Act of 1996 \(HIPAA\), and using AWS services to process, store, and transmit protected health information \(PHI\), see [HIPAA Overview](https://aws.amazon.com/compliance/hipaa-compliance/)\.
 
 ## Are You a First\-time User of Amazon Translate ?<a name="first-time-user"></a>
 

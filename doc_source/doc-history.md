@@ -1,10 +1,14 @@
 # Document History for Amazon Translate<a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon Translate\.
-+ **Latest documentation update:** July 17, 2018
++ **Latest documentation update:** November 27, 2018
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [New feature](https://docs.aws.amazon.com/translate/latest/dg/how-custom-terminology.html) | Amazon Translate adds four new APIs and the new Custom Terminology feature to give you more control over your translation\. Using a custom terminology with your translation requests enables you to make sure that your brand names, character names, model names, and other unique content is translated exactly the way you need it, every time, regardless of standard translation or its context\.on\. see [Supported Language Pairs](https://docs.aws.amazon.com/translate/latest/dg/how-custom-terminology.html)\. | November 27, 2018 | 
+| [New languages](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds multiple new languages for translation: Danish, Dutch, Finnish, Hebrew, Indonesian, Korean, Polish, and Swedish\. As part of this process, Amazon Translate continues to improve its direct translation by significantly reducing the number of unsupported language pairs\. For the language combinations which can be used for direction translation by Amazon Translate, see [Supported Language Pairs](https://docs.aws.amazon.com/translate/latest/dg/pairs.html)\. | November 20, 2018 | 
+| [New feature](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds direct translation between supported languages other than English\. For the language combinations which can be used for direction translation by Amazon Translate, see [Supported Language Pairs](https://docs.aws.amazon.com/translate/latest/dg/pairs.html)\. | October 29, 2018 | 
+| [New feature](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds HIPAA compliance\. For more information, see [What Is Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)\. | October 25, 2018 | 
 | [New feature](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds translation of six additional languages\. For a list of languages that Amazon Translate supports, see [What Is Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)\. | July 17, 2018 | 
 | [New feature](https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html) | Amazon Translate adds support for automatic source language detection\. For more information, see [ How Amazon Translate Works ](https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html)\. | April 4, 2018 | 
-| New guide | This is the first release of the *Amazon Translate Developer Guide*\. | November 29, 2017 | 
+| [New guide](#doc-history) | This is the first release of the *Amazon Translate Developer Guide*\. | November 29, 2017 | 

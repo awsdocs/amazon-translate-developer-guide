@@ -42,12 +42,11 @@ The example is formatted for Unix, Linux, and macOS\. For Windows, replace the b
 
    ```
    {
-       "Text": "Amazon Translate translates documents into English from 
-       six languages and vice versa in real time.  It uses 
-       advanced machine learning technologies to provide 
-       high-quality real-time translation. Use it to translate 
-       documents or to build applications that work in multiple 
-       languages.", 
+       "Text": "Amazon Translate translates documents between languages in 
+       real time. It uses advanced machine learning technologies 
+       to provide high-quality real-time translation. Use it to 
+       translate documents or to build applications that work in 
+       multiple languages.", 
        "SourceLanguageCode": "en", 
        "TargetLanguageCode": "fr"
    }
@@ -66,12 +65,12 @@ The example is formatted for Unix, Linux, and macOS\. For Windows, replace the b
    ```
    {
        "TargetLanguageCode": "fr", 
-       "Text": "Amazon Translate traduit les documents en anglais à partir 
-       de six langues et vice versa en temps réel. Il utilise des 
-       technologies avancées d'apprentissage de la machine pour 
-       fournir une traduction en temps réel de haute qualité. 
-       Utilisez-le pour traduire des documents ou pour créer des 
-       applications qui fonctionnent en plusieurs langues.", 
+       "Text": "Amazon Translate traduit les documents entre 
+       les langue en temps réel. Il utilise des technologies 
+       avancées d'apprentissage de la machine pour fournir 
+       une traduction en temps réel de haute qualité. Utilisez-le 
+       pour traduire des documents ou pour créer des applications 
+       qui fonctionnent en plusieurs langues.", 
        "SourceLanguageCode": "en"
    }
    ```

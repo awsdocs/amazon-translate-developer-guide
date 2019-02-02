@@ -1,17 +1,26 @@
 # TranslateText<a name="API_TranslateText"></a>
 
-Translates input text from the source language to the target language\. You can translate between English \(en\) and one of the following languages, or between one of the following languages and English\.
+Translates input text from the source language to the target language\. It is not necessary to use English \(en\) as either the source or the target language but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Language Pairs](https://docs.aws.amazon.com/translate/latest/dg/pairs.html)\.
 + Arabic \(ar\)
 + Chinese \(Simplified\) \(zh\)
 + Chinese \(Traditional\) \(zh\-TW\)
 + Czech \(cs\)
++ Danish \(da\)
++ Dutch \(nl\)
++ English \(en\)
++ Finnish \(fi\)
 + French \(fr\)
 + German \(de\)
++ Hebrew \(he\)
++ Indonesian \(id\)
 + Italian \(it\)
 + Japanese \(ja\)
++ Korean \(ko\)
++ Polish \(pl\)
 + Portuguese \(pt\)
 + Russian \(ru\)
 + Spanish \(es\)
++ Swedish \(sw\)
 + Turkish \(tr\)
 
 To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call Amazon Comprehend to determine the source language\.
@@ -22,6 +31,7 @@ To have Amazon Translate determine the source language of your text, you can spe
 {
    "[SourceLanguageCode](#Translate-TranslateText-request-SourceLanguageCode)": "string",
    "[TargetLanguageCode](#Translate-TranslateText-request-TargetLanguageCode)": "string",
+   "[TerminologyNames](#Translate-TranslateText-request-TerminologyNames)": [ "string" ],
    "[Text](#Translate-TranslateText-request-Text)": "string"
 }
 ```
@@ -33,28 +43,46 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format\.
 
  ** [SourceLanguageCode](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-SourceLanguageCode"></a>
-One of the supported language codes for the source text\. If the `TargetLanguageCode` is not "en", the `SourceLanguageCode` must be "en"\.  
+One of the supported language codes for the source text\.   
 To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call Amazon Comprehend to determine the source language\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.  
 Required: Yes
 
  ** [TargetLanguageCode](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-TargetLanguageCode"></a>
-One of the supported language codes for the target text\. If the `SourceLanguageCode` is not "en", the `TargetLanguageCode` must be "en"\.  
+One of the supported language codes for the target text\.   
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.  
 Required: Yes
+
+ ** [TerminologyNames](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-TerminologyNames"></a>
+Type: Array of strings  
+Length Constraints: Minimum length of 1\. Maximum length of 256\.  
+Pattern: `^([A-Za-z0-9-]_?)+$`   
+Required: No
 
  ** [Text](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-Text"></a>
 The text to translate\. The text string can be a maximum of 5,000 bytes long\. Depending on your character set, this may be fewer than 5,000 characters\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 5000\.  
+Pattern: `[\P{M}\p{M}]{1,5000}`   
 Required: Yes
 
 ## Response Syntax<a name="API_TranslateText_ResponseSyntax"></a>
 
 ```
 {
+   "[AppliedTerminologies](#Translate-TranslateText-response-AppliedTerminologies)": [ 
+      { 
+         "[Name](API_AppliedTerminology.md#Translate-Type-AppliedTerminology-Name)": "string",
+         "[Terms](API_AppliedTerminology.md#Translate-Type-AppliedTerminology-Terms)": [ 
+            { 
+               "[SourceText](API_Term.md#Translate-Type-Term-SourceText)": "string",
+               "[TargetText](API_Term.md#Translate-Type-Term-TargetText)": "string"
+            }
+         ]
+      }
+   ],
    "[SourceLanguageCode](#Translate-TranslateText-response-SourceLanguageCode)": "string",
    "[TargetLanguageCode](#Translate-TranslateText-response-TargetLanguageCode)": "string",
    "[TranslatedText](#Translate-TranslateText-response-TranslatedText)": "string"
@@ -66,6 +94,9 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
+
+ ** [AppliedTerminologies](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-AppliedTerminologies"></a>
+Type: Array of [AppliedTerminology](API_AppliedTerminology.md) objects
 
  ** [SourceLanguageCode](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-SourceLanguageCode"></a>
 The language code for the language of the input text\.   
@@ -80,7 +111,8 @@ Length Constraints: Minimum length of 2\. Maximum length of 5\.
  ** [TranslatedText](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-TranslatedText"></a>
 The text translated into the target language\.  
 Type: String  
-Length Constraints: Minimum length of 1\.
+Length Constraints: Maximum length of 10000\.  
+Pattern: `[\P{M}\p{M}]{0,10000}` 
 
 ## Errors<a name="API_TranslateText_Errors"></a>
 
@@ -98,6 +130,9 @@ HTTP Status Code: 500
 The request is invalid\.  
 HTTP Status Code: 400
 
+ **ResourceNotFoundException**   
+HTTP Status Code: 400
+
  **ServiceUnavailableException**   
 Amazon Translate is unavailable\. Retry your request later\.  
 HTTP Status Code: 400
@@ -111,7 +146,7 @@ The number of requests exceeds the limit\. Resubmit your request later\.
 HTTP Status Code: 400
 
  **UnsupportedLanguagePairException**   
-Amazon Translate cannot translate input text in the source language into this target language\. For more information, see [Exception Handling](how-it-works.md#how-to-error-msg)\.   
+Amazon Translate cannot translate input text from the source language into this target language\.   
 HTTP Status Code: 400
 
 ## See Also<a name="API_TranslateText_SeeAlso"></a>

@@ -1,6 +1,6 @@
 # Using Signature Version 4 with Amazon Translate<a name="examples-sigv4"></a>
 
-This example Python program shows how to use Signature Version 4 to add authentication information to Amazon Translate requests\. The example makes a POST request, creates a JSON structure that contains the text to be translated in the body \(payload\) of the request, and passes authentication information in an Authorization header\. For more information about using Signature Version 4, see [ Signature Version 4 Signing Process ](http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the *Amazon Web Services General Reference*\.
+This example Python program shows how to use Signature Version 4 to add authentication information to Amazon Translate requests\. The example makes a POST request, creates a JSON structure that contains the text to be translated in the body \(payload\) of the request, and passes authentication information in an Authorization header\. For more information about using Signature Version 4, see [ Signature Version 4 Signing Process ](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the *Amazon Web Services General Reference*\.
 
 ## Setting Up<a name="examples-sig4-setting-up"></a>
 
@@ -8,13 +8,13 @@ To run the example, perform the following steps:
 
 1. Install the AWS Command Line Interface \(AWS CLI\)\. The AWS SDK for Python \(Boto\) is included when you install the AWS CLI\. For instructions, see [Step 2: Set Up the AWS Command Line Interface \(AWS CLI\)](setup-awscli.md)\.
 
-1. Create an AWS Identity and Access Management \(IAM\) user with the minimum required permission policy to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md)\. Record the user access key ID and the secret access key\.
+1. Create an AWS Identity and Access Management \(IAM\) user with the minimum required permission policy to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md)\. Record the user access key ID and the secret access key\.
 
 1. Place the access key ID and secret access key in environment variables named `AWS_ACCESS_KEY and AWS_SECRET_ACCESS_KEY`, respectively\. As a best practice, we recommend that you don't embed credentials in code\.
 
 1. Create a new file on your computer, copy the code for the example \(which you can find in the next section\), paste it into the file, and save the file with the extension `.py`\.
 
-1. In the code, replace `region` with the name of the AWS Region where you want to run the Amazon Translate `TranslateText` operation\. For a list of supported Regions, see [ AWS Regions and Endpoints ](http://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *Amazon Web Services General Reference\.*\. 
+1. In the code, replace `region` with the name of the AWS Region where you want to run the Amazon Translate `TranslateText` operation\. For a list of supported Regions, see [ AWS Regions and Endpoints ](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *Amazon Web Services General Reference\.*\. 
 
 ## Code<a name="example-sigv4-code"></a>
 
