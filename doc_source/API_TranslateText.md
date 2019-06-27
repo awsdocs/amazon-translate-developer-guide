@@ -1,6 +1,6 @@
 # TranslateText<a name="API_TranslateText"></a>
 
-Translates input text from the source language to the target language\. It is not necessary to use English \(en\) as either the source or the target language but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Language Pairs](https://docs.aws.amazon.com/translate/latest/dg/pairs.html)\.
+Translates input text from the source language to the target language\. It is not necessary to use English \(en\) as either the source or the target language, but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Language Pairs](https://docs.aws.amazon.com/translate/latest/dg/what-is-language-pairs.html)\.
 + Arabic \(ar\)
 + Chinese \(Simplified\) \(zh\)
 + Chinese \(Traditional\) \(zh\-TW\)
@@ -12,15 +12,19 @@ Translates input text from the source language to the target language\. It is no
 + French \(fr\)
 + German \(de\)
 + Hebrew \(he\)
++ Hindi \(hi\)
 + Indonesian \(id\)
 + Italian \(it\)
 + Japanese \(ja\)
 + Korean \(ko\)
++ Malay \(ms\)
++ Norwegian \(no\)
++ Persian \(fa\)
 + Polish \(pl\)
 + Portuguese \(pt\)
 + Russian \(ru\)
 + Spanish \(es\)
-+ Swedish \(sw\)
++ Swedish \(sv\)
 + Turkish \(tr\)
 
 To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call Amazon Comprehend to determine the source language\.
@@ -43,19 +47,20 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format\.
 
  ** [SourceLanguageCode](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-SourceLanguageCode"></a>
-One of the supported language codes for the source text\.   
+The language code for the language of the source text\. The language must be a language supported by Amazon Translate\.   
 To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call Amazon Comprehend to determine the source language\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.  
 Required: Yes
 
  ** [TargetLanguageCode](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-TargetLanguageCode"></a>
-One of the supported language codes for the target text\.   
+The language code requested for the language of the target text\. The language must be a language supported by Amazon Translate\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.  
 Required: Yes
 
  ** [TerminologyNames](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-TerminologyNames"></a>
+The TerminologyNames list that is taken as input to the TranslateText request\. This has a minimum length of 0 and a maximum length of 1\.  
 Type: Array of strings  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `^([A-Za-z0-9-]_?)+$`   
@@ -96,20 +101,21 @@ If the action is successful, the service sends back an HTTP 200 response\.
 The following data is returned in JSON format by the service\.
 
  ** [AppliedTerminologies](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-AppliedTerminologies"></a>
+The names of the custom terminologies applied to the input text by Amazon Translate for the translated text response\.  
 Type: Array of [AppliedTerminology](API_AppliedTerminology.md) objects
 
  ** [SourceLanguageCode](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-SourceLanguageCode"></a>
-The language code for the language of the input text\.   
+The language code for the language of the source text\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.
 
  ** [TargetLanguageCode](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-TargetLanguageCode"></a>
-The language code for the language of the translated text\.   
+The language code for the language of the target text\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.
 
  ** [TranslatedText](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-TranslatedText"></a>
-The text translated into the target language\.  
+The the translated text\. The maximum length of this text is 5kb\.  
 Type: String  
 Length Constraints: Maximum length of 10000\.  
 Pattern: `[\P{M}\p{M}]{0,10000}` 
@@ -119,7 +125,7 @@ Pattern: `[\P{M}\p{M}]{0,10000}`
 For information about the errors that are common to all actions, see [Common Errors](CommonErrors.md)\.
 
  **DetectedLanguageLowConfidenceException**   
-The confidence that Amazon Comprehend accurately detected the source language is low\. If a low confidence level is acceptable for your application, you can use the language in the exception to call Amazon Translate again\. For more information, see the [DetectDominantLanguage](https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectDominantLanguage.html) operation in the *Amazon Comprehend Developer Guide*\.  
+The confidence that Amazon Comprehend accurately detected the source language is low\. If a low confidence level is acceptable for your application, you can use the language in the exception to call Amazon Translate again\. For more information, see the [DetectDominantLanguage](https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectDominantLanguage.html) operation in the *Amazon Comprehend Developer Guide*\.   
 HTTP Status Code: 400
 
  **InternalServerException**   
@@ -127,26 +133,27 @@ An internal server error occurred\. Retry your request\.
 HTTP Status Code: 500
 
  **InvalidRequestException**   
-The request is invalid\.  
+ The request that you made is invalid\. Check your request to determine why it's invalid and then retry the request\.   
 HTTP Status Code: 400
 
  **ResourceNotFoundException**   
+The resource you are looking for has not been found\. Review the resource you're looking for and see if a different resource will accomplish your needs before retrying the revised request\.  
 HTTP Status Code: 400
 
  **ServiceUnavailableException**   
-Amazon Translate is unavailable\. Retry your request later\.  
-HTTP Status Code: 400
+The Amazon Translate service is temporarily unavailable\. Please wait a bit and then retry your request\.  
+HTTP Status Code: 500
 
  **TextSizeLimitExceededException**   
-The size of the input text exceeds the length constraint for the `Text` field\. Try again with a shorter text\.   
+ The size of the text you submitted exceeds the size limit\. Reduce the size of the text or use a smaller document and then retry your request\.   
 HTTP Status Code: 400
 
  **TooManyRequestsException**   
-The number of requests exceeds the limit\. Resubmit your request later\.  
+ You have made too many requests within a short period of time\. Wait for a short time and then try your request again\.  
 HTTP Status Code: 400
 
  **UnsupportedLanguagePairException**   
-Amazon Translate cannot translate input text from the source language into this target language\.   
+Amazon Translate does not support translation from the language of the source text into the requested target language\. For more information, see [Exception Handling](how-it-works.md#how-to-error-msg)\.   
 HTTP Status Code: 400
 
 ## See Also<a name="API_TranslateText_SeeAlso"></a>
@@ -156,6 +163,7 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/TranslateText) 
++  [AWS SDK for Go \- Pilot](https://docs.aws.amazon.com/goto/SdkForGoPilot/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/TranslateText) 

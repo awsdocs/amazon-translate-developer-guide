@@ -1,6 +1,6 @@
 # Using Amazon Translate to Translate Large Documents<a name="examples-split"></a>
 
-You can split large documents into smaller parts to keep the total document size below the document size limit\. For more information about document size limits, see [Service Limits](limits-guidelines.md#limits)\. The following Java program breaks long text documents into individual sentences and then translates each sentence from the source language to the target language\. The program contains two sections:
+You can split large documents into smaller parts to keep the total document size below the document size limit\. For more information about document size limits, see [Service Limits](what-is-limits.md#limits)\. The following Java program breaks long text documents into individual sentences and then translates each sentence from the source language to the target language\. The program contains two sections:
 + The `SentenceSegmenter` class that is responsible for breaking the source string into individual sentences\. The sample uses the Java `BreakIterator` class\.
 + The `main` function that calls the `Translate` operation for each sentence in the source string\. The `main` function also handles authentication with Amazon Translate\.
 
@@ -14,7 +14,7 @@ You can split large documents into smaller parts to keep the total document size
 
 1. Create a new project in your Java IDE and copy the source code\.
 
-1. Change the region to the region where you want to run the Amazon Translate operation\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. 
+1. Change the region to the region where you want to run the Amazon Translate operation\. For a list of supported regions for Amazon Translate, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *AWS General Reference*\.
 
 1. Change the source and target languages to the languages to translate between\.
 

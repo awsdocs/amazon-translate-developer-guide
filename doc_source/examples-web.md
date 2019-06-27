@@ -18,7 +18,7 @@ This example works on simple HTML pages without nested elements\.
 
 1. Create a new project in your Java IDE and copy the source code\.
 
-1. Change the region and endpoint to the region where you want to run the Amazon Translate operation\. For a list of supported regions for Amazon Translate, see [Guidelines and Limits](limits-guidelines.md)\. 
+1. Change the region and endpoint to the region where you want to run the Amazon Translate operation\. For a list of supported regions for Amazon Translate, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *AWS General Reference*\.
 
 ```
 package com.amazonaws.translateweb;

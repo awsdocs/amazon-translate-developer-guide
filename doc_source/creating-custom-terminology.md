@@ -44,3 +44,6 @@ A TMX file is an XML\-type file commonly used by translation software\. Although
 ```
 
 These files are then attached to your Amazon Translate account\. When a translation job is run and you choose to use the custom terminology, Amazon Translate then uses the designated word whenever it encounters the source word\.
+
+**Important**  
+The source word within a custom terminology is *case\-sensitive* and will not work for words that are not an exact match\.

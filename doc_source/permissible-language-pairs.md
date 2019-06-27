@@ -7,11 +7,12 @@ The following table shows you languages and recommendations for using this featu
 
 | Language | Recommended/Not Recommended | 
 | --- | --- | 
-| East Asian Languages \(such as Chinese, Japanese, Korean, Indonesian\)  | Recommended | 
-| Germanic Languages \(German, Dutch, English, Swedish, Danish, Norwegian\)  | Recommended | 
-| Romance Languages \(Italian, French, Spanish, Portuguese\)  | Recommended | 
+| East Asian Languages \(such as Chinese, Indonesian, Japanese, Korean, Malay\) | Recommended | 
+| Germanic Languages \(Danish, Dutch, German, English, Norwegian, Swedish\) | Recommended | 
+| Romance Languages \(French, Italian, Spanish, Portuguese\)  | Recommended | 
 | Hebrew  | Recommended | 
-| Slavic Languages \(Russian, Polish, Czech\) | Not recommended | 
+| Indo\-Iranian \(Hindi, Persian\) | Recommended | 
+| Slavic Languages \(Czech, Polish, Russian\) | Not recommended | 
 | Finno\-Ugric Languages \(Finnish\)  | Not recommended | 
 | Arabic | Not recommended | 
 | Turkish | Not recommended | 

@@ -14,7 +14,7 @@ To run the example, perform the following steps:
 
 1. Create a new file on your computer, copy the code for the example \(which you can find in the next section\), paste it into the file, and save the file with the extension `.py`\.
 
-1. In the code, replace `region` with the name of the AWS Region where you want to run the Amazon Translate `TranslateText` operation\. For a list of supported Regions, see [ AWS Regions and Endpoints ](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *Amazon Web Services General Reference\.*\. 
+1. In the code, replace `region` with the name of the AWS Region where you want to run the Amazon Translate `TranslateText` operation\. For a list of supported Regions, see [ AWS Regions and Endpoints ](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *AWS General Reference*\. 
 
 ## Code<a name="example-sigv4-code"></a>
 

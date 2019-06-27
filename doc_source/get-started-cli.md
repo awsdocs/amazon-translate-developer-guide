@@ -4,7 +4,7 @@ In the following exercises , you use the AWS command line interface \(AWS CLI\) 
 
 There are two ways to use the CLI to translate text with Amazon Translate\. For short text, you can provide the text that you want to translate as a parameter of the `translate-text` command\. For longer text, you can provide the source language, target language, and text in a JSON file\.
 
-To use Amazon Translate from the command line, you need to know the endpoint and region for the service\. For a list of available endpoints and regions, see [Guidelines and Limits](limits-guidelines.md)\.
+To use Amazon Translate from the command line, you need to know the endpoint and region for the service\. For a list of available endpoints and regions, see [Amazon Translate Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *AWS General Reference*\.
 
 ## Translate Text Using the Command Line<a name="cli-command-line"></a>
 
