@@ -62,7 +62,7 @@ If the action is successful, the service sends back an HTTP 200 response\.
 The following data is returned in JSON format by the service\.
 
  ** [NextToken](#API_ListTerminologies_ResponseSyntax) **   <a name="Translate-ListTerminologies-response-NextToken"></a>
- If the response to the ListTerminologies response was truncated, the NextToken fetches the next group of custom terminologies\.  
+ If the response to the ListTerminologies was truncated, the NextToken fetches the next group of custom terminologies\.   
 Type: String  
 Length Constraints: Maximum length of 8192\.  
 Pattern: `\p{ASCII}{0,8192}` 
@@ -76,7 +76,7 @@ Type: Array of [TerminologyProperties](API_TerminologyProperties.md) objects
 For information about the errors that are common to all actions, see [Common Errors](CommonErrors.md)\.
 
  **InternalServerException**   
-An internal server error occurred\. Retry your request\.  
+ An internal server error occurred\. Retry your request\.  
 HTTP Status Code: 500
 
  **InvalidParameterValueException**   

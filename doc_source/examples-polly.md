@@ -132,7 +132,7 @@ Target Language Code:
          * For more information about the AWS Credentials object, see:
          *   http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Credentials.html
          */
-        AWS.config.credentials = new AWS.Credentials("access key", "secret key);
+        AWS.config.credentials = new AWS.Credentials("access key", "secret key");
 
         var translate = new AWS.Translate({region: AWS.config.region});
         var polly = new AWS.Polly();

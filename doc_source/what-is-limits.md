@@ -39,9 +39,9 @@ Amazon Translate has the following service limitations\.
 | Document size \(UTF\-8 characters\) | 5,000 bytes | 
 | **Custom Terminology Limits** |  | 
 | Custom terminology file size | 10 Mb | 
-| Maximum number of target languages per custom terminology file | 10  | 
-| Maximum number of custom terminologies per AWS account per AWS Region | 100  | 
+| Maximum number of target languages per custom terminology file | 10 | 
+| Maximum number of custom terminologies per AWS account per AWS Region | 100 | 
 | Maximum source and target text length per custom terminology term | 200 bytes | 
-| Maximum number of terms from acustom terminology source text applied to a TranslateText request | 250\* | 
+| Maximum number of terms from a custom terminology source text applied to a TranslateText request | 256\* | 
 
-\* Amazon Translate uses the first 250 terms matched in a termonology source text\. This limit applies across all terminologies used in a `TranslateText` request\. At this time, the number of terminologies specified in a `TranslateText` request is limited to 1\. 
+\*Amazon Translate uses the first 256 terms matched in a termonology source file\. This limit applies across all terminologies used in a `TranslateText` request\. At this time, you can use a maximum of 1 terminology file per `TranslateText` request\.

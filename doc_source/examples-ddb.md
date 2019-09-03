@@ -56,7 +56,7 @@ Use the following code to create the example\.
 
 ### Python Lambda Function<a name="examples-ddb-code-lambda"></a>
 
-The following is the contents of the Python Lambda function\. The Lambda function call the `TranlateText` operation and passes the review, the source language, and the target language to get the translated review\. Save this file as `example.py` and them compress it in a \.zip archive called `example.zip`\. Save the file in an S3 bucket in the same region that you are running the example\.\.
+The following is the contents of the Python Lambda function\. The Lambda function call the `TranslateText` operation and passes the review, the source language, and the target language to get the translated review\. Save this file as `example.py` and them compress it in a \.zip archive called `example.zip`\. Save the file in an S3 bucket in the same region that you are running the example\.\.
 
 ```
 import logging

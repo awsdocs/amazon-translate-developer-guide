@@ -95,7 +95,7 @@ Type: [TerminologyProperties](API_TerminologyProperties.md) object
 For information about the errors that are common to all actions, see [Common Errors](CommonErrors.md)\.
 
  **InternalServerException**   
-An internal server error occurred\. Retry your request\.  
+ An internal server error occurred\. Retry your request\.  
 HTTP Status Code: 500
 
  **InvalidParameterValueException**   

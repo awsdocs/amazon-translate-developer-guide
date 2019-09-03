@@ -1,33 +1,6 @@
 # TranslateText<a name="API_TranslateText"></a>
 
-Translates input text from the source language to the target language\. It is not necessary to use English \(en\) as either the source or the target language, but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Language Pairs](https://docs.aws.amazon.com/translate/latest/dg/what-is-language-pairs.html)\.
-+ Arabic \(ar\)
-+ Chinese \(Simplified\) \(zh\)
-+ Chinese \(Traditional\) \(zh\-TW\)
-+ Czech \(cs\)
-+ Danish \(da\)
-+ Dutch \(nl\)
-+ English \(en\)
-+ Finnish \(fi\)
-+ French \(fr\)
-+ German \(de\)
-+ Hebrew \(he\)
-+ Hindi \(hi\)
-+ Indonesian \(id\)
-+ Italian \(it\)
-+ Japanese \(ja\)
-+ Korean \(ko\)
-+ Malay \(ms\)
-+ Norwegian \(no\)
-+ Persian \(fa\)
-+ Polish \(pl\)
-+ Portuguese \(pt\)
-+ Russian \(ru\)
-+ Spanish \(es\)
-+ Swedish \(sv\)
-+ Turkish \(tr\)
-
-To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call Amazon Comprehend to determine the source language\.
+Translates input text from the source language to the target language\. It is not necessary to use English \(en\) as either the source or the target language, but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Languages](what-is.md#what-is-languages)\.
 
 ## Request Syntax<a name="API_TranslateText_RequestSyntax"></a>
 
@@ -47,8 +20,8 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format\.
 
  ** [SourceLanguageCode](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-SourceLanguageCode"></a>
-The language code for the language of the source text\. The language must be a language supported by Amazon Translate\.   
-To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call Amazon Comprehend to determine the source language\.  
+The language code for the language of the source text\. The language must be a language supported by Amazon Translate\. For a list of language codes, see [Supported Language Codes](how-it-works.md#how-it-works-language-codes)\.  
+To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/comprehend-general.html) to determine the source language\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.  
 Required: Yes
@@ -60,7 +33,7 @@ Length Constraints: Minimum length of 2\. Maximum length of 5\.
 Required: Yes
 
  ** [TerminologyNames](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-TerminologyNames"></a>
-The TerminologyNames list that is taken as input to the TranslateText request\. This has a minimum length of 0 and a maximum length of 1\.  
+The name of the terminology list file to be used in the TranslateText request\. You can use 1 terminology list at most in a `TranslateText` request\. Terminology lists can contain a maximum of 256 terms\.  
 Type: Array of strings  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `^([A-Za-z0-9-]_?)+$`   
@@ -110,12 +83,12 @@ Type: String
 Length Constraints: Minimum length of 2\. Maximum length of 5\.
 
  ** [TargetLanguageCode](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-TargetLanguageCode"></a>
-The language code for the language of the target text\.  
+The language code for the language of the target text\.   
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.
 
  ** [TranslatedText](#API_TranslateText_ResponseSyntax) **   <a name="Translate-TranslateText-response-TranslatedText"></a>
-The the translated text\. The maximum length of this text is 5kb\.  
+The translated text\.  
 Type: String  
 Length Constraints: Maximum length of 10000\.  
 Pattern: `[\P{M}\p{M}]{0,10000}` 
@@ -129,7 +102,7 @@ The confidence that Amazon Comprehend accurately detected the source language is
 HTTP Status Code: 400
 
  **InternalServerException**   
-An internal server error occurred\. Retry your request\.  
+ An internal server error occurred\. Retry your request\.  
 HTTP Status Code: 500
 
  **InvalidRequestException**   
@@ -137,7 +110,7 @@ HTTP Status Code: 500
 HTTP Status Code: 400
 
  **ResourceNotFoundException**   
-The resource you are looking for has not been found\. Review the resource you're looking for and see if a different resource will accomplish your needs before retrying the revised request\.  
+The resource you are looking for has not been found\. Review the resource you're looking for and see if a different resource will accomplish your needs before retrying the revised request\. \.  
 HTTP Status Code: 400
 
  **ServiceUnavailableException**   

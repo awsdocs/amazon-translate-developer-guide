@@ -32,11 +32,11 @@ If the action is successful, the service sends back an HTTP 200 response with an
 For information about the errors that are common to all actions, see [Common Errors](CommonErrors.md)\.
 
  **InternalServerException**   
-An internal server error occurred\. Retry your request\.  
+ An internal server error occurred\. Retry your request\.  
 HTTP Status Code: 500
 
  **ResourceNotFoundException**   
-The resource you are looking for has not been found\. Review the resource you're looking for and see if a different resource will accomplish your needs before retrying the revised request\.  
+The resource you are looking for has not been found\. Review the resource you're looking for and see if a different resource will accomplish your needs before retrying the revised request\. \.  
 HTTP Status Code: 400
 
  **TooManyRequestsException**   

@@ -21,7 +21,7 @@ public class App {
         AWSCredentialsProvider awsCreds = DefaultAWSCredentialsProviderChain.getInstance();
         
         AmazonTranslate translate = AmazonTranslateClient.builder()
-                .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
+                .withCredentials(new AWSStaticCredentialsProvider(awsCreds.getCredentials()))
                 .withRegion(REGION)
                 .build();
  
