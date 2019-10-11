@@ -1,6 +1,6 @@
 # TranslateText<a name="API_TranslateText"></a>
 
-Translates input text from the source language to the target language\. It is not necessary to use English \(en\) as either the source or the target language, but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Languages](what-is.md#what-is-languages)\.
+Translates input text from the source language to the target language\. It is not necessary to use English \(en\) as either the source or the target language, but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Languages and Language Codes](what-is.md#what-is-languages)\.
 
 ## Request Syntax<a name="API_TranslateText_RequestSyntax"></a>
 
@@ -20,7 +20,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format\.
 
  ** [SourceLanguageCode](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-SourceLanguageCode"></a>
-The language code for the language of the source text\. The language must be a language supported by Amazon Translate\. For a list of language codes, see [Supported Language Codes](how-it-works.md#how-it-works-language-codes)\.  
+The language code for the language of the source text\. The language must be a language supported by Amazon Translate\. For a list of language codes, see [Supported Languages and Language Codes](what-is.md#what-is-languages)\.  
 To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/comprehend-general.html) to determine the source language\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.  
@@ -136,7 +136,6 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for Go \- Pilot](https://docs.aws.amazon.com/goto/SdkForGoPilot/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/TranslateText) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/TranslateText) 

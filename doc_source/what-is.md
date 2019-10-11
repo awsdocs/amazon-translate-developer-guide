@@ -2,16 +2,47 @@
 
 Amazon Translate is a text translation service that uses advanced machine learning technologies to provide high\-quality translation on demand\. You can use Amazon Translate to translate unstructured text documents or to build applications that work in multiple languages\.
 
-## Supported Languages<a name="what-is-languages"></a>
+## Supported Languages and Language Codes<a name="what-is-languages"></a>
 
 Amazon Translate provides translation between a source language \(the input language\) and a target language \(the output language\)\. A source language\-target language combination is known as a *language pair*\.
 
 Amazon Translate can translate text between the languages listed in the following table, with a few exceptions noted below\.
 
 
-| East Asian Languages | Germanic Languages | Romance Languages | Slavic Languages | Semitic Languages | Indo\-Iranian Languages | Finno\-Ugric Languages | Turkic Languages | 
-| --- | --- | --- | --- | --- | --- | --- | --- | 
-|  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/translate/latest/dg/what-is.html)  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/translate/latest/dg/what-is.html)  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/translate/latest/dg/what-is.html)  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/translate/latest/dg/what-is.html)  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/translate/latest/dg/what-is.html)  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/translate/latest/dg/what-is.html)  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/translate/latest/dg/what-is.html)  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/translate/latest/dg/what-is.html)  | 
+| Language | Language Code | 
+| --- | --- | 
+| Arabic | ar | 
+| Chinese \(Simplified\) | zh | 
+| Chinese \(Traditional\) | zh\-TW | 
+| Czech | cs | 
+| Danish | da  | 
+| Dutch | nl  | 
+| English | en | 
+| Finnish | fi | 
+| French | fr | 
+| German | de | 
+| Greek | el | 
+| Hebrew | he  | 
+| Hindi | hi | 
+| Hungarian | hu | 
+| Indonesian | id  | 
+| Italian | it | 
+| Japanese | ja | 
+| Korean | ko | 
+| Malay | ms | 
+| Norwegian | no | 
+| Persian | fa | 
+| Polish | pl | 
+| Portuguese | pt | 
+| Romanian | ro | 
+| Russian | ru | 
+| Spanish | es | 
+| Swedish | sv | 
+| Thai | th | 
+| Turkish | tr | 
+| Ukrainian | uk | 
+| Urdu | ur | 
+| Vietnamese | vi | 
 
 Amazon Translate can't translate text between the following language pairs:
 + Chinese \(Simplified\) to Chinese \(Traditional\)

@@ -14,7 +14,7 @@ print('SourceLanguageCode: ' + result.get('SourceLanguageCode'))
 print('TargetLanguageCode: ' + result.get('TargetLanguageCode'))
 ```
 
-You can change the source and target languages as long as the language pair selected is supported by Amazon Translate in the correct combination\. For more information, see [Supported Languages](what-is.md#what-is-languages)
+You can change the source and target languages as long as the language pair selected is supported by Amazon Translate in the correct combination\. For more information, see [Supported Languages and Language Codes](what-is.md#what-is-languages)
 
 **Custom Terminology**
 

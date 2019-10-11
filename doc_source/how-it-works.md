@@ -1,6 +1,6 @@
 # How Amazon Translate Works<a name="how-it-works"></a>
 
-The Amazon Translate service is based on neural networks trained for language translation\. This enables you to translate between a source language \(the original language of the text being translated\) and a target language \(the language into which the text is being translated\)\. It is not necessary to use English as either the source or the target language but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Languages](what-is.md#what-is-languages)\.
+The Amazon Translate service is based on neural networks trained for language translation\. This enables you to translate between a source language \(the original language of the text being translated\) and a target language \(the language into which the text is being translated\)\. It is not necessary to use English as either the source or the target language but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Languages and Language Codes](what-is.md#what-is-languages)\.
 
 When working with Amazon Translate, you will provide source text and get output text:
 + **Source text**—The text that you want to translate\. You provide the source text in UTF\-8 format\.
@@ -11,39 +11,6 @@ The translation model has two components, the encoder and the decoder\. The *enc
 Amazon Translate uses attention mechanisms to understand context\. This helps it decide which words in the source text are most relevant for generating the next target word\. Attention mechanisms enable the decoder to focus on the most relevant parts of a source sentence\. This ensures that the decoder correctly translates ambiguous words or phrases\. 
 
 The target word that the model generates becomes input to the decoder\. The network continues generating words until it reaches the end of the sentence\.
-
-## Supported Language Codes<a name="how-it-works-language-codes"></a>
-
-To translate text, you call the [TranslateText](API_TranslateText.md) method and provide the source text and the target language, using one of the language codes listed in the following table:
-
-
-| Language | Code | 
-| --- | --- | 
-| Arabic | ar | 
-| Chinese \(Simplified\) | zh | 
-| Chinese \(Traditional\) | zh\-TW | 
-| Czech | cs | 
-| Danish | da  | 
-| Dutch | nl  | 
-| English | en | 
-| Finnish | fi  | 
-| French | fr | 
-| German | de | 
-| Hebrew | he  | 
-| Hindi | hi | 
-| Indonesian | id  | 
-| Italian | it | 
-| Japanese | ja | 
-| Korean | ko | 
-| Malay | ms | 
-| Norwegian | no | 
-| Persian | fa | 
-| Polish | pl | 
-| Portuguese | pt | 
-| Russian | ru | 
-| Spanish | es | 
-| Swedish | sv | 
-| Turkish | tr | 
 
 ## Automatic Language Detection<a name="how-to-auto"></a>
 

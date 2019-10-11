@@ -4,7 +4,7 @@ You can use Amazon Translate in an iOS application to translate text\.
 
 **To configure the example**
 
-1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Using Identity\-Based Policies \(IAM Policies\) for Amazon Translate](access-control-managing-permissions.md)\. After you create the user, download the credentials or record the access key and secret access key\.
+1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate Identity\-Based Policies](security_iam_service-with-iam.md#access-control-managing-permissions)\. After you create the user, download the credentials or record the access key and secret access key\.
 
 1. Install Xcode version 8\.0 or later\. You can download the latest version of Xcode from the Apple website, [ https://developer\.apple\.com/xcode/](https://developer.apple.com/xcode/)\.
 
