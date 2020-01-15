@@ -1,7 +1,7 @@
 # Amazon Translate Developer Guide
 
 -----
-*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -26,6 +26,9 @@ Amazon's trademarks and trade dress may not be used in
       + [Translating Text Using the AWS SDK for Python (Boto)](examples-python.md)
       + [Translating Text Using the AWS Mobile SDK for Android](getting-started-android.md)
       + [Translating Text Using the AWS Mobile SDK for iOS](getting-started-ios.md)
++ [Translation Processing Modes](processing.md)
+   + [Synchronous Single-Document Processing](sync.md)
+   + [Asynchronous Batch Processing](async.md)
 + [Custom Terminology](how-custom-terminology.md)
    + [Creating a Custom Terminology](creating-custom-terminology.md)
       + [Compatible Languages](permissible-language-pairs.md)
@@ -59,17 +62,26 @@ Amazon's trademarks and trade dress may not be used in
 + [API Reference](API_Reference.md)
    + [Actions](API_Operations.md)
       + [DeleteTerminology](API_DeleteTerminology.md)
+      + [DescribeTextTranslationJob](API_DescribeTextTranslationJob.md)
       + [GetTerminology](API_GetTerminology.md)
       + [ImportTerminology](API_ImportTerminology.md)
       + [ListTerminologies](API_ListTerminologies.md)
+      + [ListTextTranslationJobs](API_ListTextTranslationJobs.md)
+      + [StartTextTranslationJob](API_StartTextTranslationJob.md)
+      + [StopTextTranslationJob](API_StopTextTranslationJob.md)
       + [TranslateText](API_TranslateText.md)
    + [Data Types](API_Types.md)
       + [AppliedTerminology](API_AppliedTerminology.md)
       + [EncryptionKey](API_EncryptionKey.md)
+      + [InputDataConfig](API_InputDataConfig.md)
+      + [JobDetails](API_JobDetails.md)
+      + [OutputDataConfig](API_OutputDataConfig.md)
       + [Term](API_Term.md)
       + [TerminologyData](API_TerminologyData.md)
       + [TerminologyDataLocation](API_TerminologyDataLocation.md)
       + [TerminologyProperties](API_TerminologyProperties.md)
+      + [TextTranslationJobFilter](API_TextTranslationJobFilter.md)
+      + [TextTranslationJobProperties](API_TextTranslationJobProperties.md)
    + [Common Errors](CommonErrors.md)
    + [Common Parameters](CommonParameters.md)
 + [AWS Glossary](glossary.md)

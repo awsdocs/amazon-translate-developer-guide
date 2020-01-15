@@ -32,16 +32,30 @@ You can request that we delete your data and that future data associated with yo
 Amazon Translate has the following service limitations\.
 
 
+**Synchronous Real\-Time Translation Limits**  
+
 | Description | Limit | 
 | --- | --- | 
-| General Limits |  | 
 | Character encoding | UTF\-8 | 
-| Document size \(UTF\-8 characters\) | 5,000 bytes | 
-| **Custom Terminology Limits** |  | 
-| Custom terminology file size | 10 Mb | 
-| Maximum number of target languages per custom terminology file | 10 | 
-| Maximum number of custom terminologies per AWS account per AWS Region | 100 | 
-| Maximum source and target text length per custom terminology term | 200 bytes | 
-| Maximum number of terms from a custom terminology source text applied to a TranslateText request | 256\* | 
+| Maximum document size \(UTF\-8 characters\) | 5,000 bytes | 
 
-\*Amazon Translate uses the first 256 terms matched in a termonology source file\. This limit applies across all terminologies used in a `TranslateText` request\. At this time, you can use a maximum of 1 terminology file per `TranslateText` request\.
+
+**Asynchronous Batch Translation Limits**  
+
+| Description | Limit | 
+| --- | --- | 
+| Character encoding | UTF\-8 | 
+| Maximum size per document | 1 MB | 
+| Maximum number of documents in batch | 1,000,000 | 
+| Maximum size of total documents in batch | 5 GB | 
+
+
+**Custom Terminology Limits**  
+
+| Description | Limit | 
+| --- | --- | 
+| Maximum custom terminology file size\* | 10 MB | 
+| Maximum number of target languages per custom terminology file | 10 | 
+| Maximum source and target text length per custom terminology term | 200 bytes | 
+
+\*Amazon Translate uses the first 256 terms matched in a terminology source file\. This limit applies across all terminologies used in a `TranslateText` or `StartTextTranslationJob` request\. You can use a maximum of 1 terminology file per `TranslateText` request\. 

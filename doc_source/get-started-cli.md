@@ -1,6 +1,6 @@
 # Step 4: Getting Started \(AWS CLI\)<a name="get-started-cli"></a>
 
-In the following exercises , you use the AWS command line interface \(AWS CLI\) to translate text\. To complete these exercises, you need to be familiar with the CLI and have a text editor\. For more information, see [Step 2: Set Up the AWS Command Line Interface \(AWS CLI\)](setup-awscli.md)\.
+In the following exercises, you use the AWS command line interface \(AWS CLI\) to translate text\. To complete these exercises, you need to be familiar with the CLI and have a text editor\. For more information, see [Step 2: Set Up the AWS Command Line Interface \(AWS CLI\)](setup-awscli.md)\.
 
 There are two ways to use the CLI to translate text with Amazon Translate\. For short text, you can provide the text that you want to translate as a parameter of the `translate-text` command\. For longer text, you can provide the source language, target language, and text in a JSON file\.
 
@@ -15,7 +15,7 @@ aws translate translate-text \
             --region region \
             --source-language-code "en" \
             --target-language-code "es" \
-            --text "hello, world "
+            --text "hello, world"
 ```
 
 The response is the following JSON:

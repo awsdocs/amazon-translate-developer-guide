@@ -35,4 +35,4 @@ public class App {
 }
 ```
 
-You can change the source and target languages as long as the language pair selected is supported by Amazon Translate in the correct combination\. For more information, see [Supported Languages and Language Codes](what-is.md#what-is-languages)
+For a list of supported languages and language codes, see [Supported Languages and Language Codes](what-is.md#what-is-languages)

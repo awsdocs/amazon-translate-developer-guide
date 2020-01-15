@@ -1,10 +1,13 @@
 # Document History for Amazon Translate<a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon Translate\.
-+ **Latest documentation update:** May 8th, 2019
++ **Latest documentation update:** November 25, 2019
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [New feature](https://docs.aws.amazon.com/translate/latest/dg/async.html) | Amazon Translate adds asynchronous batch translation functionality\. For more information, see [Asynchronous Batch Processing](https://docs.aws.amazon.com/translate/latest/dg/async.html)\. | December 23, 2019 | 
+| [New regions](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds support for the Asia Pacific \(Hong Kong\), Asia Pacific \(Sydney\), EU \(London\), EU \(Paris\), EU \(Stockholm\), and US West \(N\. California\) Regions\. For a complete list of the AWS Regions supported by Amazon Translate, see the [AWS Region Table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) or [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *Amazon Web Services General Reference*\. | November 25, 2019 | 
+| [New languages](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds new language for translation: Afrikaans, Albanian, Amharic, Azerbaijani, Bengali, Bosnian, Bulgarian, Canadian\-French, Croatian, Dari, Estonian, Georgian, Hausa, Latvian, Pashto, Serbian, Slovak, Slovenian, Somali, Swahili, Tagalog, and Tamil\. GFor a list of the language combinations that Amazon Translate can translate directly, see [Supported Languages](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)\. | November 25, 2019 | 
 | [New languages](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds new languages for translation: Greek, Hungarian, Romanian, Thai, Ukrainian, Urdu, and Vietnamese\. For a list of the language combinations that Amazon Translate can translate directly, see [Supported Languages](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)\. | October 3, 2019 | 
 | [New feature](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds [FedRAMP compliance](https://www.fedramp.gov/)\. For more information, see [Compliance](https://docs.aws.amazon.com/translate/latest/dg/what-is-limits.html#what-is-compliance)\. | July 31, 2019 | 
 | [New feature](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) | Amazon Translate adds [SOC compliance](https://docs.aws.amazon.com/translate/latest/dg/what-is-limits.html#what-is-compliance)\. For more information, see [Compliance](https://docs.aws.amazon.com/translate/latest/dg/what-is-compliance.html)\. | May 30, 2019 | 

@@ -51,12 +51,12 @@ The following example shows a CloudTrail log entry that demonstrates the `Transl
     "sourceIPAddress": "192.0.2.0",
     "userAgent": "aws-cli/1.16.207 Python/3.4.7 Linux/4.9.184-0.1.ac.235.83.329.metal1.x86_64 botocore/1.12.197",
     "requestParameters": {
-        "text": "Amazon is based in Seattle.",
+        "text": "HIDDEN_DUE_TO_SECURITY_REASONS",
         "sourceLanguageCode": "en",
         "targetLanguageCode": "fr"
     },
     "responseElements": {
-        "translatedText": "Amazon est basé à Seattle.",
+        "translatedText": "HIDDEN_DUE_TO_SECURITY_REASONS",
         "sourceLanguageCode": "en",
         "targetLanguageCode": "fr"
     },

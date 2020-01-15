@@ -6,22 +6,35 @@ Amazon Translate is a text translation service that uses advanced machine learni
 
 Amazon Translate provides translation between a source language \(the input language\) and a target language \(the output language\)\. A source language\-target language combination is known as a *language pair*\.
 
-Amazon Translate can translate text between the languages listed in the following table, with a few exceptions noted below\.
+Amazon Translate can translate text between the languages listed in the following table\.
 
 
 | Language | Language Code | 
 | --- | --- | 
+| Afrikaans | af | 
+| Albanian | sq | 
+| Amharic | am | 
 | Arabic | ar | 
+| Azerbaijani | az | 
+| Bengali | bn | 
+| Bosnian | bs | 
+| Bulgarian | bg | 
 | Chinese \(Simplified\) | zh | 
 | Chinese \(Traditional\) | zh\-TW | 
+| Croatian | hr | 
 | Czech | cs | 
 | Danish | da  | 
+| Dari | fa\-AF | 
 | Dutch | nl  | 
 | English | en | 
+| Estonian | et | 
 | Finnish | fi | 
 | French | fr | 
+| French \(Canadian\) | fr\-CA | 
+| Georgian | ka | 
 | German | de | 
 | Greek | el | 
+| Hausa | ha | 
 | Hebrew | he  | 
 | Hindi | hi | 
 | Hungarian | hu | 
@@ -29,31 +42,33 @@ Amazon Translate can translate text between the languages listed in the followin
 | Italian | it | 
 | Japanese | ja | 
 | Korean | ko | 
+| Latvian | lv | 
 | Malay | ms | 
 | Norwegian | no | 
 | Persian | fa | 
+| Pashto | ps | 
 | Polish | pl | 
 | Portuguese | pt | 
 | Romanian | ro | 
 | Russian | ru | 
+| Serbian | sr | 
+| Slovak | sk | 
+| Slovenian | sl | 
+| Somali | so | 
 | Spanish | es | 
+| Swahili | sw | 
 | Swedish | sv | 
+| Tagalog | tl | 
+| Tamil | ta | 
 | Thai | th | 
 | Turkish | tr | 
 | Ukrainian | uk | 
 | Urdu | ur | 
 | Vietnamese | vi | 
 
-Amazon Translate can't translate text between the following language pairs:
-+ Chinese \(Simplified\) to Chinese \(Traditional\)
-+ Chinese \(Traditional\) to Chinese \(Simplified\)
-+ Korean to Hebrew
-+ Norwegian to Arabic
-+ Norwegian to Hebrew
-
 ## Use Cases<a name="what-is-use-cases"></a>
 
-Use Amazon Translate to do the following::
+Use Amazon Translate to do the following:
 
 **Enable multilingual user experiences in your applications by integrating Amazon Translate: **  
 + Translate company\-authored content, such as meeting minutes, technician reports, knowledge\-base articles, posts, and more\.
@@ -63,8 +78,8 @@ Use Amazon Translate to do the following::
 + Analyze text, such as social media and news feeds, in many languages\.
 + Search for information, such as for eDiscovery cases, in many languages\.
 
-**Enable language\-independent processing by integrating Amazon Translate with other AWS services:\.**  
-+  Extract named entities, sentiment, and key phrases from unstructured text, such as social media streams with [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/comphrened-general.html)\.
+**Enable language\-independent processing by integrating Amazon Translate with other AWS services:**  
++ Extract named entities, sentiment, and key phrases from unstructured text, such as social media streams with [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/comphrened-general.html)\.
 + Make subtitles and live captioning available in many languages with [Amazon Transcribe](https://docs.aws.amazon.com/transcribe/latest/dg/what-is-transcribe.html)\.
 + Speak translated content with [Amazon Polly](https://docs.aws.amazon.com/polly/latest/dg/what-is.html)\.
 + Translate document repositories stored in [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) \.

@@ -1,6 +1,6 @@
 # TranslateText<a name="API_TranslateText"></a>
 
-Translates input text from the source language to the target language\. It is not necessary to use English \(en\) as either the source or the target language, but not all language combinations are supported by Amazon Translate\. For more information, see [Supported Languages and Language Codes](what-is.md#what-is-languages)\.
+Translates input text from the source language to the target language\. For a list of available languages and language codes, see [Supported Languages and Language Codes](what-is.md#what-is-languages)\.
 
 ## Request Syntax<a name="API_TranslateText_RequestSyntax"></a>
 
@@ -102,7 +102,7 @@ The confidence that Amazon Comprehend accurately detected the source language is
 HTTP Status Code: 400
 
  **InternalServerException**   
- An internal server error occurred\. Retry your request\.  
+An internal server error occurred\. Retry your request\.  
 HTTP Status Code: 500
 
  **InvalidRequestException**   
@@ -110,7 +110,7 @@ HTTP Status Code: 500
 HTTP Status Code: 400
 
  **ResourceNotFoundException**   
-The resource you are looking for has not been found\. Review the resource you're looking for and see if a different resource will accomplish your needs before retrying the revised request\. \.  
+The resource you are looking for has not been found\. Review the resource you're looking for and see if a different resource will accomplish your needs before retrying the revised request\.  
 HTTP Status Code: 400
 
  **ServiceUnavailableException**   
