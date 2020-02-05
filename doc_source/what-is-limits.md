@@ -19,7 +19,7 @@ For more information about Amazon Translate compliance programs, see [AWS Compli
 
 ## Throttling<a name="limits-throttling"></a>
 
-For information about throttling for Amazon Translate or to request a limit increase, see [Amazon Translate Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_amazon_translate) in the *Amazon Web Services General Reference*\.
+Amazon Translate scales to serve customer operational traffic\. If you encounter sustained throttling, contact [AWS Support](https://console.aws.amazon.com/support/home#/)\.
 
 ## Guidelines<a name="guidelines"></a>
 
@@ -54,8 +54,8 @@ Amazon Translate has the following service limitations\.
 
 | Description | Limit | 
 | --- | --- | 
-| Maximum custom terminology file size\* | 10 MB | 
+| Maximum custom terminology file size | 10 MB | 
+| Maximum number of custom terminologies per AWS account per AWS Region | 100 | 
 | Maximum number of target languages per custom terminology file | 10 | 
 | Maximum source and target text length per custom terminology term | 200 bytes | 
-
-\*Amazon Translate uses the first 256 terms matched in a terminology source file\. This limit applies across all terminologies used in a `TranslateText` or `StartTextTranslationJob` request\. You can use a maximum of 1 terminology file per `TranslateText` request\. 
+| Maximum number of terminology files per TranslateText or StartTextTranslationJob request\. | 1 | 

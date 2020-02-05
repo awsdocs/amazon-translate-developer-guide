@@ -34,7 +34,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format\.
 
  ** [ClientToken](#API_StartTextTranslationJob_RequestSyntax) **   <a name="Translate-StartTextTranslationJob-request-ClientToken"></a>
-The client token of the EC2 instance calling the request\. This token is auto\-generated when using the Amazon Translate SDK\. Otherwise, use the [DescribeInstances](docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html) EC2 operation to retreive an instance's client token\. For more information, see [Client Tokens](docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html#client-tokens) in the EC2 User Guide\.  
+A unique identifier for the request\. This token is auto\-generated when using the Amazon Translate SDK\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 64\.  
 Pattern: `^[a-zA-Z0-9-]+$`   
