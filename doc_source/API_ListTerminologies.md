@@ -6,8 +6,8 @@ Provides a list of custom terminologies associated with your account\.
 
 ```
 {
-   "[MaxResults](#Translate-ListTerminologies-request-MaxResults)": number,
-   "[NextToken](#Translate-ListTerminologies-request-NextToken)": "string"
+   "MaxResults": number,
+   "NextToken": "string"
 }
 ```
 
@@ -34,22 +34,22 @@ Required: No
 
 ```
 {
-   "[NextToken](#Translate-ListTerminologies-response-NextToken)": "string",
-   "[TerminologyPropertiesList](#Translate-ListTerminologies-response-TerminologyPropertiesList)": [ 
+   "NextToken": "string",
+   "TerminologyPropertiesList": [ 
       { 
-         "[Arn](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-Arn)": "string",
-         "[CreatedAt](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-CreatedAt)": number,
-         "[Description](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-Description)": "string",
-         "[EncryptionKey](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-EncryptionKey)": { 
-            "[Id](API_EncryptionKey.md#Translate-Type-EncryptionKey-Id)": "string",
-            "[Type](API_EncryptionKey.md#Translate-Type-EncryptionKey-Type)": "string"
+         "Arn": "string",
+         "CreatedAt": number,
+         "Description": "string",
+         "EncryptionKey": { 
+            "Id": "string",
+            "Type": "string"
          },
-         "[LastUpdatedAt](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-LastUpdatedAt)": number,
-         "[Name](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-Name)": "string",
-         "[SizeBytes](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-SizeBytes)": number,
-         "[SourceLanguageCode](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-SourceLanguageCode)": "string",
-         "[TargetLanguageCodes](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-TargetLanguageCodes)": [ "string" ],
-         "[TermCount](API_TerminologyProperties.md#Translate-Type-TerminologyProperties-TermCount)": number
+         "LastUpdatedAt": number,
+         "Name": "string",
+         "SizeBytes": number,
+         "SourceLanguageCode": "string",
+         "TargetLanguageCodes": [ "string" ],
+         "TermCount": number
       }
    ]
 }
@@ -90,12 +90,12 @@ HTTP Status Code: 400
 ## See Also<a name="API_ListTerminologies_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/ListTerminologies) 
-+  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/ListTerminologies) 
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/ListTerminologies) 
-+  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/ListTerminologies) 
-+  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/translate-2017-07-01/ListTerminologies) 
-+  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/ListTerminologies) 
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/ListTerminologies) 
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/ListTerminologies) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/translate-2017-07-01/ListTerminologies) 
++  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/ListTerminologies) 
++  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/ListTerminologies) 
++  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/ListTerminologies) 
++  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/ListTerminologies) 
++  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/ListTerminologies) 
++  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/ListTerminologies) 
++  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/ListTerminologies) 
++  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/ListTerminologies) 
++  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/ListTerminologies) 

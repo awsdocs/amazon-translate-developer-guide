@@ -7,7 +7,7 @@ The properties of the custom terminology\.
  **Arn**   <a name="Translate-Type-TerminologyProperties-Arn"></a>
  The Amazon Resource Name \(ARN\) of the custom terminology\.   
 Type: String  
-Pattern: `^arn:aws((-us-gov)|(-iso)|(-iso-b)|(-cn))?:translate:[a-zA-Z0-9-]+:[0-9]{12}:terminology/.+?/.+?$`   
+Length Constraints: Minimum length of 1\. Maximum length of 512\.  
 Required: No
 
  **CreatedAt**   <a name="Translate-Type-TerminologyProperties-CreatedAt"></a>
@@ -64,7 +64,7 @@ Required: No
 ## See Also<a name="API_TerminologyProperties_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/TerminologyProperties) 
-+  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/TerminologyProperties) 
-+  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/translate-2017-07-01/TerminologyProperties) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/translate-2017-07-01/TerminologyProperties) 
++  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/TerminologyProperties) 
++  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/TerminologyProperties) 
++  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/TerminologyProperties) 
++  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/TerminologyProperties) 

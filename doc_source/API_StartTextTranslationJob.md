@@ -1,6 +1,6 @@
 # StartTextTranslationJob<a name="API_StartTextTranslationJob"></a>
 
-Starts an asynchronous batch translation job\. Batch translation jobs can be used to translate large volumes of text across multiple documents at once\. For more information, see [Asynchronous Batch Processing](async.md)\.
+Starts an asynchronous batch translation job\. Batch translation jobs can be used to translate large volumes of text across multiple documents at once\. For more information, see [Asynchronous Batch Processing with Amazon Translate](async.md)\.
 
 Batch translation jobs can be described with the [DescribeTextTranslationJob](API_DescribeTextTranslationJob.md) operation, listed with the [ListTextTranslationJobs](API_ListTextTranslationJobs.md) operation, and stopped with the [StopTextTranslationJob](API_StopTextTranslationJob.md) operation\.
 
@@ -11,19 +11,24 @@ Amazon Translate does not support batch translation of multiple source languages
 
 ```
 {
-   "[ClientToken](#Translate-StartTextTranslationJob-request-ClientToken)": "string",
-   "[DataAccessRoleArn](#Translate-StartTextTranslationJob-request-DataAccessRoleArn)": "string",
-   "[InputDataConfig](#Translate-StartTextTranslationJob-request-InputDataConfig)": { 
-      "[ContentType](API_InputDataConfig.md#Translate-Type-InputDataConfig-ContentType)": "string",
-      "[S3Uri](API_InputDataConfig.md#Translate-Type-InputDataConfig-S3Uri)": "string"
+   "ClientToken": "string",
+   "DataAccessRoleArn": "string",
+   "InputDataConfig": { 
+      "ContentType": "string",
+      "S3Uri": "string"
    },
-   "[JobName](#Translate-StartTextTranslationJob-request-JobName)": "string",
-   "[OutputDataConfig](#Translate-StartTextTranslationJob-request-OutputDataConfig)": { 
-      "[S3Uri](API_OutputDataConfig.md#Translate-Type-OutputDataConfig-S3Uri)": "string"
+   "JobName": "string",
+   "OutputDataConfig": { 
+      "EncryptionKey": { 
+         "Id": "string",
+         "Type": "string"
+      },
+      "S3Uri": "string"
    },
-   "[SourceLanguageCode](#Translate-StartTextTranslationJob-request-SourceLanguageCode)": "string",
-   "[TargetLanguageCodes](#Translate-StartTextTranslationJob-request-TargetLanguageCodes)": [ "string" ],
-   "[TerminologyNames](#Translate-StartTextTranslationJob-request-TerminologyNames)": [ "string" ]
+   "ParallelDataNames": [ "string" ],
+   "SourceLanguageCode": "string",
+   "TargetLanguageCodes": [ "string" ],
+   "TerminologyNames": [ "string" ]
 }
 ```
 
@@ -64,6 +69,13 @@ Specifies the S3 folder to which your job output will be saved\.
 Type: [OutputDataConfig](API_OutputDataConfig.md) object  
 Required: Yes
 
+ ** [ParallelDataNames](#API_StartTextTranslationJob_RequestSyntax) **   <a name="Translate-StartTextTranslationJob-request-ParallelDataNames"></a>
+The names of the parallel data resources to use in the batch translation job\. For a list of available parallel data resources, use the [ListParallelData](API_ListParallelData.md) operation\.  
+Type: Array of strings  
+Length Constraints: Minimum length of 1\. Maximum length of 256\.  
+Pattern: `^([A-Za-z0-9-]_?)+$`   
+Required: No
+
  ** [SourceLanguageCode](#API_StartTextTranslationJob_RequestSyntax) **   <a name="Translate-StartTextTranslationJob-request-SourceLanguageCode"></a>
 The language code of the input language\. For a list of language codes, see [Supported Languages and Language Codes](what-is.md#what-is-languages)\.  
 Amazon Translate does not automatically detect a source language during batch translation jobs\.  
@@ -89,8 +101,8 @@ Required: No
 
 ```
 {
-   "[JobId](#Translate-StartTextTranslationJob-response-JobId)": "string",
-   "[JobStatus](#Translate-StartTextTranslationJob-response-JobStatus)": "string"
+   "JobId": "string",
+   "JobStatus": "string"
 }
 ```
 
@@ -126,6 +138,10 @@ For information about the errors that are common to all actions, see [Common Err
 An internal server error occurred\. Retry your request\.  
 HTTP Status Code: 500
 
+ **InvalidParameterValueException**   
+The value of the parameter is invalid\. Review the value of the parameter you are using to correct it, and then retry your operation\.  
+HTTP Status Code: 400
+
  **InvalidRequestException**   
  The request that you made is invalid\. Check your request to determine why it's invalid and then retry the request\.   
 HTTP Status Code: 400
@@ -145,12 +161,12 @@ HTTP Status Code: 400
 ## See Also<a name="API_StartTextTranslationJob_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/StartTextTranslationJob) 
-+  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/StartTextTranslationJob) 
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/StartTextTranslationJob) 
-+  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/StartTextTranslationJob) 
-+  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/translate-2017-07-01/StartTextTranslationJob) 
-+  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/StartTextTranslationJob) 
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/StartTextTranslationJob) 
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/StartTextTranslationJob) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/StartTextTranslationJob) 
++  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/StartTextTranslationJob) 

@@ -37,7 +37,7 @@ Exercises in this guide assume that you have an IAM user with administrator priv
 
 For more information about IAM, see the following:
 + [AWS Identity and Access Management \(IAM\)](https://aws.amazon.com/iam/)
-+ [Getting Started](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html)
++ [Getting started](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html)
 + [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)
 
 ## Next Step<a name="setting-up-next-step-2"></a>

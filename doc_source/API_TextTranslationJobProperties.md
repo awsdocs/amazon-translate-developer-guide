@@ -56,6 +56,13 @@ The output configuration properties that were specified when the job was request
 Type: [OutputDataConfig](API_OutputDataConfig.md) object  
 Required: No
 
+ **ParallelDataNames**   <a name="Translate-Type-TextTranslationJobProperties-ParallelDataNames"></a>
+A list containing the names of the parallel data resources applied to the translation job\.  
+Type: Array of strings  
+Length Constraints: Minimum length of 1\. Maximum length of 256\.  
+Pattern: `^([A-Za-z0-9-]_?)+$`   
+Required: No
+
  **SourceLanguageCode**   <a name="Translate-Type-TextTranslationJobProperties-SourceLanguageCode"></a>
 The language code of the language of the source text\. The language must be a language supported by Amazon Translate\.  
 Type: String  
@@ -84,7 +91,7 @@ Required: No
 ## See Also<a name="API_TextTranslationJobProperties_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/TextTranslationJobProperties) 
-+  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/TextTranslationJobProperties) 
-+  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/translate-2017-07-01/TextTranslationJobProperties) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/translate-2017-07-01/TextTranslationJobProperties) 
++  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/TextTranslationJobProperties) 
++  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/TextTranslationJobProperties) 
++  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/TextTranslationJobProperties) 
++  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/TextTranslationJobProperties) 
