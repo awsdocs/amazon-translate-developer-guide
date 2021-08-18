@@ -35,7 +35,7 @@ After you have all the accounts set up, you can open the Jupyter notebooks that 
 
 <img width="569" alt="Screen Shot 2021-08-17 at 3 13 58 PM" src="https://user-images.githubusercontent.com/88006687/129786612-b56a718c-f96e-4da9-970c-84be795b83f9.png">
 
-7. Under the *Git repositories*, open the drop down menu and choose _Clone a public Git repository to this notebook instance only_. Copy the URL of this GitHub repository: https://github.com/awszhouanni/aws-machine-learning-curriculum-translate. Paste it under _Git repository URL_.
+7. Under the *Git repositories*, open the drop down menu and choose _Clone a public Git repository to this notebook instance only_. Copy the URL of this GitHub repository. Paste it under _Git repository URL_.
 
 <img width="475" alt="Screen Shot 2021-08-17 at 3 19 24 PM" src="https://user-images.githubusercontent.com/88006687/129787279-16bc2302-59dc-4358-9745-0ff0dea6af12.png">
 
