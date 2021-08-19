@@ -35,9 +35,9 @@ After you have all the accounts set up, you can open the Jupyter notebooks that 
 
 <img width="569" alt="Screen Shot 2021-08-17 at 3 13 58 PM" src="https://user-images.githubusercontent.com/88006687/129786612-b56a718c-f96e-4da9-970c-84be795b83f9.png">
 
-7. Under the *Git repositories*, open the drop down menu and choose _Clone a public Git repository to this notebook instance only_. Copy the URL of this GitHub repository: https://github.com/awszhouanni/amazon-translate-developer-guide. Paste it under _Git repository URL_.
+7. Under the *Git repositories*, open the drop down menu and choose _Clone a public Git repository to this notebook instance only_. Copy the URL of this GitHub repository: https://github.com/awsdocs/amazon-translate-developer-guide. Paste it under _Git repository URL_.
 
-<img width="475" alt="Screen Shot 2021-08-17 at 3 19 24 PM" src="https://user-images.githubusercontent.com/88006687/129787279-16bc2302-59dc-4358-9745-0ff0dea6af12.png">
+<img width="439" alt="Screen Shot 2021-08-19 at 12 35 32 PM" src="https://user-images.githubusercontent.com/88006687/130108053-2eb99071-3612-486d-a79b-9fd5edcd25e3.png">
 
 8. Choose _Create notebook Instance_. 
 9. SageMaker takes a few minutes to create the notebook instance. Under _Notebook instances_, find your unique notebook instance. Wait for the status to change from _Pending_ to _InService_. You can refresh the page.  
@@ -46,5 +46,6 @@ After you have all the accounts set up, you can open the Jupyter notebooks that 
 Now, you can access the repostories through Amazon SageMaker's notebook instances. 
 1. Choose the custom notebook instance that you created.
 2. Choose *Open JupyterLab.*
-3. Then, choose the folder "Module1." 
-4. Choose the Jupyter Notebook titled "#1 Translate text into spoken translations with Amazon Translate and Amazon Polly" to begin the curriculum.
+3. Then, choose the folder "aws-machine-learning-curriculum-translate." 
+4. Choose the folder "Module1."
+5. Choose the Jupyter Notebook titled "#1 Translate text into spoken translations with Amazon Translate and Amazon Polly" to begin the curriculum.
