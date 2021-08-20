@@ -49,4 +49,3 @@ Now, you can access the repostories through Amazon SageMaker's notebook instance
 2. Choose *Open JupyterLab.* 
 3. Then, choose the folder "Module 1." 
 4. Choose the JupyterNotebook titled "Translate text into spoken translations with Amazon Translate and Amazon Polly" to begin the curriculum.
->>>>>>> a8552f82354a081d4387410895c202d697fba816
