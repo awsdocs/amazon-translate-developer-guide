@@ -6,7 +6,7 @@ Gets the properties associated with an asycnhronous batch translation job includ
 
 ```
 {
-   "[JobId](#Translate-DescribeTextTranslationJob-request-JobId)": "string"
+   "JobId": "string"
 }
 ```
 
@@ -27,29 +27,34 @@ Required: Yes
 
 ```
 {
-   "[TextTranslationJobProperties](#Translate-DescribeTextTranslationJob-response-TextTranslationJobProperties)": { 
-      "[DataAccessRoleArn](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-DataAccessRoleArn)": "string",
-      "[EndTime](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-EndTime)": number,
-      "[InputDataConfig](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-InputDataConfig)": { 
-         "[ContentType](API_InputDataConfig.md#Translate-Type-InputDataConfig-ContentType)": "string",
-         "[S3Uri](API_InputDataConfig.md#Translate-Type-InputDataConfig-S3Uri)": "string"
+   "TextTranslationJobProperties": { 
+      "DataAccessRoleArn": "string",
+      "EndTime": number,
+      "InputDataConfig": { 
+         "ContentType": "string",
+         "S3Uri": "string"
       },
-      "[JobDetails](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-JobDetails)": { 
-         "[DocumentsWithErrorsCount](API_JobDetails.md#Translate-Type-JobDetails-DocumentsWithErrorsCount)": number,
-         "[InputDocumentsCount](API_JobDetails.md#Translate-Type-JobDetails-InputDocumentsCount)": number,
-         "[TranslatedDocumentsCount](API_JobDetails.md#Translate-Type-JobDetails-TranslatedDocumentsCount)": number
+      "JobDetails": { 
+         "DocumentsWithErrorsCount": number,
+         "InputDocumentsCount": number,
+         "TranslatedDocumentsCount": number
       },
-      "[JobId](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-JobId)": "string",
-      "[JobName](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-JobName)": "string",
-      "[JobStatus](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-JobStatus)": "string",
-      "[Message](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-Message)": "string",
-      "[OutputDataConfig](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-OutputDataConfig)": { 
-         "[S3Uri](API_OutputDataConfig.md#Translate-Type-OutputDataConfig-S3Uri)": "string"
+      "JobId": "string",
+      "JobName": "string",
+      "JobStatus": "string",
+      "Message": "string",
+      "OutputDataConfig": { 
+         "EncryptionKey": { 
+            "Id": "string",
+            "Type": "string"
+         },
+         "S3Uri": "string"
       },
-      "[SourceLanguageCode](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-SourceLanguageCode)": "string",
-      "[SubmittedTime](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-SubmittedTime)": number,
-      "[TargetLanguageCodes](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-TargetLanguageCodes)": [ "string" ],
-      "[TerminologyNames](API_TextTranslationJobProperties.md#Translate-Type-TextTranslationJobProperties-TerminologyNames)": [ "string" ]
+      "ParallelDataNames": [ "string" ],
+      "SourceLanguageCode": "string",
+      "SubmittedTime": number,
+      "TargetLanguageCodes": [ "string" ],
+      "TerminologyNames": [ "string" ]
    }
 }
 ```
@@ -83,12 +88,12 @@ HTTP Status Code: 400
 ## See Also<a name="API_DescribeTextTranslationJob_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/DescribeTextTranslationJob) 
-+  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/DescribeTextTranslationJob) 
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/DescribeTextTranslationJob) 
-+  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/DescribeTextTranslationJob) 
-+  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/translate-2017-07-01/DescribeTextTranslationJob) 
-+  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/DescribeTextTranslationJob) 
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/DescribeTextTranslationJob) 
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/DescribeTextTranslationJob) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/DescribeTextTranslationJob) 
++  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/DescribeTextTranslationJob) 

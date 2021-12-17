@@ -16,4 +16,3 @@ For more information about data protection, see the [AWS Shared Responsibility M
 **Topics**
 + [Encryption at Rest](encryption-at-rest.md)
 + [Encryption in Transit](encryption-in-transit.md)
-+ [Key Management](key-management.md)

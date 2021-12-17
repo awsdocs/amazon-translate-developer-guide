@@ -15,10 +15,12 @@ Amazon Translate can translate text between the languages listed in the followin
 | Albanian | sq | 
 | Amharic | am | 
 | Arabic | ar | 
+| Armenian | hy | 
 | Azerbaijani | az | 
 | Bengali | bn | 
 | Bosnian | bs | 
 | Bulgarian | bg | 
+| Catalan | ca | 
 | Chinese \(Simplified\) | zh | 
 | Chinese \(Traditional\) | zh\-TW | 
 | Croatian | hr | 
@@ -28,22 +30,34 @@ Amazon Translate can translate text between the languages listed in the followin
 | Dutch | nl  | 
 | English | en | 
 | Estonian | et | 
+| Farsi \(Persian\) | fa | 
+| Filipino Tagalog | tl | 
 | Finnish | fi | 
 | French | fr | 
-| French \(Canadian\) | fr\-CA | 
+| French \(Canada\) | fr\-CA | 
 | Georgian | ka | 
 | German | de | 
 | Greek | el | 
+| Gujarati | gu | 
+| Haitian Creole | ht | 
 | Hausa | ha | 
 | Hebrew | he  | 
 | Hindi | hi | 
 | Hungarian | hu | 
+| Icelandic | is | 
 | Indonesian | id  | 
 | Italian | it | 
 | Japanese | ja | 
+| Kannada | kn | 
+| Kazakh | kk | 
 | Korean | ko | 
 | Latvian | lv | 
+| Lithuanian | lt | 
+| Macedonian | mk | 
 | Malay | ms | 
+| Malayalam | ml | 
+| Maltese | mt | 
+| Mongolian | mn | 
 | Norwegian | no | 
 | Persian | fa | 
 | Pashto | ps | 
@@ -52,19 +66,24 @@ Amazon Translate can translate text between the languages listed in the followin
 | Romanian | ro | 
 | Russian | ru | 
 | Serbian | sr | 
+| Sinhala | si | 
 | Slovak | sk | 
 | Slovenian | sl | 
 | Somali | so | 
 | Spanish | es | 
+| Spanish \(Mexico\) | es\-MX | 
 | Swahili | sw | 
 | Swedish | sv | 
 | Tagalog | tl | 
 | Tamil | ta | 
+| Telugu | te | 
 | Thai | th | 
 | Turkish | tr | 
 | Ukrainian | uk | 
 | Urdu | ur | 
+| Uzbek | uz | 
 | Vietnamese | vi | 
+| Welsh | cy | 
 
 ## Use Cases<a name="what-is-use-cases"></a>
 

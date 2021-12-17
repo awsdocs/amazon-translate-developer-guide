@@ -6,10 +6,10 @@ Translates input text from the source language to the target language\. For a li
 
 ```
 {
-   "[SourceLanguageCode](#Translate-TranslateText-request-SourceLanguageCode)": "string",
-   "[TargetLanguageCode](#Translate-TranslateText-request-TargetLanguageCode)": "string",
-   "[TerminologyNames](#Translate-TranslateText-request-TerminologyNames)": [ "string" ],
-   "[Text](#Translate-TranslateText-request-Text)": "string"
+   "SourceLanguageCode": "string",
+   "TargetLanguageCode": "string",
+   "TerminologyNames": [ "string" ],
+   "Text": "string"
 }
 ```
 
@@ -50,20 +50,20 @@ Required: Yes
 
 ```
 {
-   "[AppliedTerminologies](#Translate-TranslateText-response-AppliedTerminologies)": [ 
+   "AppliedTerminologies": [ 
       { 
-         "[Name](API_AppliedTerminology.md#Translate-Type-AppliedTerminology-Name)": "string",
-         "[Terms](API_AppliedTerminology.md#Translate-Type-AppliedTerminology-Terms)": [ 
+         "Name": "string",
+         "Terms": [ 
             { 
-               "[SourceText](API_Term.md#Translate-Type-Term-SourceText)": "string",
-               "[TargetText](API_Term.md#Translate-Type-Term-TargetText)": "string"
+               "SourceText": "string",
+               "TargetText": "string"
             }
          ]
       }
    ],
-   "[SourceLanguageCode](#Translate-TranslateText-response-SourceLanguageCode)": "string",
-   "[TargetLanguageCode](#Translate-TranslateText-response-TargetLanguageCode)": "string",
-   "[TranslatedText](#Translate-TranslateText-response-TranslatedText)": "string"
+   "SourceLanguageCode": "string",
+   "TargetLanguageCode": "string",
+   "TranslatedText": "string"
 }
 ```
 
@@ -132,12 +132,12 @@ HTTP Status Code: 400
 ## See Also<a name="API_TranslateText_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/TranslateText) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/translate-2017-07-01/TranslateText) 
++  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/TranslateText) 
++  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/TranslateText) 
++  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/TranslateText) 
++  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/TranslateText) 
++  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/TranslateText) 
++  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/TranslateText) 
++  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/TranslateText) 
++  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/TranslateText) 
++  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/TranslateText) 

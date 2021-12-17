@@ -1,4 +1,4 @@
-# Custom Terminology<a name="how-custom-terminology"></a>
+# Customizing Your Translations with Custom Terminology<a name="how-custom-terminology"></a>
 
 Using custom terminology with your translation requests enables you to make sure that your brand names, character names, model names, and other unique content is translated exactly the way you need it, regardless of its context and the Amazon Translate algorithm’s decision\.
 
