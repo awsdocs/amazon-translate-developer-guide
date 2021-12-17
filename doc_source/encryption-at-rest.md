@@ -4,8 +4,6 @@ For the batch translation jobs that you run with Amazon Translate, your translat
 
 Amazon Translate also uses an Amazon Elastic Block Store \(Amazon EBS\) volume encrypted with the default key\.
 
-
-
 ## Translation Input<a name="encryption-at-rest-input"></a>
 
 When you use Amazon Translate to translate documents in batch, you store a set of input documents in an Amazon S3 bucket\. To encrypt these documents at rest, you can use the SSE\-S3 server\-side encryption option that is provided by Amazon S3\. With this option, each object is encrypted with a unique key that is managed by Amazon S3\. 
