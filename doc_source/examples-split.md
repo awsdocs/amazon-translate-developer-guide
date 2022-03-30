@@ -1,6 +1,6 @@
-# Using Amazon Translate to Translate Large Documents<a name="examples-split"></a>
+# Using Amazon Translate to translate large documents<a name="examples-split"></a>
 
-You can split large documents into smaller parts to keep the total document size below the document size limit\. For more information about document size limits, see [Service Limits](what-is-limits.md#limits)\. The following Java program breaks long text documents into individual sentences and then translates each sentence from the source language to the target language\. The program contains two sections:
+You can split large documents into smaller parts to keep the total document size below the document size limit\. For more information about document size limits, see [Service limits](what-is-limits.md#limits)\. The following Java program breaks long text documents into individual sentences and then translates each sentence from the source language to the target language\. The program contains two sections:
 + The `SentenceSegmenter` class that is responsible for breaking the source string into individual sentences\. The sample uses the Java `BreakIterator` class\.
 + The `main` function that calls the `Translate` operation for each sentence in the source string\. The `main` function also handles authentication with Amazon Translate\.
 
@@ -8,7 +8,7 @@ You can split large documents into smaller parts to keep the total document size
 
 1. Install and configure the AWS SDK for Java\. For instructions for installing the SDK for Java, see [ Set up the AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-install.html)\.
 
-1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate Identity\-Based Policies](security_iam_service-with-iam.md#access-control-managing-permissions)\.
+1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate identity\-based policies](security_iam_service-with-iam.md#access-control-managing-permissions)\.
 
 1. Set up the credentials needed to run the sample\. For instructions, see [ Set up AWS Credentials and Region for Development ](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html) in the *AWS SDK for Java Developer Guide*\.
 

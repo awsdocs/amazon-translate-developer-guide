@@ -15,3 +15,4 @@ The following data types are supported:
 +  [TerminologyProperties](API_TerminologyProperties.md) 
 +  [TextTranslationJobFilter](API_TextTranslationJobFilter.md) 
 +  [TextTranslationJobProperties](API_TextTranslationJobProperties.md) 
++  [TranslationSettings](API_TranslationSettings.md) 

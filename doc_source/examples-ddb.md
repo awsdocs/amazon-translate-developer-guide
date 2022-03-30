@@ -8,9 +8,9 @@ In this example, you:
 
 **To run the example**
 
-1.  Copy the contents of `example.py`, which you can find in [Python Lambda Function](#examples-ddb-code-lambda), to a file named `example.py`\. `example.py` is a Lambda function that calls the [TranslateText](API_TranslateText.md) operation\. Compress the file to a zip archive named `example.zip`\. Store it in an S3 bucket in the same AWS Region where you want to run the function\. 
+1.  Copy the contents of `example.py`, which you can find in [Python Lambda function](#examples-ddb-code-lambda), to a file named `example.py`\. `example.py` is a Lambda function that calls the [TranslateText](API_TranslateText.md) operation\. Compress the file to a zip archive named `example.zip`\. Store it in an S3 bucket in the same AWS Region where you want to run the function\. 
 
-1. Create a new file named `template.yaml`\. Copy the AWS CloudFormation template code, which you can find in [AWS CloudFormation Template](#examples-ddb-code-yaml), into the file\. AWS CloudFormation uses the template to create resources for the sample application\. Change `BUCKET_NAME` to the name of the S3 bucket that contains `example.zip`\. Save the file in a local directory\. 
+1. Create a new file named `template.yaml`\. Copy the AWS CloudFormation template code, which you can find in [AWS CloudFormation template](#examples-ddb-code-yaml), into the file\. AWS CloudFormation uses the template to create resources for the sample application\. Change `BUCKET_NAME` to the name of the S3 bucket that contains `example.zip`\. Save the file in a local directory\. 
 
 1. Sign in to the AWS Management Console and open the AWS CloudFormation console at [https://console\.aws\.amazon\.com/cloudformation](https://console.aws.amazon.com/cloudformation/)\.
 
@@ -50,11 +50,11 @@ In this example, you:
 1. Make sure that **TestTranslate** is selected, then choose **Test**\. When the test finishes, you receive the following message:  
 ![\[A panel showing the results of the operation, "Hello world" in Spanish.\]](http://docs.aws.amazon.com/translate/latest/dg/images/example-3-results.png)
 
-## Example Code<a name="examples-ddb-code"></a>
+## Example code<a name="examples-ddb-code"></a>
 
 Use the following code to create the example\.
 
-### Python Lambda Function<a name="examples-ddb-code-lambda"></a>
+### Python Lambda function<a name="examples-ddb-code-lambda"></a>
 
 The following is the contents of the Python Lambda function\. The Lambda function call the `TranslateText` operation and passes the review, the source language, and the target language to get the translated review\. Save this file as `example.py` and them compress it in a \.zip archive called `example.zip`\. Save the file in an S3 bucket in the same region that you are running the example\.\.
 
@@ -143,7 +143,7 @@ def lambda_handler(event, context):
         raise Exception("[ErrorMessage]: Invalid input ")
 ```
 
-### AWS CloudFormation Template<a name="examples-ddb-code-yaml"></a>
+### AWS CloudFormation template<a name="examples-ddb-code-yaml"></a>
 
 The following is the template file that you use with AWS CloudFormation to create and configure the Lambda function and the DynamoDB tables\. Use this file when you create the AWS CloudFormation stack for the example\. Update `BUCKET_NAME` to the name of the S3 bucket that contains the `example.zip` file and then save it to a local directory as `template.yaml`\. 
 

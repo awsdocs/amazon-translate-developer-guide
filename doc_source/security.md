@@ -9,9 +9,10 @@ Security is a shared responsibility between AWS and you\. The [shared responsibi
 This topic helps you understand how to apply the shared responsibility model when using AWS\. The following topics show you how to configure AWS to meet your security and compliance objectives\. You also learn how to use other AWS services that help you to monitor and secure your AWS resources\. 
 
 **Topics**
-+ [Data Protection in Amazon Translate](data-protection.md)
-+ [Identity and Access Management for Amazon Translate](identity-and-access-management.md)
++ [Data protection in Amazon Translate](data-protection.md)
++ [Identity and access management for Amazon Translate](identity-and-access-management.md)
 + [Monitoring Amazon Translate](monitoring-translate.md)
-+ [Compliance Validation for Amazon Translate](compliance.md)
++ [Compliance validation for Amazon Translate](compliance.md)
 + [Resilience in Amazon Translate](disaster-recovery-resiliency.md)
-+ [Infrastructure Security in Amazon Translate](infrastructure-security.md)
++ [Infrastructure security in Amazon Translate](infrastructure-security.md)
++ [Amazon Translate and interface VPC endpoints \(AWS PrivateLink\)](vpc-interface-endpoints.md)

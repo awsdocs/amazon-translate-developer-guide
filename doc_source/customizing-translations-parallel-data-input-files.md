@@ -1,10 +1,8 @@
-# Parallel Data Input Files for Amazon Translate<a name="customizing-translations-parallel-data-input-files"></a>
+# Parallel data input files for Amazon Translate<a name="customizing-translations-parallel-data-input-files"></a>
 
-Before you can create a parallel data resource in Amazon Translate, you must create an input file that contains your translation examples\.
+Before you can create a parallel data resource in Amazon Translate, you must create an input file that contains your translation examples\. Your parallel data input file must use languages that Amazon Translate supports\. For a list of these languages, see [Supported languages and language codes](what-is.md#what-is-languages)\.
 
-Your parallel data input file must use languages that Amazon Translate supports, and it must use English as one of its languages\. English can be used as the source language, or it can be one of the target languages\. For a list of the languages that Amazon Translate supports, see [Supported Languages and Language Codes](what-is.md#what-is-languages)\.
-
-## Example Parallel Data<a name="customizing-translations-parallel-data-input-files-example-pd"></a>
+## Example parallel data<a name="customizing-translations-parallel-data-input-files-example-pd"></a>
 
 The text in the following table provides examples of translation segments that can be formatted into a parallel data input file:
 
@@ -17,7 +15,7 @@ The text in the following table provides examples of translation segments that c
 
 The first row of the table provides the language codes\. The first language, English \(en\), is the source language\. Spanish \(es\) and Chinese \(zh\) are the target languages\. The first column provides examples of source text\. The other columns contain examples of translations\. When this parallel data customizes a batch job, Amazon Translate adapts the translation to reflect the examples\. 
 
-## Input File Formats<a name="customizing-translations-parallel-data-input-files-formats"></a>
+## Input file formats<a name="customizing-translations-parallel-data-input-files-formats"></a>
 
 Amazon Translate supports the following formats for parallel data input files:
 + Translation Memory eXchange \(TMX\)

@@ -1,4 +1,4 @@
-# Translating Text Using the AWS SDK for Java<a name="examples-java"></a>
+# Translating text using the AWS SDK for Java<a name="examples-java"></a>
 
 The following example demonstrates using the [TranslateText](API_TranslateText.md) operation in Java\. To run this example, you need the AWS SDK for Java\. For instructions for installing the SDK for Java, see [ Set up the AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-install.html)\. 
 
@@ -35,4 +35,4 @@ public class App {
 }
 ```
 
-For a list of supported languages and language codes, see [Supported Languages and Language Codes](what-is.md#what-is-languages)
+For a list of supported languages and language codes, see [Supported languages and language codes](what-is.md#what-is-languages)

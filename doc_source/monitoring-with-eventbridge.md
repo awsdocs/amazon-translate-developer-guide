@@ -1,4 +1,4 @@
-# Monitoring Amazon Translate Events with Amazon EventBridge<a name="monitoring-with-eventbridge"></a>
+# Monitoring Amazon Translate events with Amazon EventBridge<a name="monitoring-with-eventbridge"></a>
 
 Amazon Translate integrates with Amazon EventBridge to notify you about changes that affect your translation jobs and parallel data resources\. Events from AWS services are delivered to EventBridge in near real time\. You can write simple rules to indicate which events are of interest to you, and what automated actions to take when an event matches a rule\. For example, actions that can be automatically started include:
 + Invoking an AWS Lambda function
@@ -9,11 +9,11 @@ Amazon Translate integrates with Amazon EventBridge to notify you about changes 
 
 For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) in the *Amazon EventBridge User Guide*\.
 
-## Amazon Translate Events<a name="monitoring-with-eventbridge-events"></a>
+## Amazon Translate events<a name="monitoring-with-eventbridge-events"></a>
 
 The following are example events from Amazon Translate\.
 
-### Events for Batch Translation Jobs<a name="monitoring-with-eventbridge-events"></a>
+### Events for batch translation jobs<a name="monitoring-with-eventbridge-events"></a>
 
 You run batch translation jobs by using the Amazon Translate console or the `StartTextTranslationJob` operation\. Amazon Translate sends events when these jobs are complete, either successfully or unsuccessfully\. These events resemble the following example\.
 
@@ -40,7 +40,7 @@ The value for the `jobStatus` attribute depends on the job state that Amazon Tra
 + `STOPPED` – The job has been stopped\.
 + `FAILED` – The job did not complete\. To get details, use the [DescribeTextTranslationJob](API_DescribeTextTranslationJob.md) operation\.
 
-### Events for Parallel Data Resources<a name="monitoring-with-eventbridge-events"></a>
+### Events for parallel data resources<a name="monitoring-with-eventbridge-events"></a>
 
 When you use Amazon Translate to create or update a parallel data resource, it sends an event to indicate whether the operation succeeded or failed\.
 

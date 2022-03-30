@@ -4,7 +4,7 @@ The input configuration properties for requesting a batch translation job\.
 
 ## Contents<a name="API_InputDataConfig_Contents"></a>
 
- **ContentType**   <a name="Translate-Type-InputDataConfig-ContentType"></a>
+ ** ContentType **   <a name="Translate-Type-InputDataConfig-ContentType"></a>
 Describes the format of the data that you submit to Amazon Translate as input\. You can specify one of the following multipurpose internet mail extension \(MIME\) types:  
 +  `text/html`: The input data consists of one or more HTML files\. Amazon Translate translates only the text that resides in the `html` element in each file\.
 +  `text/plain`: The input data consists of one or more unformatted text files\. Amazon Translate translates every character in this type of input\.
@@ -18,7 +18,7 @@ Length Constraints: Maximum length of 256\.
 Pattern: `^[-\w.]+\/[-\w.+]+$`   
 Required: Yes
 
- **S3Uri**   <a name="Translate-Type-InputDataConfig-S3Uri"></a>
+ ** S3Uri **   <a name="Translate-Type-InputDataConfig-S3Uri"></a>
 The URI of the AWS S3 folder that contains the input file\. The folder must be in the same Region as the API endpoint you are calling\.  
 Type: String  
 Length Constraints: Maximum length of 1024\.  
@@ -28,7 +28,7 @@ Required: Yes
 ## See Also<a name="API_InputDataConfig_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/InputDataConfig) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/InputDataConfig) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/InputDataConfig) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/InputDataConfig) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/InputDataConfig) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/InputDataConfig) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/InputDataConfig) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/InputDataConfig) 

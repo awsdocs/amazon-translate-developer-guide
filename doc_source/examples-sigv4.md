@@ -2,13 +2,13 @@
 
 This example Python program shows how to use Signature Version 4 to add authentication information to Amazon Translate requests\. The example makes a POST request, creates a JSON structure that contains the text to be translated in the body \(payload\) of the request, and passes authentication information in an Authorization header\. For more information about using Signature Version 4, see [ Signature Version 4 Signing Process ](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the *Amazon Web Services General Reference*\.
 
-## Setting Up<a name="examples-sig4-setting-up"></a>
+## Setting up<a name="examples-sig4-setting-up"></a>
 
 To run the example, perform the following steps:
 
-1. Install the AWS Command Line Interface \(AWS CLI\)\. The AWS SDK for Python \(Boto\) is included when you install the AWS CLI\. For instructions, see [Step 2: Set Up the AWS Command Line Interface \(AWS CLI\)](setup-awscli.md)\.
+1. Install the AWS Command Line Interface \(AWS CLI\)\. The AWS SDK for Python \(Boto\) is included when you install the AWS CLI\. For instructions, see [Step 2: Set up the AWS Command Line Interface \(AWS CLI\)](setup-awscli.md)\.
 
-1. Create an AWS Identity and Access Management \(IAM\) user with the minimum required permission policy to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate Identity\-Based Policies](security_iam_service-with-iam.md#access-control-managing-permissions)\. Record the user access key ID and the secret access key\.
+1. Create an AWS Identity and Access Management \(IAM\) user with the minimum required permission policy to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate identity\-based policies](security_iam_service-with-iam.md#access-control-managing-permissions)\. Record the user access key ID and the secret access key\.
 
 1. Place the access key ID and secret access key in environment variables named `AWS_ACCESS_KEY and AWS_SECRET_ACCESS_KEY`, respectively\. As a best practice, we recommend that you don't embed credentials in code\.
 

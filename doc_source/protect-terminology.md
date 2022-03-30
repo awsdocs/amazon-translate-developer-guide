@@ -1,4 +1,4 @@
-# Encrypting Your Terminology<a name="protect-terminology"></a>
+# Encrypting your terminology<a name="protect-terminology"></a>
 
 Amazon Translate endeavors to protect all of your data and your custom terminologies are no different\. When created, each custom terminology is encrypted so it accessible only by you\.
 

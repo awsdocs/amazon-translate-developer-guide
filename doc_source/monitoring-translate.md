@@ -22,7 +22,7 @@ The following table describes each of the preconfigured graphs provided by Amazo
 
 With Amazon CloudWatch, you can get metrics for individual Amazon Translate operations or global Amazon Translate metrics for your account\. Use metrics to track the health of your Amazon Translate solutions and to set up alarms to notify you when one or more metrics fall outside a defined threshold\. For example, you can monitor the number of requests made to Amazon Translate in a particular time period, see the latency of requests, or raise an alarm when errors exceed a threshold\.
 
-### Understanding CloudWatch Metrics for Amazon Translate<a name="aws-lex-cloudwatch-using"></a>
+### Understanding CloudWatch metrics for Amazon Translate<a name="aws-lex-cloudwatch-using"></a>
 
 To get metrics for your Amazon Translate operations, you specify the following information:
 + The metric dimension\. A *dimension* is a set of name\-value pairs that you use to identify a metric\. Amazon Translate has two dimensions:
@@ -35,7 +35,7 @@ You can get metrics for Amazon Translate with the AWS Management Console, the AW
 The following table lists some common uses for CloudWatch metrics\. These are suggestions to get you started, not a comprehensive list\.
 
 
-| How Do I? | Monitor This Metric | 
+| How do I? | Monitor this metric | 
 | --- | --- | 
 | Track the number of successful requests | The sum statistic of the SuccessfulRequestCount metric  | 
 | Know if my application has reached its maximum throughput | The sum statistic of the ThrottledCount metric | 
@@ -45,7 +45,7 @@ The following table lists some common uses for CloudWatch metrics\. These are su
 
 You must have the appropriate CloudWatch permissions to monitor Amazon Translate with CloudWatch For more information, see [ Authentication and Access Control for Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html) in the *Amazon CloudWatch User Guide*\.
 
-### Viewing Amazon Translate Metrics<a name="translate-cloudwatch-view"></a>
+### Viewing Amazon Translate metrics<a name="translate-cloudwatch-view"></a>
 
 View Amazon Translate metrics in the CloudWatch console\.
 

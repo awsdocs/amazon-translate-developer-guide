@@ -1,8 +1,8 @@
-# Step 3: Getting Started \(Console\)<a name="get-started-console"></a>
+# Step 3: Getting started \(console\)<a name="get-started-console"></a>
 
-The easiest way to get started with Amazon Translate is to use the console to translate some text\. You can translate up to 5,000 characters using the console\. If you haven't reviewed the concepts and terminology in [How Amazon Translate Works](how-it-works.md), we recommend that you do so before proceeding\.
+The easiest way to get started with Amazon Translate is to use the console to translate some text\. You can translate up to 5,000 characters using the console\. If you haven't reviewed the concepts and terminology in [How Amazon Translate works](how-it-works.md), we recommend that you do so before proceeding\.
 
-To start translating text, go to the [ AWS Management Console ](https://console.aws.amazon.com/translate) and open the Amazon Translate console\. 
+To start translating text, go to the [AWS Management Console](https://console.aws.amazon.com/translate) and open the Amazon Translate console\. 
 
 If this is the first time that you've used Amazon Translate, choose **Launch real\-time translation**\.
 
@@ -14,6 +14,6 @@ In the **JSON samples** section you can see the JSON input and output to the [Tr
 
 ![\[JSON code samples for translating text.\]](http://docs.aws.amazon.com/translate/latest/dg/images/gs-20.png)
 
-## Next Step<a name="setting-up-next-step-4"></a>
+## Next step<a name="setting-up-next-step-4"></a>
 
-[Step 4: Getting Started \(AWS CLI\)](get-started-cli.md)
+[Step 4: Getting started \(AWS CLI\)](get-started-cli.md)

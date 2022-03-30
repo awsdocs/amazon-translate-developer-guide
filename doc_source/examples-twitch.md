@@ -1,4 +1,4 @@
-# Using Amazon Translate to Translate a Chat Channel<a name="examples-twitch"></a>
+# Using Amazon Translate to translate a chat channel<a name="examples-twitch"></a>
 
 You can use Amazon Translate for real time translation of chat messages\. This example uses a Twitch channel, but you can use it as a starting point for other real\-time streaming text like other chat platforms, customer service interactions, message boards, and more\. 
 
@@ -15,7 +15,7 @@ The code can be summarized as follows:
 
 **To configure the example**
 
-1. Install and Configure the AWS SDK for JavaScript\. For instructions for installing the SDK for JavaScript, see [Installing the SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html)\.
+1. Install and configure the AWS SDK for JavaScript\. For instructions for installing the SDK for JavaScript, see [Installing the SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/installing-jssdk.html)\.
 
 1. Copy the code for the example to an HTML file on your Web server\.
 
@@ -23,7 +23,7 @@ The code can be summarized as follows:
 
 1. Change the region and endpoint to the region where you want to run the Amazon Translate and Amazon Polly operations\. For a list of supported regions for Amazon Translate, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *AWS General Reference*\.
 
-1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate Identity\-Based Policies](security_iam_service-with-iam.md#access-control-managing-permissions) and [ Using Identity\-Based Policies \(IAM Policies\) for Amazon Polly ](https://docs.aws.amazon.com/polly/latest/dg/using-identity-based-policies.html) in the *Amazon Polly Developer Guide*\.
+1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate identity\-based policies](security_iam_service-with-iam.md#access-control-managing-permissions) and [ Using Identity\-Based Policies \(IAM Policies\) for Amazon Polly ](https://docs.aws.amazon.com/polly/latest/dg/using-identity-based-policies.html) in the *Amazon Polly Developer Guide*\.
 
 1. Provide the access ID and secret key of the IAM user created in the previous step\.
 
@@ -281,6 +281,9 @@ The code can be summarized as follows:
                SourceLanguageCode: con.sourceLanguage,
                TargetLanguageCode:  con.targetLanguage
            };
+           
+           // In a real application, you need to include input validation and encoding of the text message, to guard against
+           // malicious attacks that inject javascript or other html/css tags in an attempt to take over the browser.
 
            window.translator.translateText(params, function onIncomingMessageTranslate(err, data) {
               if (err) {

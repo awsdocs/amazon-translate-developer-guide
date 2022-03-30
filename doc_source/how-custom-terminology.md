@@ -1,4 +1,4 @@
-# Customizing Your Translations with Custom Terminology<a name="how-custom-terminology"></a>
+# Customizing your translations with custom terminology<a name="how-custom-terminology"></a>
 
 Using custom terminology with your translation requests enables you to make sure that your brand names, character names, model names, and other unique content is translated exactly the way you need it, regardless of its context and the Amazon Translate algorithm’s decision\.
 
@@ -8,10 +8,10 @@ For example, consider the following: *Amazon Family* is a collection of benefits
 
 **Topics**
 + [How does this work?](#how-does-ct-work)
-+ [Creating a Custom Terminology](creating-custom-terminology.md)
-+ [Using Custom Terminologies](using-ct.md)
-+ [Encrypting Your Terminology](protect-terminology.md)
-+ [Best Practices](ct-best-practices.md)
++ [Creating a custom terminology](creating-custom-terminology.md)
++ [Using custom terminologies](using-ct.md)
++ [Encrypting your terminology](protect-terminology.md)
++ [Best practices](ct-best-practices.md)
 
 ## How does this work?<a name="how-does-ct-work"></a>
 

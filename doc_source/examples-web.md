@@ -1,4 +1,4 @@
-# Using Amazon Translate to Translate a Web Page<a name="examples-web"></a>
+# Using Amazon Translate to translate a web page<a name="examples-web"></a>
 
 You can use Amazon Translate to translate the contents of a Web page\. The following Java program translates a specified Web page from English to Spanish and creates an HTML file that contains the result of the translation\. There are two functions in the program:
 + A function that reads data from the source Web page, separates it into HTML elements, and then calls the second function to translate the element\. At the end of the document, it writes the results to an HTML file\.
@@ -12,7 +12,7 @@ This example works on simple HTML pages without nested elements\.
 
 1. Install the jsoup Java HTML parser\. For instructions, see [jsoup](https://jsoup.org/)\.
 
-1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate Identity\-Based Policies](security_iam_service-with-iam.md#access-control-managing-permissions)\.
+1. Create an IAM user with the minimum required permissions to run this example\. For information about creating an IAM user, see [ Creating an IAM User in Your AWS Account ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS Identity and Access Management User Guide*\. For the required permissions policies, see [Amazon Translate identity\-based policies](security_iam_service-with-iam.md#access-control-managing-permissions)\.
 
 1. Set up the credentials needed to run the sample\. For instructions, see [ Set up AWS Credentials and Region for Development ](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html) in the *AWS SDK for Java Developer Guide*\.
 

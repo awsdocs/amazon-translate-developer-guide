@@ -89,47 +89,47 @@ Valid Values:` CREATING | UPDATING | ACTIVE | DELETING | FAILED`
 
 For information about the errors that are common to all actions, see [Common Errors](CommonErrors.md)\.
 
- **ConcurrentModificationException**   
+ ** ConcurrentModificationException **   
 Another modification is being made\. That modification must complete before you can make your change\.  
 HTTP Status Code: 400
 
- **ConflictException**   
+ ** ConflictException **   
 There was a conflict processing the request\. Try your request again\.  
 HTTP Status Code: 400
 
- **InternalServerException**   
+ ** InternalServerException **   
 An internal server error occurred\. Retry your request\.  
 HTTP Status Code: 500
 
- **InvalidParameterValueException**   
-The value of the parameter is invalid\. Review the value of the parameter you are using to correct it, and then retry your operation\.  
+ ** InvalidParameterValueException **   
+The value of the parameter is not valid\. Review the value of the parameter you are using to correct it, and then retry your operation\.  
 HTTP Status Code: 400
 
- **InvalidRequestException**   
- The request that you made is invalid\. Check your request to determine why it's invalid and then retry the request\.   
+ ** InvalidRequestException **   
+ The request that you made is not valid\. Check your request to determine why it's not valid and then retry the request\.   
 HTTP Status Code: 400
 
- **LimitExceededException**   
+ ** LimitExceededException **   
 The specified limit has been exceeded\. Review your request and retry it with a quantity below the stated limit\.  
 HTTP Status Code: 400
 
- **ResourceNotFoundException**   
+ ** ResourceNotFoundException **   
 The resource you are looking for has not been found\. Review the resource you're looking for and see if a different resource will accomplish your needs before retrying the revised request\.  
 HTTP Status Code: 400
 
- **TooManyRequestsException**   
+ ** TooManyRequestsException **   
  You have made too many requests within a short period of time\. Wait for a short time and then try your request again\.  
 HTTP Status Code: 400
 
 ## See Also<a name="API_UpdateParallelData_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/UpdateParallelData) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/UpdateParallelData) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/UpdateParallelData) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/UpdateParallelData) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/UpdateParallelData) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/UpdateParallelData) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/UpdateParallelData) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/UpdateParallelData) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/UpdateParallelData) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/translate-2017-07-01/UpdateParallelData) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/translate-2017-07-01/UpdateParallelData) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/translate-2017-07-01/UpdateParallelData) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/translate-2017-07-01/UpdateParallelData) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/translate-2017-07-01/UpdateParallelData) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/translate-2017-07-01/UpdateParallelData) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/translate-2017-07-01/UpdateParallelData) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/translate-2017-07-01/UpdateParallelData) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/translate-2017-07-01/UpdateParallelData) 

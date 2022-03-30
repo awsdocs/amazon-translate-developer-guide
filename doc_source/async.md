@@ -1,4 +1,4 @@
-# Asynchronous Batch Processing with Amazon Translate<a name="async"></a>
+# Asynchronous batch processing with Amazon Translate<a name="async"></a>
 
 To translate large collections of documents \(up to 5 GB in size\), use the Amazon Translate asynchronous batch processing operation, [StartTextTranslationJob](API_StartTextTranslationJob.md)\. This is best for collections of short documents, such as social media postings or user reviews, or any situation in which instantaneous translation is not required\.
 
@@ -14,7 +14,7 @@ To perform an asynchronous batch translation, you typically perform the followin
 
 1. Retrieve the results of the batch translation job from the specified output bucket\.
 
-## Region Availability<a name="async-regions"></a>
+## Region availability<a name="async-regions"></a>
 
 Batch translation is supported in the following AWS Regions:
 + US East \(N\. Virginia\)

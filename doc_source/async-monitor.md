@@ -1,4 +1,4 @@
-# Monitoring and Analyzing Batch Translation Jobs<a name="async-monitor"></a>
+# Monitoring and analyzing batch translation jobs<a name="async-monitor"></a>
 
 You can use a job's ID to monitor its progress and get the Amazon S3 location of its output documents\. To monitor a specific job, use the [DescribeTextTranslationJob](API_DescribeTextTranslationJob.md) operation\. You can also use the [ListTextTranslationJobs](API_ListTextTranslationJobs.md) operation to retrieve information on all of the translation jobs in your account\. To restrict results to jobs that match a certain criteria, use the [ListTextTranslationJobs](API_ListTextTranslationJobs.md) operation's `filter` parameter\. You can filter results by job name, job status, or the date and time that the job was submitted\. 
 

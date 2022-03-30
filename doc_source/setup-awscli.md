@@ -1,4 +1,4 @@
-# Step 2: Set Up the AWS Command Line Interface \(AWS CLI\)<a name="setup-awscli"></a>
+# Step 2: Set up the AWS Command Line Interface \(AWS CLI\)<a name="setup-awscli"></a>
 
 You use the AWS CLI to make interactive calls to Amazon Translate\. 
 
@@ -27,6 +27,6 @@ You use the AWS CLI to make interactive calls to Amazon Translate\.
 
    You should see a brief description of Amazon Translate and a list of the available commands\.
 
-## Next Step<a name="setting-up-next-step-3"></a>
+## Next step<a name="setting-up-next-step-3"></a>
 
-[Step 3: Getting Started \(Console\)](get-started-console.md)
+[Step 3: Getting started \(console\)](get-started-console.md)

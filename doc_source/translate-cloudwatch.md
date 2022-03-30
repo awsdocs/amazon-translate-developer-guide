@@ -1,4 +1,4 @@
-# CloudWatch Metrics and Dimensions for Amazon Translate<a name="translate-cloudwatch"></a>
+# CloudWatch metrics and dimensions for Amazon Translate<a name="translate-cloudwatch"></a>
 
 To monitor your solution's performance, use the Amazon CloudWatch metrics and dimensions for Amazon Translate\.
 

@@ -1,4 +1,4 @@
-# Customizing Your Translations with Parallel Data \(Active Custom Translation\)<a name="customizing-translations-parallel-data"></a>
+# Customizing your translations with parallel data \(Active Custom Translation\)<a name="customizing-translations-parallel-data"></a>
 
 Add *parallel data* to Amazon Translate to customize the output of your batch translations jobs\. Parallel data consists of examples that show how you want segments of text to be translated\. It includes a collection of textual examples in a source language, and for each example, it contains the desired translation output in one or more target languages\.
 
@@ -43,7 +43,7 @@ Comment allez-vous ?
 
 By customizing your batch translation jobs with parallel data, you influence the output in a way that's similar to using a custom translation model that you train with your translation examples\. With Active Custom Translation, training a custom model is unnecessary, and you avoid the time and expense that such training requires\. As your translation requirements change over time, you can refine your output by updating your parallel data, which is easier than retraining a custom model\. 
 
-## Region Availability<a name="customizing-translations-parallel-data-regions"></a>
+## Region availability<a name="customizing-translations-parallel-data-regions"></a>
 
 Active Custom Translation is available in the following regions:
 + US East \(N\. Virginia\)
@@ -51,7 +51,7 @@ Active Custom Translation is available in the following regions:
 + Europe \(Ireland\)
 
 **Topics**
-+ [Region Availability](#customizing-translations-parallel-data-regions)
-+ [Parallel Data Input Files for Amazon Translate](customizing-translations-parallel-data-input-files.md)
-+ [Adding Your Parallel Data to Amazon Translate](customizing-translations-parallel-data-adding.md)
-+ [Viewing and Managing Your Parallel Data in Amazon Translate](customizing-translations-parallel-data-managing.md)
++ [Region availability](#customizing-translations-parallel-data-regions)
++ [Parallel data input files for Amazon Translate](customizing-translations-parallel-data-input-files.md)
++ [Adding your parallel data to Amazon Translate](customizing-translations-parallel-data-adding.md)
++ [Viewing and managing your parallel data in Amazon Translate](customizing-translations-parallel-data-managing.md)

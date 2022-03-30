@@ -1,8 +1,8 @@
-# API Reference<a name="API_Reference"></a>
+# API reference<a name="API_Reference"></a>
 
 This section contains the API Reference documentation\. 
 
-## HTTP Headers<a name="api-http-headers"></a>
+## HTTP headers<a name="api-http-headers"></a>
 
 In addition to the usual HTTP headers, Amazon Translate operations have the required headers:
 

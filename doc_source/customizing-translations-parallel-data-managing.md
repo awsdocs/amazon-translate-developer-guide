@@ -1,8 +1,8 @@
-# Viewing and Managing Your Parallel Data in Amazon Translate<a name="customizing-translations-parallel-data-managing"></a>
+# Viewing and managing your parallel data in Amazon Translate<a name="customizing-translations-parallel-data-managing"></a>
 
 You can view all of the parallel data resources that you have added to Amazon Translate, and you can access detailed summaries for each one\. As your translation requirements change, you can refine your translation output by updating your parallel data\.
 
-## Viewing and Managing Parallel Data \(Amazon Translate Console\)<a name="customizing-translations-parallel-data-managing-console"></a>
+## Viewing and managing parallel data \(Amazon Translate console\)<a name="customizing-translations-parallel-data-managing-console"></a>
 
 To view and manage your parallel data in the Amazon Translate console, use the **Parallel data** page:
 
@@ -33,7 +33,7 @@ The format of the parallel data input file\. Supported formats are Translation M
 
 1. Choose **Save**\. Amazon Translate replaces the old parallel data with the new input file\.
 
-## Viewing and Managing Parallel Data \(AWS CLI\)<a name="customizing-translations-parallel-data-managing-cli"></a>
+## Viewing and managing parallel data \(AWS CLI\)<a name="customizing-translations-parallel-data-managing-cli"></a>
 
 You can use the AWS CLI to view and update your parallel data resources\.
 

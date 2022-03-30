@@ -1,6 +1,6 @@
-# Compliance Validation for Amazon Translate<a name="compliance"></a>
+# Compliance validation for Amazon Translate<a name="compliance"></a>
 
-Third\-party auditors assess the security and compliance of Amazon Translate as part of multiple AWS compliance programs\. These include PCI, FedRAMP, HIPAA, and others\. You can download third\-party audit reports using AWS Artifact\. For more information, see [Downloading Reports in AWS Artifact](https://docs.aws.amazon.com/artifact/latest/ug/downloading-documents.html)\.
+Third\-party auditors assess the security and compliance of Amazon Translate as part of multiple AWS compliance programs\. These include PCI, FedRAMP, HIPAA, and others\. You can download third\-party audit reports using AWS Artifact\. For more information, see [Downloading reports in AWS Artifact](https://docs.aws.amazon.com/artifact/latest/ug/downloading-documents.html)\.
 
 Your compliance responsibility when using Amazon Translate is determined by the sensitivity of your data, your company's compliance objectives, and applicable laws and regulations\. AWS provides the following resources to help with compliance:
 + [Security and Compliance Quick Start Guides](http://aws.amazon.com/quickstart/?awsf.quickstart-homepage-filter=categories%23security-identity-compliance) – These deployment guides discuss architectural considerations and provide steps for deploying security\- and compliance\-focused baseline environments on AWS\.

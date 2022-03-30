@@ -1,15 +1,18 @@
-# What Is Amazon Translate?<a name="what-is"></a>
+# What is Amazon Translate?<a name="what-is"></a>
 
 Amazon Translate is a text translation service that uses advanced machine learning technologies to provide high\-quality translation on demand\. You can use Amazon Translate to translate unstructured text documents or to build applications that work in multiple languages\.
 
-## Supported Languages and Language Codes<a name="what-is-languages"></a>
+## Supported languages and language codes<a name="what-is-languages"></a>
 
 Amazon Translate provides translation between a source language \(the input language\) and a target language \(the output language\)\. A source language\-target language combination is known as a *language pair*\.
+
+**Note**  
+Amazon Translate does not charge you for translations in which the source language and target language are the same\.
 
 Amazon Translate can translate text between the languages listed in the following table\.
 
 
-| Language | Language Code | 
+| Language | Language code | 
 | --- | --- | 
 | Afrikaans | af | 
 | Albanian | sq | 
@@ -25,13 +28,13 @@ Amazon Translate can translate text between the languages listed in the followin
 | Chinese \(Traditional\) | zh\-TW | 
 | Croatian | hr | 
 | Czech | cs | 
-| Danish | da  | 
+| Danish | da | 
 | Dari | fa\-AF | 
-| Dutch | nl  | 
+| Dutch | nl | 
 | English | en | 
 | Estonian | et | 
 | Farsi \(Persian\) | fa | 
-| Filipino Tagalog | tl | 
+| Filipino, Tagalog | tl | 
 | Finnish | fi | 
 | French | fr | 
 | French \(Canada\) | fr\-CA | 
@@ -41,11 +44,12 @@ Amazon Translate can translate text between the languages listed in the followin
 | Gujarati | gu | 
 | Haitian Creole | ht | 
 | Hausa | ha | 
-| Hebrew | he  | 
+| Hebrew | he | 
 | Hindi | hi | 
 | Hungarian | hu | 
 | Icelandic | is | 
-| Indonesian | id  | 
+| Indonesian | id | 
+| Irish | ga | 
 | Italian | it | 
 | Japanese | ja | 
 | Kannada | kn | 
@@ -57,12 +61,14 @@ Amazon Translate can translate text between the languages listed in the followin
 | Malay | ms | 
 | Malayalam | ml | 
 | Maltese | mt | 
+| Marathi | mr | 
 | Mongolian | mn | 
 | Norwegian | no | 
-| Persian | fa | 
 | Pashto | ps | 
 | Polish | pl | 
 | Portuguese | pt | 
+| Portuguese \(Portugal\) | pt\-PT | 
+| Punjabi | pa | 
 | Romanian | ro | 
 | Russian | ru | 
 | Serbian | sr | 
@@ -74,7 +80,6 @@ Amazon Translate can translate text between the languages listed in the followin
 | Spanish \(Mexico\) | es\-MX | 
 | Swahili | sw | 
 | Swedish | sv | 
-| Tagalog | tl | 
 | Tamil | ta | 
 | Telugu | te | 
 | Thai | th | 
@@ -85,13 +90,19 @@ Amazon Translate can translate text between the languages listed in the followin
 | Vietnamese | vi | 
 | Welsh | cy | 
 
-## Use Cases<a name="what-is-use-cases"></a>
+### Limitations in language support<a name="what-is-languages-by-feature"></a>
+
+The following features in Amazon Translate have limitations in the languages that they support\.
++ Profanity masking – For the languages supported by this feature, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md)\.
++ Formality – For the languages supported by this feature, see [Setting formality in Amazon Translate](customizing-translations-formality.md)\.
+
+## Use cases<a name="what-is-use-cases"></a>
 
 Use Amazon Translate to do the following:
 
 **Enable multilingual user experiences in your applications by integrating Amazon Translate: **  
 + Translate company\-authored content, such as meeting minutes, technician reports, knowledge\-base articles, posts, and more\.
-+ Translate interpersonal communications, such as email, in\-game chat, customer service chat, and more to enable customers and employees to connect in their preferred language\.
++ Translate interpersonal communications, such as email, in\-game chat, customer service chat, so that customers and employees can connect in their preferred language\.
 
 **Process and manage your company's incoming data:**  
 + Analyze text, such as social media and news feeds, in many languages\.
@@ -105,18 +116,18 @@ Use Amazon Translate to do the following:
 + Translate text stored in the following databases: [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html), [Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html), and [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/dg/welcome.html)\.
 + Seamlessly integrate workflows with [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) or [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)\.
 
-## Are You a First\-time User of Amazon Translate?<a name="first-time-user"></a>
+## Are you a first\-time user of Amazon Translate?<a name="first-time-user"></a>
 
 If you are a first\-time user, we recommend that you read the following sections in order:
 
-1. [How Amazon Translate Works](how-it-works.md) – Introduces Amazon Translate\.
+1. [How Amazon Translate works](how-it-works.md) – Introduces Amazon Translate\.
 
-1. [Getting Started with Amazon Translate](getting-started.md) – Explains how to set up your AWS account and start using Amazon Translate\.
+1. [Getting started with Amazon Translate](getting-started.md) – Explains how to set up your AWS account and start using Amazon Translate\.
 
 1. [Examples](examples.md) – Provides code examples in Java and Python\. Use the examples to explore how Amazon Translate works\.
 
-1.  [API Reference](API_Reference.md) – Contains reference documentation for Amazon Translate operations\.
+1.  [API reference](API_Reference.md) – Contains reference documentation for Amazon Translate operations\.
 
-## Amazon Translate Pricing<a name="what-is-pricing"></a>
+## Amazon Translate pricing<a name="what-is-pricing"></a>
 
 As with other AWS products, there are no contracts or minimum commitments for using Amazon Translate\. For more information about the cost of using Amazon Translate, see [Amazon Translate Pricing](https://aws.amazon.com/translate/pricing/)\.

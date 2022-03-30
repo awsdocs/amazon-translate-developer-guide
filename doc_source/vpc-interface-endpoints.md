@@ -17,9 +17,9 @@ Amazon Translate supports making calls to all of its API actions from your VPC\.
 You can create a VPC endpoint for the Amazon Translate service using either the Amazon VPC console or the AWS Command Line Interface \(AWS CLI\)\. For more information, see [Creating an interface endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint) in the *Amazon VPC User Guide*\.
 
 Create a VPC endpoint for Amazon Translate using the following service name: 
-+ com\.amazonaws\.*region*\.translate 
++ com\.amazonaws\.*region*\.translate
 
-If you enable private DNS for the endpoint, you can make API requests to Amazon Translate using its default DNS name for the Region, for example, `translate.us-east-1.amazonaws.com`\. 
+If you enable private DNS for the endpoint, you can make API requests to Amazon Translate using its default DNS name for the Region, for example, `translate.us-east-1.amazonaws.com`\.
 
 For more information, see [Accessing a service through an interface endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#access-service-though-endpoint) in the *Amazon VPC User Guide*\.
 
@@ -32,22 +32,39 @@ You can attach an endpoint policy to your VPC endpoint that controls access to A
 
 For more information, see [Controlling access to services with VPC endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) in the *Amazon VPC User Guide*\. 
 
-**Example: VPC endpoint policy for Amazon Translate actions**  
-The following is an example of an endpoint policy for Amazon Translate\. When attached to an endpoint, this policy grants access to the listed Amazon Translate actions for all principals on all resources\.
+**Example: VPC endpoint policy for Amazon Translate real\-time translation actions**  
+The following is an example of an endpoint policy for real\-time translation in Amazon Translate\. When attached to an endpoint, this policy grants access to the listed Amazon Translate actions for all principals on all resources\.
 
 ```
 {
-   "Statement":[
-      {
-         "Principal":"*",
-         "Effect":"Allow",
-         "Action":[
-            "servicename:action-1",
-            "servicename:action-2",
-            "servicename:action-2"
-         ],
-         "Resource":"*"
-      }
-   ]
-}
+            "Statement":[
+                {
+                    "Principal":"*",
+                    "Effect":"Allow",
+                    "Action":[
+                        "translate:TranslateText",
+                    ],
+                    "Resource":"*"
+                }
+            ]
+        }
+```
+
+**Example: VPC endpoint policy for Amazon Translate batch translation actions**  
+The following is an example of an endpoint policy for batch translation in Amazon Translate\. When attached to an endpoint, this policy grants access to the listed Amazon Translate actions for all principals on all resources\.
+
+```
+{
+            "Statement":[
+                {
+                    "Principal":"*",
+                    "Effect":"Allow",
+                    "Action":[
+                        "translate:StartTextTranslationJob",
+                        "iam:PassRole"
+                    ],
+                    "Resource":"*"
+                }
+            ]
+        }
 ```

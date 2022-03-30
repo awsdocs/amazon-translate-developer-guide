@@ -1,4 +1,4 @@
-# Guidelines and Limits<a name="what-is-limits"></a>
+# Guidelines and limits<a name="what-is-limits"></a>
 
 The following sections contain information about Amazon Translate guidelines and limits\.
 
@@ -7,7 +7,7 @@ The following sections contain information about Amazon Translate guidelines and
 + [Compliance](#what-is-compliance)
 + [Throttling](#limits-throttling)
 + [Guidelines](#guidelines)
-+ [Service Limits](#limits)
++ [Service limits](#limits)
 
 ## Supported AWS Regions<a name="what-is-regions"></a>
 
@@ -27,12 +27,12 @@ To continuously improve the quality of its analysis models, Amazon Translate mig
 
 You can request that we delete your data and that future data associated with your account isn't stored by contacting [AWS Support](https://console.aws.amazon.com/support/home#/)\. However, because deleting your data can also delete unique training data that is helpful in improving translation, doing so might reduce the quality of your translations\. 
 
-## Service Limits<a name="limits"></a>
+## Service limits<a name="limits"></a>
 
 Amazon Translate has the following service limitations\.
 
 
-**Synchronous Real\-Time Translation Limits**  
+**Synchronous real\-time translation limits**  
 
 | Description | Limit | 
 | --- | --- | 
@@ -40,7 +40,7 @@ Amazon Translate has the following service limitations\.
 | Maximum document size \(UTF\-8 characters\) | 5,000 bytes | 
 
 
-**Asynchronous Batch Translation Limits**  
+**Asynchronous batch translation limits**  
 
 | Description | Limit | 
 | --- | --- | 
@@ -52,9 +52,13 @@ Amazon Translate has the following service limitations\.
 | Maximum size of total documents in batch | 5 GB | 
 | Maximum number of concurrent batch translation jobs | 10 | 
 | Maximum number of queued batch translation jobs | 1000 | 
+| Transactions per second for the StartTextTranslationJob API action | 5 | 
+| Transactions per second for the DescribeTextTranslationJob API action | 10 | 
+| Transactions per second for the ListTextTranslationJobs API action | 10 | 
+| Transactions per second for the StopTextTranslationJob API action | 5 | 
 
 
-**Custom Terminology Limits**  
+**Custom terminology limits**  
 
 | Description | Limit | 
 | --- | --- | 
@@ -63,17 +67,21 @@ Amazon Translate has the following service limitations\.
 | Maximum number of target languages per custom terminology file | 10 | 
 | Maximum source and target text length per custom terminology term | 200 bytes | 
 | Maximum number of terminology files per TranslateText or StartTextTranslationJob request\. | 1 | 
-| Maximum number of concurrent create or update operations for parallel data resources | 1 | 
+| Transactions per second for the ImportTerminology API action | 5 | 
+| Transactions per second for the GetTerminology API action | 10 | 
+| Transactions per second for the ListTerminologies API action | 10 | 
+| Transactions per second for the DeleteTerminology API action | 5 | 
 
 
-**Parallel Data Limits**  
+**Parallel data limits**  
 
 | Description | Limit | 
 | --- | --- | 
-| Maximum parallel data input file size | 5 GB | 
-|  Maximum number of source languages in a parallel data resource  | 1 | 
-| Maximum size of a single segment or record in a parallel data input file | 1000 bytes | 
 | Maximum number of parallel data resources per AWS account per AWS Region | 1000 | 
+| Maximum parallel data input file size | 5 GB | 
+| Maximum number of source languages in a parallel data resource | 1 | 
+| Maximum size of a single segment or record in a parallel data input file | 1000 bytes | 
+| Maximum number of concurrent create or update operations for parallel data resources | 1 | 
 | Transactions per second for the CreateParallelData API action | 5 | 
 | Transactions per second for the GetParallelData API action | 10 | 
 | Transactions per second for the ListParallelData API action | 10 | 

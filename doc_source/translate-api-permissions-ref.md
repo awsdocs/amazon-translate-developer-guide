@@ -1,4 +1,4 @@
-# Amazon Translate API Permissions: Actions, Resources, and Conditions Reference<a name="translate-api-permissions-ref"></a>
+# Amazon Translate API permissions: Actions, resources, and conditions reference<a name="translate-api-permissions-ref"></a>
 
 Use the following table as a reference when writing a permissions policy that you can attach to an IAM identity \(an identity\-based policy\)\. The list includes each Amazon Translate API operation, the corresponding action for which you can grant permissions, and the AWS resource for which you can grant the permissions\. You specify the actions in the policy's `Action` field, and you specify the resource value in the policy's `Resource` field\. 
 
@@ -10,9 +10,9 @@ To specify an action, use the `translate:` prefix followed by the API operation 
 Use the scroll bars to see the rest of the table\.
 
 
-**Amazon Translate API and Required Permissions for Actions**  
+**Amazon Translate API and required permissions for actions**  
 
-| Amazon Translate API Operations | Required Permissions \(API Actions\) | Resources | 
+| Amazon Translate API operations | Required permissions \(API actions\) | Resources | 
 | --- | --- | --- | 
 | [TranslateText](API_TranslateText.md) – Use to specify the source language \. |  `translate:TranslateText`  | \* | 
 | [TranslateText](API_TranslateText.md) – Use for automatic source language detection\. |  `translate:TranslateText` `comprehend:DetectDominantLanguage`  | \* | 

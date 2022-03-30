@@ -1,6 +1,6 @@
-# Translating Text Using the AWS SDK for Python \(Boto\)<a name="examples-python"></a>
+# Translating text using the AWS SDK for Python \(Boto\)<a name="examples-python"></a>
 
-The following example demonstrates using the [TranslateText](API_TranslateText.md) operation in Python\. To run it, you must first install Amazon Translate via the AWS CLI\. For instructions, see [Step 2: Set Up the AWS Command Line Interface \(AWS CLI\)](setup-awscli.md)\.
+The following example demonstrates using the [TranslateText](API_TranslateText.md) operation in Python\. To run it, you must first install Amazon Translate via the AWS CLI\. For instructions, see [Step 2: Set up the AWS Command Line Interface \(AWS CLI\)](setup-awscli.md)\.
 
 ```
 import boto3
@@ -14,7 +14,7 @@ print('SourceLanguageCode: ' + result.get('SourceLanguageCode'))
 print('TargetLanguageCode: ' + result.get('TargetLanguageCode'))
 ```
 
-For a list of supported language codes, see [Supported Languages and Language Codes](what-is.md#what-is-languages)
+For a list of supported language codes, see [Supported languages and language codes](what-is.md#what-is-languages)
 
 **Custom Terminology**
 
