@@ -48,9 +48,9 @@ You don't need to allow minimum console permissions for users that are making ca
 
 ## Permissions for using customer managed keys with custom terminologies<a name="kms-permissions"></a>
 
-If you use AWS Key Management Service \(AWS KMS\) customer\-managed keys \(CMKs\) with Amazon Translate custom terminologies, you might need additional permissions in your AWS KMS key policy\. 
+If you use AWS Key Management Service \(AWS KMS\) customer managed keys with Amazon Translate custom terminologies, you might need additional permissions in your KMS key policy\. 
 
-To call the `ImportTerminology` operation with an AWS KMS CMK, add the following permissions to your existing AWS KMS key policy\.
+To call the `ImportTerminology` operation with a customer managed key, add the following permissions to your existing KMS key policy\.
 
 ```
 {
@@ -78,7 +78,7 @@ To call the `ImportTerminology` operation with an AWS KMS CMK, add the following
 }
 ```
 
-To call the `GetTerminology` operation for a custom terminology that was imported with an KMS CMK, add the following permissions in the AWS KMS key policy\.
+To call the `GetTerminology` operation for a custom terminology that was imported with a KMS customer managed key, add the following permissions in the KMS key policy\.
 
 ```
 {
@@ -100,9 +100,9 @@ To call the `GetTerminology` operation for a custom terminology that was importe
 }
 ```
 
-To call the `ListTerminologies` or `DeleteTermionlogy` operations for a custom terminology that was imported with an AWS KMS CMK, you don't need to have any special AWS KMS permissions\.
+To call the `ListTerminologies` or `DeleteTermionlogy` operations for a custom terminology that was imported with a customer managed key, you don't need to have any special AWS KMS permissions\.
 
-To use CMKs with all custom terminologies operations, add the following permissions in the AWS KMS key policy\.
+To use customer managed keys with all custom terminologies operations, add the following permissions in the KMS key policy\.
 
 ```
 {

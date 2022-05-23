@@ -184,4 +184,4 @@ To update your KMS key policy, add the service role and root user as principals 
 }
 ```
 
-For more information, see [Allowing users in other accounts to use a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html) in the *AWS Key Management Service Developer Guide*
+For more information, see [Allowing users in other accounts to use a AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html) in the *AWS Key Management Service Developer Guide*

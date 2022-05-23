@@ -25,7 +25,7 @@ In contrast, if you used uni\-directional terminology for those translation jobs
 
 ## Example terminology files<a name="creating-custom-terminology-examples"></a>
 
-See [Supported languages and language codes](what-is.md#what-is-languages) for the supported language codes\.
+See [Supported languages and language codes](what-is-languages.md) for the supported language codes\.
 
 **CSV \(comma separated values\)**
 

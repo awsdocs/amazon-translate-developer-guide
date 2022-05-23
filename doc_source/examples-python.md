@@ -14,7 +14,7 @@ print('SourceLanguageCode: ' + result.get('SourceLanguageCode'))
 print('TargetLanguageCode: ' + result.get('TargetLanguageCode'))
 ```
 
-For a list of supported language codes, see [Supported languages and language codes](what-is.md#what-is-languages)
+For a list of supported language codes, see [Supported languages and language codes](what-is-languages.md)
 
 **Custom Terminology**
 

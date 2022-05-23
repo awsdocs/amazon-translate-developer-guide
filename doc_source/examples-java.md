@@ -35,4 +35,4 @@ public class App {
 }
 ```
 
-For a list of supported languages and language codes, see [Supported languages and language codes](what-is.md#what-is-languages)
+For a list of supported languages and language codes, see [Supported languages and language codes](what-is-languages.md)

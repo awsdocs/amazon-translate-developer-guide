@@ -1,6 +1,6 @@
 # TranslateText<a name="API_TranslateText"></a>
 
-Translates input text from the source language to the target language\. For a list of available languages and language codes, see [Supported languages and language codes](what-is.md#what-is-languages)\.
+Translates input text from the source language to the target language\. For a list of available languages and language codes, see [Supported languages and language codes](what-is-languages.md)\.
 
 ## Request Syntax<a name="API_TranslateText_RequestSyntax"></a>
 
@@ -29,7 +29,7 @@ Type: [TranslationSettings](API_TranslationSettings.md) object
 Required: No
 
  ** [SourceLanguageCode](#API_TranslateText_RequestSyntax) **   <a name="Translate-TranslateText-request-SourceLanguageCode"></a>
-The language code for the language of the source text\. The language must be a language supported by Amazon Translate\. For a list of language codes, see [Supported languages and language codes](what-is.md#what-is-languages)\.  
+The language code for the language of the source text\. The language must be a language supported by Amazon Translate\. For a list of language codes, see [Supported languages and language codes](what-is-languages.md)\.  
 To have Amazon Translate determine the source language of your text, you can specify `auto` in the `SourceLanguageCode` field\. If you specify `auto`, Amazon Translate will call [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/comprehend-general.html) to determine the source language\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.  

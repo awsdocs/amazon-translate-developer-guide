@@ -34,11 +34,11 @@ To run a translation job by using the Amazon Translate console, use the **Batch 
 
    1. For **Output S3 location**, specify the output folder in Amazon S3 where Amazon Translate puts the translation output\. To provide the folder by navigating to it in Amazon S3, choose **Select folder**\.
 
-   1. Optionally, choose **Customize encryption settings \(advanced\)** if you want to encrypt your output with a customer managed key that you manage in AWS Key Management Service \(AWS KMS\)\.
+   1. Optionally, choose **Customize encryption settings \(advanced\)** if you want to encrypt your output with a customer managed key that you manage in the AWS Key Management Service \(AWS KMS\)\.
 
       By default, Amazon Translate encrypts your translation output using a KMS key that is created, managed, and used on your behalf by AWS\. Choose this option if you want to encrypt your output with your own KMS key instead\. 
 
-      If you want to use a KMS key from the current AWS account, select it under **Choose an AWS KMS key**\. Or, if you want to use a KMS key from a different AWS account, enter the Amazon Resource Name \(ARN\) for that key\.
+      If you want to use a KMS key from the current AWS account, select it under **Choose an AWS Key Management Service key**\. Or, if you want to use a KMS key from a different AWS account, enter the Amazon Resource Name \(ARN\) for that key\.
 **Note**  
 Before you can use your own KMS key, you must add permissions to the service role for Amazon Translate in IAM\. If you want to use a KMS key from a different account, you must also update the key policy in AWS KMS\. For more information, see [Prerequisite permissions to customize encryption](async-prereqs.md#async-prereqs-permissions-custom-encryption)\.
 

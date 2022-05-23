@@ -90,7 +90,7 @@ Type: [TranslationSettings](API_TranslationSettings.md) object
 Required: No
 
  ** [SourceLanguageCode](#API_StartTextTranslationJob_RequestSyntax) **   <a name="Translate-StartTextTranslationJob-request-SourceLanguageCode"></a>
-The language code of the input language\. For a list of language codes, see [Supported languages and language codes](what-is.md#what-is-languages)\.  
+The language code of the input language\. For a list of language codes, see [Supported languages and language codes](what-is-languages.md)\.  
 Amazon Translate does not automatically detect a source language during batch translation jobs\.  
 Type: String  
 Length Constraints: Minimum length of 2\. Maximum length of 5\.  

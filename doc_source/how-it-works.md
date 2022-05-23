@@ -1,6 +1,6 @@
 # How Amazon Translate works<a name="how-it-works"></a>
 
-The Amazon Translate service is based on neural networks trained for language translation\. This enables you to translate between a source language \(the original language of the text being translated\) and a target language \(the language into which the text is being translated\)\. For more information, see [Supported languages and language codes](what-is.md#what-is-languages)\.
+The Amazon Translate service is based on neural networks trained for language translation\. This enables you to translate between a source language \(the original language of the text being translated\) and a target language \(the language into which the text is being translated\)\. For more information, see [Supported languages and language codes](what-is-languages.md)\.
 
 When working with Amazon Translate, you will provide source text and get output text:
 + **Source text**—The text that you want to translate\. You provide the source text in UTF\-8 format\.
@@ -19,7 +19,7 @@ Amazon Translate can automatically detect the language used in your source text\
 ## Exception handling<a name="how-to-error-msg"></a>
 
 If you specify a source or target language that isn't supported, Amazon Translate returns the following exceptions: 
-+ **UnsupportedLanguagePairException** – Amazon Translate supports translation between all supported languages\. This exception is returned if either the source language or target language is unsupported\. For more information, see [Supported languages](what-is.md#what-is-languages)\.
++ **UnsupportedLanguagePairException** – Amazon Translate supports translation between all supported languages\. This exception is returned if either the source language or target language is unsupported\. For more information, see [Supported languages](what-is-languages.md)\.
 + **DetectedLanguageLowConfidenceException** – If you use automatic language detection, and Amazon Translate has low confidence that it detected the correct source language, it returns this exception\. If a low confidence level is acceptable, you can use the source language returned in the exception\.
 
 ## Next steps<a name="how-it-works-next-steps"></a>

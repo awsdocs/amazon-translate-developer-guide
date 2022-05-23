@@ -19,7 +19,8 @@ Pattern: `^[-\w.]+\/[-\w.+]+$`
 Required: Yes
 
  ** S3Uri **   <a name="Translate-Type-InputDataConfig-S3Uri"></a>
-The URI of the AWS S3 folder that contains the input file\. The folder must be in the same Region as the API endpoint you are calling\.  
+The URI of the AWS S3 folder that contains the input files\. Amazon Translate translates all the files in the folder\. The folder must be in the same Region as the API endpoint you are calling\.  
+The URI can also point to a single input document, or it can provide the prefix for a collection of input documents\. For example\. if you use the URI `S3://bucketName/prefix` and the prefix is a single file, Amazon Translate uses that files as input\. If more than one file begins with the prefix, Amazon Translate uses all of them as input\.
 Type: String  
 Length Constraints: Maximum length of 1024\.  
 Pattern: `s3://[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9](/.*)?`   

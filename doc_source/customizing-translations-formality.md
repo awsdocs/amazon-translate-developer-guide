@@ -23,7 +23,7 @@ Formality is not available for asynchronous batch operations\.
 
 ## Supported languages<a name="customizing-translations-formality-languages"></a>
 
-Amazon Translate supports the formality setting for translation from any source language to the following target languages\.
+Amazon Translate supports the formality setting for translation from any source language to the following target languages\. Formality does not support variants of these languages \(such as fr\-CA and es\-MX\) as the target language\.
 
 
 | Language | Language code | 
@@ -35,4 +35,4 @@ Amazon Translate supports the formality setting for translation from any source 
 | Japanese | ja | 
 | Spanish | es | 
 
-For all the languages that Amazon Translate supports, see [Supported languages and language codes](what-is.md#what-is-languages)\.
+For all the languages that Amazon Translate supports, see [Supported languages and language codes](what-is-languages.md)\.
