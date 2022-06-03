@@ -146,6 +146,11 @@ HTTP Status Code: 400
 Amazon Translate does not support translation from the language of the source text into the requested target language\. For more information, see [Exception handling](how-it-works.md#how-to-error-msg)\.   
 HTTP Status Code: 400
 
+ ** ValidationException **   
+An error occurred (ValidationException) when calling the TranslateText operation: Autodetect language is not supported\.   
+HTTP Status Code: 400   
+This error occurs if you have set 'SourceLanguageCode' to 'auto' in a region in which Amazon Comprehend is not available\. For example, if you are using Amazon Translate in eu\-west\-3 \- Paris where Amazon Comprehend is not yet available \(as of June 2022\) the request will fail with this error message\.   
+
 ## See Also<a name="API_TranslateText_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
