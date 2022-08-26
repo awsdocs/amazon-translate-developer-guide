@@ -8,6 +8,7 @@ Amazon Translate is a text translation service that uses advanced machine learni
 + [Use cases](#what-is-use-cases)
 + [Are you a first\-time user of Amazon Translate?](#first-time-user)
 + [Amazon Translate pricing](#what-is-pricing)
++ [Amazon Translate API Reference](#what-is-api)
 
 ## Use cases<a name="what-is-use-cases"></a>
 
@@ -46,3 +47,7 @@ You can also use the following resources to learn about the Amazon Translate ser
 ## Amazon Translate pricing<a name="what-is-pricing"></a>
 
 As with other AWS products, there are no contracts or minimum commitments for using Amazon Translate\. For more information about the cost of using Amazon Translate, see [Amazon Translate Pricing](https://aws.amazon.com/translate/pricing/)\.
+
+## Amazon Translate API Reference<a name="what-is-api"></a>
+
+The Amazon Translate API Reference is now a separate document\. For more information, see [Amazon Translate API Reference](https://docs.aws.amazon.com/translate/latest/APIReference/Welcome.html)\.

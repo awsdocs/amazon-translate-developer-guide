@@ -16,7 +16,7 @@ You can use the profanity setting with both types of translation operations in A
 
 To mask profanity in a real\-time translation request, do any of the following:
 + On the **Real\-time translation** page in the Amazon Translate console, under **Additional settings**, enable the **Profanity** setting\.
-+ For `translate-text` command in the AWS CLI, set the `--settings` parameter to `Profanity=MASK`\. For more information, see [translate\-text](https://docs.aws.amazon.com/cli/latest/reference/translate/translate-text.html) in the *AWS CLI Command Reference*\.
++ For `translate-text` command in the AWS CLI, set the `--settings` parameter to `Profanity=MASK`\. For more information, see [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) in the *AWS CLI Command Reference*\.
 + Use the Settings parameter in the [TranslateText](http://amazonaws.com/translate/latest/dg/API_TranslateText.html) action in the Amazon Translate API\.
 
 To mask profanity in an asynchronous batch operation, see [Running a batch translation job](async-start.md)\.

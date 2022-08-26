@@ -14,7 +14,7 @@ To run the example, perform the following steps:
 
 1. Create a new file on your computer, copy the code for the example \(which you can find in the next section\), paste it into the file, and save the file with the extension `.py`\.
 
-1. In the code, replace `region` with the name of the AWS Region where you want to run the Amazon Translate `TranslateText` operation\. For a list of supported Regions, see [ AWS Regions and Endpoints ](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *AWS General Reference*\. 
+1. In the code, replace `region` with the name of the AWS Region where you want to run the Amazon Translate [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation\. For a list of supported Regions, see [ AWS Regions and Endpoints ](https://docs.aws.amazon.com/general/latest/gr/rande.html#translate_region) in the *AWS General Reference*\. 
 
 ## Code<a name="example-sigv4-code"></a>
 
@@ -22,7 +22,7 @@ The following is the complete code of the example Python program\.
 
 After creating request values such as the endpoint URL and the body of the request, the code does the following:
 
-1. Create a canonical request to the Amazon Translate `TranslateText` operation\.
+1. Create a canonical request to the Amazon Translate [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation\.
 
 1. Create the string to that you hash to create the signature\.
 
@@ -30,7 +30,7 @@ After creating request values such as the endpoint URL and the body of the reque
 
 1. Add the signature to the request header\.
 
-1. Send the request to the `TranslateText` operation\.
+1. Send the request to the [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation\.
 
 To run the example on your computer, copy the code to a Python file\.
 

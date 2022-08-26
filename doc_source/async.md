@@ -1,6 +1,6 @@
 # Asynchronous batch processing with Amazon Translate<a name="async"></a>
 
-To translate large collections of documents \(up to 5 GB in size\), use the Amazon Translate asynchronous batch processing operation, [StartTextTranslationJob](API_StartTextTranslationJob.md)\. This is best for collections of short documents, such as social media postings or user reviews, or any situation in which instantaneous translation is not required\.
+To translate large collections of documents \(up to 5 GB in size\), use the Amazon Translate asynchronous batch processing operation, [StartTextTranslationJob](https://docs.aws.amazon.com/translate/latest/APIReference/API_StartTextTranslationJob.html)\. This is best for collections of short documents, such as social media postings or user reviews, or any situation in which instantaneous translation is not required\.
 
 To perform an asynchronous batch translation, you typically perform the following steps:
 

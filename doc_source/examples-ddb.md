@@ -3,12 +3,12 @@
 This example shows you how to translate a product review and store it in Amazon DynamoDB\. If you request the same review later, DynamoDB returns it without Amazon Translate needing to translate it again\. 
 
 In this example, you:
-+ Use AWS CloudFormation to create DynamoDB tables to store the translation and a Lambda function that calls the [TranslateText](API_TranslateText.md) operation\.
++ Use AWS CloudFormation to create DynamoDB tables to store the translation and a Lambda function that calls the [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation\.
 + Test the function using the AWS Lambda console\.
 
 **To run the example**
 
-1.  Copy the contents of `example.py`, which you can find in [Python Lambda function](#examples-ddb-code-lambda), to a file named `example.py`\. `example.py` is a Lambda function that calls the [TranslateText](API_TranslateText.md) operation\. Compress the file to a zip archive named `example.zip`\. Store it in an S3 bucket in the same AWS Region where you want to run the function\. 
+1.  Copy the contents of `example.py`, which you can find in [Python Lambda function](#examples-ddb-code-lambda), to a file named `example.py`\. `example.py` is a Lambda function that calls the [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation\. Compress the file to a zip archive named `example.zip`\. Store it in an S3 bucket in the same AWS Region where you want to run the function\. 
 
 1. Create a new file named `template.yaml`\. Copy the AWS CloudFormation template code, which you can find in [AWS CloudFormation template](#examples-ddb-code-yaml), into the file\. AWS CloudFormation uses the template to create resources for the sample application\. Change `BUCKET_NAME` to the name of the S3 bucket that contains `example.zip`\. Save the file in a local directory\. 
 

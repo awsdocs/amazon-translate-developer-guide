@@ -46,7 +46,8 @@ Before you can use your own KMS key, you must add permissions to the service rol
 **Profanity**  
 Enable to mask profane words and phrases in your translation output\. For more information, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md)\.  
 **Formality**  
-The formality option is not available for batch translation jobs\.  
+For some target languages, you can set **Formality** to formal or informal\.   
+ For more information, see [Setting formality in Amazon Translate](customizing-translations-formality.md)\.  
 **Custom terminology**  
 Consists of example source terms and the desired translation for each term\.  
 For more information, see [Customizing your translations with custom terminology](how-custom-terminology.md)\.  
@@ -100,7 +101,9 @@ If the command succeeds, Amazon Translate responds with the job ID and status:
 ```
 If you want to customize the output of your translation job, you can use the following parameters:    
 `--settings`  
-Settings to configure your translation output, including the option to mask profane words and phrases\. To enable profanity masking, set this parameter to `Profanity=MASK`\. For more information, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md)\.  
+Settings to configure your translation output, including the following options:  
+Enable profanity to mask profane words and phrases\. To enable, set the profanity parameter to `Profanity=MASK`\. For more information, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md)\.  
+Set the level of formality in the translation output\. Set the `Formality` parameter to `FORMAL` or `INFORMAL`\. For more information, see [Setting formality in Amazon Translate](customizing-translations-formality.md)\.  
 `--terminology-names`  
 The name of a custom terminology resource to add to the translation job\. This resource lists example source terms and the desired translation for each term\.  
 This parameter accepts only one custom terminology resource\.  
@@ -158,4 +161,4 @@ If the `JobStatus` value is `IN_PROGRESS`, allow a few minutes to pass, and run 
 
 ## Amazon Translate API<a name="async-start-api"></a>
 
-To submit a batch translation job by using the Amazon Translate API, use the [StartTextTranslationJob](API_StartTextTranslationJob.md) operation\.
+To submit a batch translation job by using the Amazon Translate API, use the [StartTextTranslationJob](https://docs.aws.amazon.com/translate/latest/APIReference/API_StartTextTranslationJob.html) operation\.

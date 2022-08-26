@@ -1,6 +1,6 @@
 # Using custom terminologies<a name="using-ct"></a>
 
- When using a Custom Terminology when translating text using the [TranslateText](API_TranslateText.md) operation, the process is similar to when you translate text without one\. The difference is that when you call the operation with the Custom Terminology, you also include the optional `TerminologyNames` parameter\. 
+ When using a Custom Terminology when translating text using the [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation, the process is similar to when you translate text without one\. The difference is that when you call the operation with the Custom Terminology, you also include the optional `TerminologyNames` parameter\. 
 
 For example, if you have the following terminology file called `Amazon_Family.csv` attached to your account:
 
@@ -38,4 +38,4 @@ print("Translated text: " + response.get('TranslatedText'))
 print("\n")
 ```
 
-For more information on using the Amazon Translate operations with Custom Terminologies, see [Actions](API_Operations.md)\. 
+For more information on using the Amazon Translate operations with Custom Terminologies, see [API Operations](https://docs.aws.amazon.com/translate/latest/APIReference/API_Operations.html)\. 

@@ -10,7 +10,7 @@ In **Real\-time translation**, choose the source and target languages\. Enter th
 
 ![\[The translate text page of the Amazon Translate API Explorer.\]](http://docs.aws.amazon.com/translate/latest/dg/images/gs-10.png)
 
-In the **JSON samples** section you can see the JSON input and output to the [TranslateText](API_TranslateText.md) operation\.
+In the **JSON samples** section you can see the JSON input and output to the [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation\.
 
 ![\[JSON code samples for translating text.\]](http://docs.aws.amazon.com/translate/latest/dg/images/gs-20.png)
 

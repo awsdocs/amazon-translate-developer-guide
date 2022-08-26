@@ -15,7 +15,7 @@ The following are example events from Amazon Translate\.
 
 ### Events for batch translation jobs<a name="monitoring-with-eventbridge-events"></a>
 
-You run batch translation jobs by using the Amazon Translate console or the `StartTextTranslationJob` operation\. Amazon Translate sends events when these jobs are complete, either successfully or unsuccessfully\. These events resemble the following example\.
+You run batch translation jobs by using the Amazon Translate console or the [StartTextTranslationJob](https://docs.aws.amazon.com/translate/latest/APIReference/API_StartTextTranslationJob.html) operation\. Amazon Translate sends events when these jobs are complete, either successfully or unsuccessfully\. These events resemble the following example\.
 
 ```
 {
@@ -38,13 +38,13 @@ The value for the `jobStatus` attribute depends on the job state that Amazon Tra
 + `COMPLETED` – The job has successfully completed and the output is available\.
 + `COMPLETED_WITH_ERROR` – The job has completed with errors\. The errors can be analyzed in the job's output\.
 + `STOPPED` – The job has been stopped\.
-+ `FAILED` – The job did not complete\. To get details, use the [DescribeTextTranslationJob](API_DescribeTextTranslationJob.md) operation\.
++ `FAILED` – The job did not complete\. To get details, use the [DescribeTextTranslationJob](https://docs.aws.amazon.com/translate/latest/APIReference/API_DescribeTextTranslationJob.html) operation\.
 
 ### Events for parallel data resources<a name="monitoring-with-eventbridge-events"></a>
 
 When you use Amazon Translate to create or update a parallel data resource, it sends an event to indicate whether the operation succeeded or failed\.
 
-You create parallel data resources by using the Amazon Translate console or the `CreateParallelData` operation\. When you do this, Amazon Translate sends an event like the following\.
+You create parallel data resources by using the Amazon Translate console or the [CreateParallelData](https://docs.aws.amazon.com/translate/latest/APIReference/API_CreateParallelData.html) operation\. When you do this, Amazon Translate sends an event like the following\.
 
 ```
 {
@@ -68,7 +68,7 @@ Values for the `status` attribute are:
 + `ACTIVE` – The `CreateParallelData `operation succeeded, and the resource is ready for you to use\.
 + `FAILED` – The `CreateParallelData` operation failed\.
 
-You update parallel data resources by using the Amazon Translate console or the `UpdateParallelData` operation\. When you do this, Amazon Translate sends an event like the following\.
+You update parallel data resources by using the Amazon Translate console or the [UpdateParallelData](https://docs.aws.amazon.com/translate/latest/APIReference/API_UpdateParallelData.html) operation\. When you do this, Amazon Translate sends an event like the following\.
 
 ```
 {
