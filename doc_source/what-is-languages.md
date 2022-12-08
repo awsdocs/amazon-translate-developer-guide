@@ -3,9 +3,9 @@
 Amazon Translate provides translation between a source language \(the input language\) and a target language \(the output language\)\. A source language\-target language combination is known as a *language pair*\.
 
 **Note**  
-Amazon Translate does not charge you for translations in which the source language and target language are the same\.
+Amazon Translate does not charge you for translations if you specify the same language for the source language and the target language\. If you set the source language to auto, you may be charged for using auto detection\. For more information, see [Automatic language detection](how-it-works.md#how-to-auto)\.
 
-Amazon Translate can translate text between the languages listed in the following table\.
+Amazon Translate supports text translation between the languages listed in the following table\. The language code column uses [ ISO 639\-1]( https://www.loc.gov/standards/iso639-2/php/code_list.php) two\-digit language codes\. For a country variant of a language, the table follows the [RFC 5646](https://www.rfc-editor.org/rfc/rfc5646.html) format of appending a dash followed by an [ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) 2\-digit country code\. For example, the language code for the Mexican variant of Spanish is `es-MX`\.
 
 
 | Language | Language code | 
@@ -59,7 +59,7 @@ Amazon Translate can translate text between the languages listed in the followin
 | Maltese | mt | 
 | Marathi | mr | 
 | Mongolian | mn | 
-| Norwegian | no | 
+| Norwegian \(Bokmål\) | no | 
 | Pashto | ps | 
 | Polish | pl | 
 | Portuguese \(Brazil\) | pt | 

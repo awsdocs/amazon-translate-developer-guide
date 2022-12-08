@@ -10,6 +10,10 @@ In some cases, a profane word in the source input might naturally become inoffen
 
 Amazon Translate detects each profane word or phrase literally, not contextually\. This means that it might mask a profane word even if it’s inoffensive in context\. For example, if Amazon Translate detected “jerk” as a profane word, then it would write the phrase “jerk chicken” as “?$\#@$ chicken”, even though “jerk chicken” is inoffensive\. \(Here, “jerk” is used as an example only\. Amazon Translate does not detect that word as profanity\.\)
 
+**Topics**
++ [Using the profanity setting](#customizing-translations-profanity-using)
++ [Unsupported languages](#customizing-translations-profanity-languages)
+
 ## Using the profanity setting<a name="customizing-translations-profanity-using"></a>
 
 You can use the profanity setting with both types of translation operations in Amazon Translate: real\-time translation and asynchronous batch processing\.

@@ -5,7 +5,8 @@ The following prerequisites must be met in order for Amazon Translate to perform
 + The collection of batch input documents must be 5 GB or less in size\.
 + There can be a maximum of one million documents submitted in a batch translation job\.
 + Each input document must be 20 MB or less and must contain fewer than 1 million characters\.
-+ Your input files must be in a folder in an Amazon S3 bucket\. If your files are not in a folder, and they reside at the top level of a bucket, Amazon Translate throws an error when you attempt to run a batch translation job\. This requirement applies only to input files\. No folder is necessary for the output files, and Amazon Translate can place them at the top level of an Amazon S3 bucket\.
++ Your input files must be in a folder in an Amazon S3 bucket\. If you add your input files to the top level of a bucket, Amazon Translate throws an error when you attempt to run a batch translation job\. This requirement applies to the input files\. No folder is necessary for the output files, and Amazon Translate can place them at the top level of an Amazon S3 bucket\.
++ Your input file folder can contain nested folders\. Make sure none of the nested folders are named details, otherwise Amazon Translate throws an error when you attempt to run the batch translation job\.
 
 ## Supported file formats<a name="async-prereqs-formats"></a>
 
@@ -22,7 +23,7 @@ Amazon Translate requires files to be UTF\-8 encoded\.
 ## Prerequisite permissions<a name="async-prereqs-permissions"></a>
 
 Before you can run a batch translation job, your AWS account must have a service role in IAM\. This role must have a permissions policy that grants Amazon Translate:
-+ Read access to your input folder in Amazon S3\.
++ Read access to your input folder and all its sub\-folders in Amazon S3\.
 + Read and write access to your output bucket\.
 
 It must also include a trust policy that allows Amazon Translate to assume the role and gain its permissions\. This trust policy must allow the `translate.amazonaws.com` service principal to perform the `sts:AssumeRole` action\.

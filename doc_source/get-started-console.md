@@ -2,7 +2,7 @@
 
 The easiest way to get started with Amazon Translate is to use the console to translate some text\. You can translate up to 5,000 characters using the console\. If you haven't reviewed the concepts and terminology in [How Amazon Translate works](how-it-works.md), we recommend that you do so before proceeding\.
 
-To start translating text, go to the [AWS Management Console](https://console.aws.amazon.com/translate) and open the Amazon Translate console\. 
+Open the [Amazon Translate console](https://console.aws.amazon.com/translate/home)\.
 
 If this is the first time that you've used Amazon Translate, choose **Launch real\-time translation**\.
 

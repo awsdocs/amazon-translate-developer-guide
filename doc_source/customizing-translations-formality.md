@@ -10,6 +10,10 @@ For example, the sentence ‘Are you sure?’ can have two correct translations 
 
 If Amazon Translate doesn’t support formality level for the target language, or you don't specify the formality parameter, the translation job ignores the formality setting\.
 
+**Topics**
++ [Using the formality setting](#customizing-translations-formality-using)
++ [Supported languages](#customizing-translations-formality-languages)
+
 ## Using the formality setting<a name="customizing-translations-formality-using"></a>
 
 To set formality in a real\-time translation request, do one of the following:
@@ -23,16 +27,19 @@ For CLI or API requests, the `AppliedSettings` field in the response includes th
 
 ## Supported languages<a name="customizing-translations-formality-languages"></a>
 
-Amazon Translate supports the formality setting for translation from any source language to the following target languages\. Formality does not support variants of these languages \(such as fr\-CA and es\-MX\) as the target language\.
+Amazon Translate supports the formality setting for translation from any source language to the following target languages\.
 
 
 | Language | Language code | 
 | --- | --- | 
+| Dutch | nl | 
 | French | fr | 
 | German | de | 
 | Hindi | hi | 
 | Italian | it | 
 | Japanese | ja | 
+| Korean | ko | 
 | Spanish | es | 
+| Spanish \(Mexico\) | es\-MX | 
 
 For all the languages that Amazon Translate supports, see [Supported languages and language codes](what-is-languages.md)\.

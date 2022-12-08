@@ -48,6 +48,7 @@ Amazon Translate has the following service limitations\.
 | Maximum number of characters per document | 1,000,000 | 
 | Maximum size per document | 20 MB | 
 | Maximum size of translatable text in a single document | 1 MB | 
+| Maximum number of target languages in a batch job request | 10 | 
 | Maximum number of documents in batch | 1,000,000 | 
 | Maximum size of total documents in batch | 5 GB | 
 | Maximum number of concurrent batch translation jobs | 10 | 

@@ -8,7 +8,7 @@ To perform an asynchronous batch translation, you typically perform the followin
 
 1. Start a batch translation job\.
 
-1. As part of your request, provide Amazon Translate with an IAM role that has read access to the input Amazon S3 folder\. The role must also have read and write access to an output Amazon S3 bucket\.
+1. As part of your request, provide Amazon Translate with an IAM role that has read access to the input Amazon S3 folder and all its sub\-folders\. The role must also have read and write access to an output Amazon S3 bucket\.
 
 1. Monitor the progress of the batch translation job\.
 

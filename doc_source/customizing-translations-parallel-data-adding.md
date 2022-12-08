@@ -12,7 +12,7 @@ Upload your input file to an Amazon S3 bucket\. For more information, see [How d
 
 To add parallel data by using the Amazon Translate console, use the **Parallel data** page:
 
-1. Open the Amazon Translate console at [https://console\.aws\.amazon\.com/translate/](https://console.aws.amazon.com/translate/)
+1. Open the [Amazon Translate console](https://console.aws.amazon.com/translate/home)\.
 
 1. In the navigation menu on the left, choose **Customization**, and choose **Parallel data**\.
 

@@ -8,7 +8,7 @@ To view and manage your parallel data in the Amazon Translate console, use the *
 
 **To view a list of your of parallel data resources**
 
-1. Open the Amazon Translate console at [https://console\.aws\.amazon\.com/translate/](https://console.aws.amazon.com/translate/)
+1. Open the [Amazon Translate console](https://console.aws.amazon.com/translate/home)\.
 
 1. In the navigation menu on the left, choose **Customization**, and choose **Parallel data**\. The table on this page lists the parallel data resources that you have added to Amazon Translate\.
 

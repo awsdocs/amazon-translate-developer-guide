@@ -2,15 +2,14 @@
 
 You can run a batch translation job by using the Amazon Translate console, the AWS CLI, or the Amazon Translate API\.
 
-**Notes**  
-Batch translation jobs are long\-running operations and can take significant time to complete\. For example, batch translation on a small dataset might take a few minutes, while very large datasets may take up to 2 days or more\. Completion time is also dependent on the availability of resources\.
-Amazon Translate does not automatically detect a source language during batch translation jobs\.
+**Note**  
+Batch translation jobs are long\-running operations and can take significant time to complete\. For example, batch translation on a small dataset might take a few minutes, while very large datasets may take up to 2 days or more\. Completion time is also dependent on the availability of resources\. 
 
 ## Amazon Translate console<a name="async-start-console"></a>
 
 To run a translation job by using the Amazon Translate console, use the **Batch translation** page to create the job:
 
-1. Open the Amazon Translate console at [https://console\.aws\.amazon\.com/translate/](https://console.aws.amazon.com/translate/)
+1. Open the [Amazon Translate console](https://console.aws.amazon.com/translate/home)\.
 
 1. In the navigation menu on the left, choose **Batch translation**\.
 
@@ -20,9 +19,9 @@ To run a translation job by using the Amazon Translate console, use the **Batch 
 
    1. For **Name**, enter a custom name for the batch translation job\.
 
-   1. For **Source language**, select the language of the source files that are being translated\.
+   1. For **Source language**, select the language of the source files\. If you don't know the language of the source files, or your input documents contains different source languages, select `auto`\. Amazon Translate auto detects the source language for each file\. 
 
-   1. For **Target language**, select language that your files are translated into\.
+   1. For **Target languages**, select up to 10 languages\. Amazon Translate translates each source file into each target language\.
 
 1. Under **Input data**, do the following:
 
@@ -44,15 +43,17 @@ Before you can use your own KMS key, you must add permissions to the service rol
 
 1. Under **Customizations \- optional**, you can choose to customize the output of your translation job with the following settings:  
 **Profanity**  
-Enable to mask profane words and phrases in your translation output\. For more information, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md)\.  
+Masks profane words and phrases in your translation output\. If you specify multiple target languages for the job, all the target languages must support profanity masking\. If any of the target languages don't support profanity masking, the translation job won't mask profanity for any target language\.  
+For more information, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md)\.  
 **Formality**  
-For some target languages, you can set **Formality** to formal or informal\.   
+For some target languages, you can set **Formality** to formal or informal\. If you specify multiple target languages for the job, translate ignores the formality setting for any unsupported target language\.  
  For more information, see [Setting formality in Amazon Translate](customizing-translations-formality.md)\.  
 **Custom terminology**  
-Consists of example source terms and the desired translation for each term\.  
+Consists of example source terms and the desired translation for each term\. If you specify multiple target languages for the job, translate uses the designated terminology for each requested target language that has an entry for the source term in the terminology file\.  
 For more information, see [Customizing your translations with custom terminology](how-custom-terminology.md)\.  
 **Parallel data**  
-Consists of examples that show how you want segments of text to be translated\. When you add parallel data to a batch translation job, you create an *Active Custom Translation* job\.  
+Consists of examples that show how you want segments of text to be translated\. If you specify multiple target languages for the job, the parallel data file must include translations for all the target languages\.  
+When you add parallel data to a batch translation job, you create an *Active Custom Translation* job\.  
 Active Custom Translation jobs are priced at a higher rate than other jobs that don't use parallel data\. For more information, see [Amazon Translate pricing](http://aws.amazon.com/translate/pricing/)\.
 For more information, see [Customizing your translations with parallel data \(Active Custom Translation\)](customizing-translations-parallel-data.md)\.
 
@@ -87,8 +88,8 @@ $ aws translate start-text-translation-job \
 > --input-data-config ContentType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,S3Uri=s3://my-s3-bucket/input/ \
 > --output-data-config S3Uri=s3://my-s3-bucket/output/ \
 > --data-access-role-arn arn:aws:iam::111122223333:role/my-iam-role \
-> --source-language-code=en \
-> --target-language-codes=es \
+> --source-language-code en \
+> --target-language-codes es it \
 > --job-name my-translation-job
 ```
 If the command succeeds, Amazon Translate responds with the job ID and status:  
@@ -102,15 +103,16 @@ If the command succeeds, Amazon Translate responds with the job ID and status:
 If you want to customize the output of your translation job, you can use the following parameters:    
 `--settings`  
 Settings to configure your translation output, including the following options:  
-Enable profanity to mask profane words and phrases\. To enable, set the profanity parameter to `Profanity=MASK`\. For more information, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md)\.  
-Set the level of formality in the translation output\. Set the `Formality` parameter to `FORMAL` or `INFORMAL`\. For more information, see [Setting formality in Amazon Translate](customizing-translations-formality.md)\.  
+Enable profanity to mask profane words and phrases\. To enable, set the profanity parameter to `Profanity=MASK`\. For more information, see [Masking profane words and phrases in Amazon Translate](customizing-translations-profanity.md)\. If any of the target languages don't support profanity masking, the translation job won't mask profanity for any target language\.  
+Set the level of formality in the translation output\. Set the `Formality` parameter to `FORMAL` or `INFORMAL`\. If you specify multiple target languages for the job, translate ignores the formality setting for any unsupported target language\. For more information, see [Setting formality in Amazon Translate](customizing-translations-formality.md)\.  
 `--terminology-names`  
-The name of a custom terminology resource to add to the translation job\. This resource lists example source terms and the desired translation for each term\.  
+The name of a custom terminology resource to add to the translation job\. This resource lists example source terms and the desired translation for each term\. If you specify multiple target languages for the job, translate uses the designated terminology for each requested target language that has an entry for the source term in the terminology file\.  
 This parameter accepts only one custom terminology resource\.  
 For a list of available custom terminology resources, use the [https://docs.aws.amazon.com/cli/latest/reference/translate/list-terminologies.html](https://docs.aws.amazon.com/cli/latest/reference/translate/list-terminologies.html) command\.  
 For more information, see [Customizing your translations with custom terminology](how-custom-terminology.md)\.  
 `--parallel-data-names`  
-The name of a parallel data resource to add to the translation job\. This resource consists of examples that show how you want segments of text to be translated\. When you add parallel data to a translation job, you create an *Active Custom Translation* job\.  
+The name of a parallel data resource to add to the translation job\. This resource consists of examples that show how you want segments of text to be translated\. If you specify multiple target languages for the job, the parallel data file must include translations for all the target languages\.  
+When you add parallel data to a translation job, you create an *Active Custom Translation* job\.  
 This parameter accepts only one parallel data resource\.  
 Active Custom Translation jobs are priced at a higher rate than other jobs that don't use parallel data\. For more information, see [Amazon Translate pricing](http://aws.amazon.com/translate/pricing/)\.
 For a list of available parallel data resources, use the [https://docs.aws.amazon.com/cli/latest/reference/translate/list-parallel-data.html](https://docs.aws.amazon.com/cli/latest/reference/translate/list-parallel-data.html) command\.  
@@ -142,7 +144,8 @@ Amazon Translate responds with the job properties, which include its status:
         },
         "SourceLanguageCode": "en",
         "TargetLanguageCodes": [
-            "es"
+            "es", 
+            "it" 
         ],
         "SubmittedTime": 1598661012.468,
         "InputDataConfig": {

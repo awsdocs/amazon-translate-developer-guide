@@ -62,7 +62,11 @@ Amazon Translate doesn't support resource\-based policies\.
 
 ## Authorization based on Amazon Translate tags<a name="security_iam_service-with-iam-tags"></a>
 
-Amazon Translate doesn't support tagging resources or controlling access based on tags\.
+Amazon Translate supports tags for **Parallel Data** and **Import Terminology**\.
+
+You can use the tags to provide tag\-based access control\. You add tags to a resource and then create IAM policies to allow or restrict access to the resource based on its tags\. For more information on using tags with IAM, see [Controlling access using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html) in the *IAM User Guide*\.
+
+For details about the Amazon Translate resource types, see [ Actions, resources, and condition keys for Amazon Translate ](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazontranslate.html) in the *Service Authorization Reference*\. 
 
 ## Amazon Translate IAM roles<a name="security_iam_service-with-iam-roles"></a>
 
